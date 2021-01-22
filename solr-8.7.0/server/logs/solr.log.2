@@ -1,120 +1,104 @@
-2021-01-15 03:00:50.880 INFO  (main) [   ] o.e.j.u.log Logging initialized @1167ms to org.eclipse.jetty.util.log.Slf4jLog
-2021-01-15 03:00:50.956 WARN  (main) [   ] o.e.j.x.XmlConfiguration Ignored arg: <Arg name="threadpool">
+2021-01-15 03:05:48.183 INFO  (main) [   ] o.e.j.u.log Logging initialized @1111ms to org.eclipse.jetty.util.log.Slf4jLog
+2021-01-15 03:05:48.262 WARN  (main) [   ] o.e.j.x.XmlConfiguration Ignored arg: <Arg name="threadpool">
     <New id="threadpool" class="com.codahale.metrics.jetty9.InstrumentedQueuedThreadPool"><Arg name="registry">
         <Call id="solrJettyMetricRegistry" name="getOrCreate" class="com.codahale.metrics.SharedMetricRegistries"><Arg>solr.jetty</Arg></Call>
       </Arg></New>
   </Arg>
-2021-01-15 03:00:51.060 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.27.v20200227; built: 2020-02-27T18:37:21.340Z; git: a304fd9f351f337e7c0e2a7c28878dd536149c6c; jvm 11.0.7+8-LTS
-2021-01-15 03:00:51.076 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///D:/xampp/htdocs/BRI/TAREA4/solr-8.7.0/server/contexts/] at interval 0
-2021-01-15 03:00:51.710 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
-2021-01-15 03:00:51.719 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
-2021-01-15 03:00:51.719 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
-2021-01-15 03:00:51.720 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 600000ms
-2021-01-15 03:00:51.760 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
-2021-01-15 03:00:51.764 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.7.0
-2021-01-15 03:00:51.764 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
-2021-01-15 03:00:51.764 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: D:\xampp\htdocs\BRI\TAREA4\solr-8.7.0
-2021-01-15 03:00:51.765 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2021-01-15T03:00:51.765741300Z
-2021-01-15 03:00:51.787 INFO  (main) [   ] o.a.s.c.SolrPaths Using system property solr.solr.home: D:\xampp\htdocs\BRI\TAREA4\solr-8.7.0\server\solr
-2021-01-15 03:00:51.793 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from D:\xampp\htdocs\BRI\TAREA4\solr-8.7.0\server\solr\solr.xml
-2021-01-15 03:00:51.880 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@6581dc0a, but no JMX reporters were configured - adding default JMX reporter.
-2021-01-15 03:00:52.499 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
-2021-01-15 03:00:52.623 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@6b4283c4[provider=null,keyStore=null,trustStore=null]
-2021-01-15 03:00:52.623 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@6b4283c4[provider=null,keyStore=null,trustStore=null]
-2021-01-15 03:00:52.741 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@934b52f[provider=null,keyStore=null,trustStore=null]
-2021-01-15 03:00:52.741 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@934b52f[provider=null,keyStore=null,trustStore=null]
-2021-01-15 03:00:52.782 WARN  (main) [   ] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
-2021-01-15 03:00:57.396 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
-2021-01-15 03:00:57.398 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
-2021-01-15 03:00:57.450 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@6581dc0a
-2021-01-15 03:00:57.451 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@6581dc0a
-2021-01-15 03:00:57.454 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@6581dc0a
-2021-01-15 03:00:57.490 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 2 core definitions underneath D:\xampp\htdocs\BRI\TAREA4\solr-8.7.0\server\solr
-2021-01-15 03:00:57.491 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [repository, start]
-2021-01-15 03:00:57.530 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.7.0
-2021-01-15 03:00:57.534 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.c.SolrResourceLoader Added 49 libs to classloader, from paths: [/D:/xampp/htdocs/BRI/TAREA4/solr-8.7.0/contrib/extraction/lib, /D:/xampp/htdocs/BRI/TAREA4/solr-8.7.0/dist]
-2021-01-15 03:00:57.672 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.s.IndexSchema Schema name=default-config
-2021-01-15 03:00:57.745 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.7.0
-2021-01-15 03:00:57.805 WARN  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.s.ManagedIndexSchemaFactory The schema has been upgraded to managed, but the non-managed schema schema.xml is still loadable.  PLEASE REMOVE THIS FILE.
-2021-01-15 03:00:57.819 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.s.IndexSchema Schema name=default-config
-2021-01-15 03:00:57.983 WARN  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
-2021-01-15 03:00:57.983 WARN  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
-2021-01-15 03:00:57.983 WARN  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
-2021-01-15 03:00:57.984 WARN  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
-2021-01-15 03:00:57.984 WARN  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
-2021-01-15 03:00:58.149 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
-2021-01-15 03:00:58.149 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
-2021-01-15 03:00:58.198 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.c.CoreContainer Creating SolrCore 'repository' using configuration from instancedir D:\xampp\htdocs\BRI\TAREA4\solr-8.7.0\server\solr\repository, trusted=true
-2021-01-15 03:00:58.199 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@29539e36{/solr,file:///D:/xampp/htdocs/BRI/TAREA4/solr-8.7.0/server/solr-webapp/webapp/,AVAILABLE}{D:\xampp\htdocs\BRI\TAREA4\solr-8.7.0\server/solr-webapp/webapp}
-2021-01-15 03:00:58.201 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.c.CoreContainer Creating SolrCore 'start' using configuration from instancedir D:\xampp\htdocs\BRI\TAREA4\solr-8.7.0\server\solr\start, trusted=true
-2021-01-15 03:00:58.219 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@53e211ee{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
-2021-01-15 03:00:58.219 INFO  (main) [   ] o.e.j.s.Server Started @8508ms
-2021-01-15 03:00:58.236 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.repository' (registry 'solr.core.repository') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@6581dc0a
-2021-01-15 03:00:58.236 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.start' (registry 'solr.core.start') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@6581dc0a
-2021-01-15 03:00:58.252 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.c.SolrCore [[start] ] Opening new SolrCore at [D:\xampp\htdocs\BRI\TAREA4\solr-8.7.0\server\solr\start], dataDir=[D:\xampp\htdocs\BRI\TAREA4\solr-8.7.0\server\solr\start\data\]
-2021-01-15 03:00:58.252 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.c.SolrCore [[repository] ] Opening new SolrCore at [D:\xampp\htdocs\BRI\TAREA4\solr-8.7.0\server\solr\repository], dataDir=[D:\xampp\htdocs\BRI\TAREA4\solr-8.7.0\server\solr\repository\data\]
-2021-01-15 03:00:59.262 INFO  (qtp204322447-52) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1610679005867} status=0 QTime=2
-2021-01-15 03:00:59.311 INFO  (qtp204322447-53) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1610679005868} status=0 QTime=51
-2021-01-15 03:00:59.360 INFO  (qtp204322447-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1610679005868} status=0 QTime=43
-2021-01-15 03:00:59.996 INFO  (qtp204322447-28) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=43
-2021-01-15 03:01:01.530 INFO  (qtp204322447-50) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1610679661468} status=0 QTime=0
-2021-01-15 03:01:01.583 INFO  (qtp204322447-27) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1610679661468} status=0 QTime=52
-2021-01-15 03:01:01.628 INFO  (qtp204322447-50) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1610679661468} status=0 QTime=42
-2021-01-15 03:01:03.347 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2021-01-15 03:01:03.347 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2021-01-15 03:01:03.347 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2021-01-15 03:01:03.347 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2021-01-15 03:01:03.363 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
-2021-01-15 03:01:03.364 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2021-01-15 03:01:03.370 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
-2021-01-15 03:01:03.370 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2021-01-15 03:01:03.493 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: D:\xampp\htdocs\BRI\TAREA4\solr-8.7.0\server\solr\repository\conf
-2021-01-15 03:01:03.500 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: D:\xampp\htdocs\BRI\TAREA4\solr-8.7.0\server\solr\start\conf
-2021-01-15 03:01:03.510 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
-2021-01-15 03:01:03.510 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
-2021-01-15 03:01:03.517 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
-2021-01-15 03:01:03.517 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
-2021-01-15 03:01:03.518 INFO  (qtp204322447-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1610679661468} status=0 QTime=0
-2021-01-15 03:01:03.518 INFO  (qtp204322447-49) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1610679663504&since=0} status=0 QTime=2
-2021-01-15 03:01:03.520 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
-2021-01-15 03:01:03.520 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=attr_text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,payloadField=address}
-2021-01-15 03:01:03.530 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
-2021-01-15 03:01:03.530 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
-2021-01-15 03:01:03.549 INFO  (searcherExecutor-16-thread-1-processing-x:repository) [   x:repository] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2021-01-15 03:01:03.549 INFO  (searcherExecutor-16-thread-1-processing-x:repository) [   x:repository] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2021-01-15 03:01:03.558 INFO  (searcherExecutor-16-thread-1-processing-x:repository) [   x:repository] o.a.s.c.SolrCore [repository]  Registered new searcher autowarm time: 0 ms
-2021-01-15 03:01:03.580 INFO  (qtp204322447-29) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1610679661468} status=0 QTime=62
-2021-01-15 03:01:03.975 INFO  (searcherExecutor-17-thread-1-processing-x:start) [   x:start] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2021-01-15 03:01:03.975 INFO  (searcherExecutor-17-thread-1-processing-x:start) [   x:start] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2021-01-15 03:01:03.975 INFO  (searcherExecutor-17-thread-1-processing-x:start) [   x:start] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2021-01-15 03:01:03.975 INFO  (searcherExecutor-17-thread-1-processing-x:start) [   x:start] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: wordbreak
-2021-01-15 03:01:03.979 INFO  (searcherExecutor-17-thread-1-processing-x:start) [   x:start] o.a.s.c.SolrCore [start]  Registered new searcher autowarm time: 0 ms
-2021-01-15 03:01:04.332 INFO  (qtp204322447-52) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1610679661468} status=0 QTime=0
-2021-01-15 03:01:04.375 INFO  (qtp204322447-50) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1610679661468} status=0 QTime=42
-2021-01-15 03:01:04.418 INFO  (qtp204322447-49) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1610679661468} status=0 QTime=41
-2021-01-15 03:01:09.081 INFO  (qtp204322447-30) [   x:start] o.a.s.u.p.LogUpdateProcessorFactory [start]  webapp=/solr path=/update params={}{deleteByQuery=*:* (-1688920044644335616)} 0 77
-2021-01-15 03:01:09.121 INFO  (searcherExecutor-17-thread-1-processing-x:start) [   x:start] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2021-01-15 03:01:09.125 INFO  (searcherExecutor-17-thread-1-processing-x:start) [   x:start] o.a.s.c.SolrCore [start]  Registered new searcher autowarm time: 1 ms
-2021-01-15 03:01:09.133 INFO  (qtp204322447-49) [   x:start] o.a.s.u.p.LogUpdateProcessorFactory [start]  webapp=/solr path=/update params={commit=true}{commit=} 0 46
-2021-01-15 03:01:13.148 INFO  (qtp204322447-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1610679661468} status=0 QTime=0
-2021-01-15 03:01:13.152 INFO  (qtp204322447-50) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1610679673120} status=0 QTime=4
-2021-01-15 03:01:13.153 INFO  (qtp204322447-25) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1610679661468&ts=1610679661468} status=503 QTime=1
-2021-01-15 03:01:13.153 INFO  (qtp204322447-28) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/replication params={wt=json&command=details&_=1610679673120} status=0 QTime=3
-2021-01-15 03:01:13.248 INFO  (qtp204322447-31) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1610679661468} status=0 QTime=98
-2021-01-15 03:01:13.248 INFO  (qtp204322447-57) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/admin/system params={wt=json&_=1610679673120} status=0 QTime=97
-2021-01-15 03:01:14.800 INFO  (qtp204322447-29) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1610679661468} status=0 QTime=0
-2021-01-15 03:01:14.844 INFO  (qtp204322447-32) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1610679661468} status=0 QTime=44
-2021-01-15 03:01:15.620 INFO  (qtp204322447-50) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/select params={q=*:*&_=1610679674777} hits=0 status=0 QTime=8
-2021-01-15 03:01:17.117 INFO  (qtp204322447-29) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1610679661468} status=0 QTime=0
-2021-01-15 03:01:17.120 INFO  (qtp204322447-28) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1610679673120} status=0 QTime=3
-2021-01-15 03:01:17.164 INFO  (qtp204322447-52) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1610679661468} status=0 QTime=46
-2021-01-15 03:01:24.569 INFO  (qtp204322447-58) [   x:start] o.a.s.u.p.LogUpdateProcessorFactory [start]  webapp=/solr path=/update/extract params={commitWithin=1000&overwrite=true&wt=json}{add=[df722c10-7355-4fbc-b754-cd4918a1808e (1688920060812328960)]} 0 703
-2021-01-15 03:01:25.650 INFO  (searcherExecutor-17-thread-1-processing-x:start) [   x:start] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2021-01-15 03:01:25.653 INFO  (searcherExecutor-17-thread-1-processing-x:start) [   x:start] o.a.s.c.SolrCore [start]  Registered new searcher autowarm time: 0 ms
-2021-01-15 03:01:26.101 INFO  (qtp204322447-52) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1610679661468} status=0 QTime=0
-2021-01-15 03:01:26.145 INFO  (qtp204322447-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1610679661468} status=0 QTime=44
-2021-01-15 03:01:29.304 INFO  (qtp204322447-28) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=*:*&_=1610679674777} hits=1 status=0 QTime=3
-2021-01-15 03:01:42.527 ERROR (qtp204322447-26) [   x:start] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: no field name specified in query and no default specified via 'df' param
+2021-01-15 03:05:48.356 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.27.v20200227; built: 2020-02-27T18:37:21.340Z; git: a304fd9f351f337e7c0e2a7c28878dd536149c6c; jvm 11.0.7+8-LTS
+2021-01-15 03:05:48.373 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///D:/xampp/htdocs/BRI/TAREA4/solr-8.7.0/server/contexts/] at interval 0
+2021-01-15 03:05:48.999 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2021-01-15 03:05:49.008 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2021-01-15 03:05:49.008 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2021-01-15 03:05:49.009 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 660000ms
+2021-01-15 03:05:49.049 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2021-01-15 03:05:49.053 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.7.0
+2021-01-15 03:05:49.053 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2021-01-15 03:05:49.053 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: D:\xampp\htdocs\BRI\TAREA4\solr-8.7.0
+2021-01-15 03:05:49.053 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2021-01-15T03:05:49.053313300Z
+2021-01-15 03:05:49.088 INFO  (main) [   ] o.a.s.c.SolrPaths Using system property solr.solr.home: D:\xampp\htdocs\BRI\TAREA4\solr-8.7.0\server\solr
+2021-01-15 03:05:49.093 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from D:\xampp\htdocs\BRI\TAREA4\solr-8.7.0\server\solr\solr.xml
+2021-01-15 03:05:49.160 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@6581dc0a, but no JMX reporters were configured - adding default JMX reporter.
+2021-01-15 03:05:49.660 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2021-01-15 03:05:49.806 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@11a8042c[provider=null,keyStore=null,trustStore=null]
+2021-01-15 03:05:49.807 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@11a8042c[provider=null,keyStore=null,trustStore=null]
+2021-01-15 03:05:49.931 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@ff23ae7[provider=null,keyStore=null,trustStore=null]
+2021-01-15 03:05:49.931 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@ff23ae7[provider=null,keyStore=null,trustStore=null]
+2021-01-15 03:05:49.973 WARN  (main) [   ] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2021-01-15 03:05:54.589 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2021-01-15 03:05:54.591 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2021-01-15 03:05:54.645 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@6581dc0a
+2021-01-15 03:05:54.645 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@6581dc0a
+2021-01-15 03:05:54.648 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@6581dc0a
+2021-01-15 03:05:54.684 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 2 core definitions underneath D:\xampp\htdocs\BRI\TAREA4\solr-8.7.0\server\solr
+2021-01-15 03:05:54.684 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [repository, start]
+2021-01-15 03:05:54.740 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.7.0
+2021-01-15 03:05:54.745 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.c.SolrResourceLoader Added 49 libs to classloader, from paths: [/D:/xampp/htdocs/BRI/TAREA4/solr-8.7.0/contrib/extraction/lib, /D:/xampp/htdocs/BRI/TAREA4/solr-8.7.0/dist]
+2021-01-15 03:05:54.885 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.s.IndexSchema Schema name=default-config
+2021-01-15 03:05:54.967 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.7.0
+2021-01-15 03:05:55.016 WARN  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.s.ManagedIndexSchemaFactory The schema has been upgraded to managed, but the non-managed schema schema.xml is still loadable.  PLEASE REMOVE THIS FILE.
+2021-01-15 03:05:55.030 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.s.IndexSchema Schema name=default-config
+2021-01-15 03:05:55.202 WARN  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
+2021-01-15 03:05:55.202 WARN  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
+2021-01-15 03:05:55.202 WARN  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
+2021-01-15 03:05:55.202 WARN  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
+2021-01-15 03:05:55.202 WARN  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
+2021-01-15 03:05:55.367 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-01-15 03:05:55.367 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-01-15 03:05:55.409 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@29539e36{/solr,file:///D:/xampp/htdocs/BRI/TAREA4/solr-8.7.0/server/solr-webapp/webapp/,AVAILABLE}{D:\xampp\htdocs\BRI\TAREA4\solr-8.7.0\server/solr-webapp/webapp}
+2021-01-15 03:05:55.428 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.c.CoreContainer Creating SolrCore 'repository' using configuration from instancedir D:\xampp\htdocs\BRI\TAREA4\solr-8.7.0\server\solr\repository, trusted=true
+2021-01-15 03:05:55.429 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.c.CoreContainer Creating SolrCore 'start' using configuration from instancedir D:\xampp\htdocs\BRI\TAREA4\solr-8.7.0\server\solr\start, trusted=true
+2021-01-15 03:05:55.429 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@53e211ee{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
+2021-01-15 03:05:55.430 INFO  (main) [   ] o.e.j.s.Server Started @8360ms
+2021-01-15 03:05:55.458 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.repository' (registry 'solr.core.repository') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@6581dc0a
+2021-01-15 03:05:55.458 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.start' (registry 'solr.core.start') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@6581dc0a
+2021-01-15 03:05:55.472 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.c.SolrCore [[repository] ] Opening new SolrCore at [D:\xampp\htdocs\BRI\TAREA4\solr-8.7.0\server\solr\repository], dataDir=[D:\xampp\htdocs\BRI\TAREA4\solr-8.7.0\server\solr\repository\data\]
+2021-01-15 03:05:55.472 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.c.SolrCore [[start] ] Opening new SolrCore at [D:\xampp\htdocs\BRI\TAREA4\solr-8.7.0\server\solr\start], dataDir=[D:\xampp\htdocs\BRI\TAREA4\solr-8.7.0\server\solr\start\data\]
+2021-01-15 03:05:57.353 INFO  (qtp204322447-51) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=50
+2021-01-15 03:06:00.527 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2021-01-15 03:06:00.527 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2021-01-15 03:06:00.527 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2021-01-15 03:06:00.527 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2021-01-15 03:06:00.547 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2021-01-15 03:06:00.547 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2021-01-15 03:06:00.547 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2021-01-15 03:06:00.547 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2021-01-15 03:06:00.617 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: D:\xampp\htdocs\BRI\TAREA4\solr-8.7.0\server\solr\start\conf
+2021-01-15 03:06:00.631 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2021-01-15 03:06:00.637 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2021-01-15 03:06:00.638 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2021-01-15 03:06:00.638 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=attr_text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,payloadField=address}
+2021-01-15 03:06:00.654 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2021-01-15 03:06:00.660 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: D:\xampp\htdocs\BRI\TAREA4\solr-8.7.0\server\solr\repository\conf
+2021-01-15 03:06:00.661 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2021-01-15 03:06:00.661 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2021-01-15 03:06:00.662 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2021-01-15 03:06:00.679 INFO  (searcherExecutor-16-thread-1-processing-x:repository) [   x:repository] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-01-15 03:06:00.680 INFO  (searcherExecutor-16-thread-1-processing-x:repository) [   x:repository] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2021-01-15 03:06:00.688 INFO  (searcherExecutor-16-thread-1-processing-x:repository) [   x:repository] o.a.s.c.SolrCore [repository]  Registered new searcher autowarm time: 0 ms
+2021-01-15 03:06:01.112 INFO  (searcherExecutor-17-thread-1-processing-x:start) [   x:start] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-01-15 03:06:01.112 INFO  (searcherExecutor-17-thread-1-processing-x:start) [   x:start] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2021-01-15 03:06:01.112 INFO  (searcherExecutor-17-thread-1-processing-x:start) [   x:start] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2021-01-15 03:06:01.112 INFO  (searcherExecutor-17-thread-1-processing-x:start) [   x:start] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: wordbreak
+2021-01-15 03:06:01.115 INFO  (searcherExecutor-17-thread-1-processing-x:start) [   x:start] o.a.s.c.SolrCore [start]  Registered new searcher autowarm time: 0 ms
+2021-01-15 03:06:06.508 INFO  (qtp204322447-51) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1610679966432} status=0 QTime=1
+2021-01-15 03:06:06.553 INFO  (qtp204322447-28) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1610679966433} status=0 QTime=46
+2021-01-15 03:06:12.267 INFO  (qtp204322447-52) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/select params={q=*:*&_=1610679966484} hits=0 status=0 QTime=24
+2021-01-15 03:06:13.431 INFO  (qtp204322447-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1610679966432} status=0 QTime=0
+2021-01-15 03:06:13.434 INFO  (qtp204322447-29) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1610679973421} status=0 QTime=0
+2021-01-15 03:06:13.474 INFO  (qtp204322447-28) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1610679973421} status=0 QTime=1
+2021-01-15 03:06:13.474 INFO  (qtp204322447-52) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1610679966432} status=0 QTime=0
+2021-01-15 03:06:13.485 INFO  (qtp204322447-51) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1610679966433} status=0 QTime=52
+2021-01-15 03:06:13.528 INFO  (qtp204322447-29) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1610679966433} status=0 QTime=41
+2021-01-15 03:06:13.944 INFO  (qtp204322447-51) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1610679966432} status=0 QTime=0
+2021-01-15 03:06:13.951 INFO  (qtp204322447-27) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1610679973935} status=0 QTime=7
+2021-01-15 03:06:13.991 INFO  (qtp204322447-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1610679966433} status=0 QTime=46
+2021-01-15 03:06:22.465 INFO  (qtp204322447-52) [   x:start] o.a.s.u.p.LogUpdateProcessorFactory [start]  webapp=/solr path=/update/extract params={commitWithin=1000&overwrite=true&wt=json}{add=[e19e7972-b7af-4120-88ab-0fd2f6940fdc (1688920373160050688)]} 0 734
+2021-01-15 03:06:23.558 INFO  (searcherExecutor-17-thread-1-processing-x:start) [   x:start] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-01-15 03:06:23.562 INFO  (searcherExecutor-17-thread-1-processing-x:start) [   x:start] o.a.s.c.SolrCore [start]  Registered new searcher autowarm time: 0 ms
+2021-01-15 03:06:25.437 INFO  (qtp204322447-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1610679966432} status=0 QTime=0
+2021-01-15 03:06:25.482 INFO  (qtp204322447-28) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1610679966433} status=0 QTime=45
+2021-01-15 03:06:26.266 INFO  (qtp204322447-27) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/select params={q=*:*&_=1610679966484} hits=1 status=0 QTime=4
+2021-01-15 03:06:51.920 ERROR (qtp204322447-28) [   x:start] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: no field name specified in query and no default specified via 'df' param
 	at org.apache.solr.parser.SolrQueryParserBase.checkNullField(SolrQueryParserBase.java:1012)
 	at org.apache.solr.parser.SolrQueryParserBase.getWildcardQuery(SolrQueryParserBase.java:1219)
 	at org.apache.solr.parser.SolrQueryParserBase.handleBareTokenQuery(SolrQueryParserBase.java:811)
@@ -171,16 +155,12 @@
 	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
 	at java.base/java.lang.Thread.run(Thread.java:834)
 
-2021-01-15 03:01:42.527 INFO  (qtp204322447-26) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=*sanchez*&_=1610679674777} status=400 QTime=1
-2021-01-15 03:01:46.304 INFO  (qtp204322447-28) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=*sanchez*&df=attr_text&_=1610679674777} hits=1 status=0 QTime=49
-2021-01-15 03:01:56.663 INFO  (qtp204322447-26) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=sanchez&df=attr_text&_=1610679674777} hits=1 status=0 QTime=8
-2021-01-15 03:02:18.489 INFO  (qtp204322447-28) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=bibliograf&df=attr_text&_=1610679674777} hits=0 status=0 QTime=12
-2021-01-15 03:02:23.314 INFO  (qtp204322447-26) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=bibliografia&df=attr_text&_=1610679674777} hits=1 status=0 QTime=7
-2021-01-15 03:02:29.601 INFO  (qtp204322447-28) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=bibliografica&df=attr_text&_=1610679674777} hits=1 status=0 QTime=6
-2021-01-15 03:02:33.644 INFO  (qtp204322447-26) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=bibliográfica&df=attr_text&_=1610679674777} hits=1 status=0 QTime=13
-2021-01-15 03:02:53.234 INFO  (qtp204322447-28) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=bibliográfica&df=attr_text&hl=true&hl.fl=attr_text&_=1610679674777} hits=1 status=0 QTime=61
-2021-01-15 03:02:58.573 INFO  (qtp204322447-26) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=bibliografica&df=attr_text&hl=true&hl.fl=attr_text&_=1610679674777} hits=1 status=0 QTime=28
-2021-01-15 03:05:28.896 INFO  (qtp204322447-26) [   x:start] o.a.s.u.p.LogUpdateProcessorFactory [start]  webapp=/solr path=/update params={}{deleteByQuery=*:* (-1688920317118906368)} 0 3
-2021-01-15 03:05:28.930 INFO  (searcherExecutor-17-thread-1-processing-x:start) [   x:start] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2021-01-15 03:05:28.932 INFO  (searcherExecutor-17-thread-1-processing-x:start) [   x:start] o.a.s.c.SolrCore [start]  Registered new searcher autowarm time: 0 ms
-2021-01-15 03:05:28.937 INFO  (qtp204322447-28) [   x:start] o.a.s.u.p.LogUpdateProcessorFactory [start]  webapp=/solr path=/update params={commit=true}{commit=} 0 38
+2021-01-15 03:06:51.920 INFO  (qtp204322447-28) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=*sanches*&hl=true&hl.fl=attr_text&_=1610679966484} status=400 QTime=1
+2021-01-15 03:06:55.941 INFO  (qtp204322447-27) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=*sanches*&df=attr_text&hl=true&hl.fl=attr_text&_=1610679966484} hits=0 status=0 QTime=45
+2021-01-15 03:07:00.296 INFO  (qtp204322447-28) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=sanches&df=attr_text&hl=true&hl.fl=attr_text&_=1610679966484} hits=0 status=0 QTime=17
+2021-01-15 03:07:05.698 INFO  (qtp204322447-27) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=sanchez&df=attr_text&hl=true&hl.fl=attr_text&_=1610679966484} hits=1 status=0 QTime=60
+2021-01-15 03:07:26.227 INFO  (qtp204322447-28) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=el&df=attr_text&hl=true&hl.fl=attr_text&_=1610679966484} hits=1 status=0 QTime=24
+2021-01-15 03:09:13.006 INFO  (qtp204322447-31) [   x:start] o.a.s.u.p.LogUpdateProcessorFactory [start]  webapp=/solr path=/update params={}{deleteByQuery=*:* (-1688920552101642240)} 0 45
+2021-01-15 03:09:13.044 INFO  (searcherExecutor-17-thread-1-processing-x:start) [   x:start] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-01-15 03:09:13.047 INFO  (searcherExecutor-17-thread-1-processing-x:start) [   x:start] o.a.s.c.SolrCore [start]  Registered new searcher autowarm time: 0 ms
+2021-01-15 03:09:13.054 INFO  (qtp204322447-28) [   x:start] o.a.s.u.p.LogUpdateProcessorFactory [start]  webapp=/solr path=/update params={commit=true}{commit=} 0 41

@@ -1,8 +1,8 @@
 <?php
-$consulta = "MéRIDA not YUCATÁN";
-    //if(isset($_GET['consulta'])) {
+//$consulta = "MéRIDA not YUCATÁN";
+    if(isset($_GET['consulta'])) {
         $diccionario = array("and", "or","not");
-        //$consulta = strtolower ($_GET['consulta']);
+        $consulta = strtolower ($_GET['consulta']);
         $consulta = strtolower ($consulta);
         $arrayDividido = explode(" ", $consulta);
         //$arrayDividido = array_values(removeEmptyElements($arrayDividido));
@@ -30,9 +30,9 @@ $consulta = "MéRIDA not YUCATÁN";
                     break;
             }
         }
-    /*} else{
+    } else{
         echo 'error';
-    }*/
+    }
 
     //echo $sentenciaSolr;
     $resultados = file_get_contents($sentenciaSolr);
