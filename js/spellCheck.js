@@ -6,6 +6,9 @@ function spellCheck() {
     wrapper.innerHTML = '';
       let urlBusqueda = 'php/proxy_sc.php?data=' + palabraBuscar;
       get(urlBusqueda).then(function(response) {
+        console.log("_________________________");
+        console.log(response);
+        console.log("_________________________");
         if ( JSON.parse(response).spellcheck.suggestions.length>0) {
           let suggestions = JSON.parse(response).spellcheck.suggestions[1].suggestion;
           let suggestion = suggestions[0].word;

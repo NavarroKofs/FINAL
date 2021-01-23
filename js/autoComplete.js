@@ -2,7 +2,7 @@ function autoComplete() {
     let palabraBuscar = document.getElementById("inputSearch").value;
     var wrapper = document.getElementById('autoComplete');
     wrapper.innerHTML = '';
-    if (palabraBuscar.length!=0) {
+    if (palabraBuscar.length>0) {
       let urlBusqueda = 'php/proxy_ac.php?data=' + palabraBuscar;
       get(urlBusqueda).then(function(response) {
         let docs = JSON.parse(response).response.docs;

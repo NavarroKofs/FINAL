@@ -1,123 +1,120 @@
-2021-01-15 03:00:50.880 INFO  (main) [   ] o.e.j.u.log Logging initialized @1167ms to org.eclipse.jetty.util.log.Slf4jLog
-2021-01-15 03:00:50.956 WARN  (main) [   ] o.e.j.x.XmlConfiguration Ignored arg: <Arg name="threadpool">
+2021-01-15 22:45:43.572 INFO  (main) [   ] o.e.j.u.log Logging initialized @3725ms to org.eclipse.jetty.util.log.Slf4jLog
+2021-01-15 22:45:43.969 WARN  (main) [   ] o.e.j.x.XmlConfiguration Ignored arg: <Arg name="threadpool">
     <New id="threadpool" class="com.codahale.metrics.jetty9.InstrumentedQueuedThreadPool"><Arg name="registry">
         <Call id="solrJettyMetricRegistry" name="getOrCreate" class="com.codahale.metrics.SharedMetricRegistries"><Arg>solr.jetty</Arg></Call>
       </Arg></New>
   </Arg>
-2021-01-15 03:00:51.060 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.27.v20200227; built: 2020-02-27T18:37:21.340Z; git: a304fd9f351f337e7c0e2a7c28878dd536149c6c; jvm 11.0.7+8-LTS
-2021-01-15 03:00:51.076 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///D:/xampp/htdocs/BRI/TAREA4/solr-8.7.0/server/contexts/] at interval 0
-2021-01-15 03:00:51.710 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
-2021-01-15 03:00:51.719 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
-2021-01-15 03:00:51.719 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
-2021-01-15 03:00:51.720 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 600000ms
-2021-01-15 03:00:51.760 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
-2021-01-15 03:00:51.764 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.7.0
-2021-01-15 03:00:51.764 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
-2021-01-15 03:00:51.764 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: D:\xampp\htdocs\BRI\TAREA4\solr-8.7.0
-2021-01-15 03:00:51.765 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2021-01-15T03:00:51.765741300Z
-2021-01-15 03:00:51.787 INFO  (main) [   ] o.a.s.c.SolrPaths Using system property solr.solr.home: D:\xampp\htdocs\BRI\TAREA4\solr-8.7.0\server\solr
-2021-01-15 03:00:51.793 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from D:\xampp\htdocs\BRI\TAREA4\solr-8.7.0\server\solr\solr.xml
-2021-01-15 03:00:51.880 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@6581dc0a, but no JMX reporters were configured - adding default JMX reporter.
-2021-01-15 03:00:52.499 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
-2021-01-15 03:00:52.623 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@6b4283c4[provider=null,keyStore=null,trustStore=null]
-2021-01-15 03:00:52.623 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@6b4283c4[provider=null,keyStore=null,trustStore=null]
-2021-01-15 03:00:52.741 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@934b52f[provider=null,keyStore=null,trustStore=null]
-2021-01-15 03:00:52.741 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@934b52f[provider=null,keyStore=null,trustStore=null]
-2021-01-15 03:00:52.782 WARN  (main) [   ] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
-2021-01-15 03:00:57.396 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
-2021-01-15 03:00:57.398 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
-2021-01-15 03:00:57.450 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@6581dc0a
-2021-01-15 03:00:57.451 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@6581dc0a
-2021-01-15 03:00:57.454 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@6581dc0a
-2021-01-15 03:00:57.490 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 2 core definitions underneath D:\xampp\htdocs\BRI\TAREA4\solr-8.7.0\server\solr
-2021-01-15 03:00:57.491 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [repository, start]
-2021-01-15 03:00:57.530 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.7.0
-2021-01-15 03:00:57.534 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.c.SolrResourceLoader Added 49 libs to classloader, from paths: [/D:/xampp/htdocs/BRI/TAREA4/solr-8.7.0/contrib/extraction/lib, /D:/xampp/htdocs/BRI/TAREA4/solr-8.7.0/dist]
-2021-01-15 03:00:57.672 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.s.IndexSchema Schema name=default-config
-2021-01-15 03:00:57.745 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.7.0
-2021-01-15 03:00:57.805 WARN  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.s.ManagedIndexSchemaFactory The schema has been upgraded to managed, but the non-managed schema schema.xml is still loadable.  PLEASE REMOVE THIS FILE.
-2021-01-15 03:00:57.819 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.s.IndexSchema Schema name=default-config
-2021-01-15 03:00:57.983 WARN  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
-2021-01-15 03:00:57.983 WARN  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
-2021-01-15 03:00:57.983 WARN  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
-2021-01-15 03:00:57.984 WARN  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
-2021-01-15 03:00:57.984 WARN  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
-2021-01-15 03:00:58.149 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
-2021-01-15 03:00:58.149 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
-2021-01-15 03:00:58.198 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.c.CoreContainer Creating SolrCore 'repository' using configuration from instancedir D:\xampp\htdocs\BRI\TAREA4\solr-8.7.0\server\solr\repository, trusted=true
-2021-01-15 03:00:58.199 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@29539e36{/solr,file:///D:/xampp/htdocs/BRI/TAREA4/solr-8.7.0/server/solr-webapp/webapp/,AVAILABLE}{D:\xampp\htdocs\BRI\TAREA4\solr-8.7.0\server/solr-webapp/webapp}
-2021-01-15 03:00:58.201 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.c.CoreContainer Creating SolrCore 'start' using configuration from instancedir D:\xampp\htdocs\BRI\TAREA4\solr-8.7.0\server\solr\start, trusted=true
-2021-01-15 03:00:58.219 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@53e211ee{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
-2021-01-15 03:00:58.219 INFO  (main) [   ] o.e.j.s.Server Started @8508ms
-2021-01-15 03:00:58.236 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.repository' (registry 'solr.core.repository') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@6581dc0a
-2021-01-15 03:00:58.236 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.start' (registry 'solr.core.start') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@6581dc0a
-2021-01-15 03:00:58.252 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.c.SolrCore [[start] ] Opening new SolrCore at [D:\xampp\htdocs\BRI\TAREA4\solr-8.7.0\server\solr\start], dataDir=[D:\xampp\htdocs\BRI\TAREA4\solr-8.7.0\server\solr\start\data\]
-2021-01-15 03:00:58.252 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.c.SolrCore [[repository] ] Opening new SolrCore at [D:\xampp\htdocs\BRI\TAREA4\solr-8.7.0\server\solr\repository], dataDir=[D:\xampp\htdocs\BRI\TAREA4\solr-8.7.0\server\solr\repository\data\]
-2021-01-15 03:00:59.262 INFO  (qtp204322447-52) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1610679005867} status=0 QTime=2
-2021-01-15 03:00:59.311 INFO  (qtp204322447-53) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1610679005868} status=0 QTime=51
-2021-01-15 03:00:59.360 INFO  (qtp204322447-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1610679005868} status=0 QTime=43
-2021-01-15 03:00:59.996 INFO  (qtp204322447-28) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=43
-2021-01-15 03:01:01.530 INFO  (qtp204322447-50) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1610679661468} status=0 QTime=0
-2021-01-15 03:01:01.583 INFO  (qtp204322447-27) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1610679661468} status=0 QTime=52
-2021-01-15 03:01:01.628 INFO  (qtp204322447-50) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1610679661468} status=0 QTime=42
-2021-01-15 03:01:03.347 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2021-01-15 03:01:03.347 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2021-01-15 03:01:03.347 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2021-01-15 03:01:03.347 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2021-01-15 03:01:03.363 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
-2021-01-15 03:01:03.364 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2021-01-15 03:01:03.370 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
-2021-01-15 03:01:03.370 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2021-01-15 03:01:03.493 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: D:\xampp\htdocs\BRI\TAREA4\solr-8.7.0\server\solr\repository\conf
-2021-01-15 03:01:03.500 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: D:\xampp\htdocs\BRI\TAREA4\solr-8.7.0\server\solr\start\conf
-2021-01-15 03:01:03.510 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
-2021-01-15 03:01:03.510 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
-2021-01-15 03:01:03.517 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
-2021-01-15 03:01:03.517 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
-2021-01-15 03:01:03.518 INFO  (qtp204322447-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1610679661468} status=0 QTime=0
-2021-01-15 03:01:03.518 INFO  (qtp204322447-49) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1610679663504&since=0} status=0 QTime=2
-2021-01-15 03:01:03.520 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
-2021-01-15 03:01:03.520 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=attr_text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,payloadField=address}
-2021-01-15 03:01:03.530 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
-2021-01-15 03:01:03.530 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
-2021-01-15 03:01:03.549 INFO  (searcherExecutor-16-thread-1-processing-x:repository) [   x:repository] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2021-01-15 03:01:03.549 INFO  (searcherExecutor-16-thread-1-processing-x:repository) [   x:repository] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2021-01-15 03:01:03.558 INFO  (searcherExecutor-16-thread-1-processing-x:repository) [   x:repository] o.a.s.c.SolrCore [repository]  Registered new searcher autowarm time: 0 ms
-2021-01-15 03:01:03.580 INFO  (qtp204322447-29) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1610679661468} status=0 QTime=62
-2021-01-15 03:01:03.975 INFO  (searcherExecutor-17-thread-1-processing-x:start) [   x:start] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2021-01-15 03:01:03.975 INFO  (searcherExecutor-17-thread-1-processing-x:start) [   x:start] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2021-01-15 03:01:03.975 INFO  (searcherExecutor-17-thread-1-processing-x:start) [   x:start] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2021-01-15 03:01:03.975 INFO  (searcherExecutor-17-thread-1-processing-x:start) [   x:start] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: wordbreak
-2021-01-15 03:01:03.979 INFO  (searcherExecutor-17-thread-1-processing-x:start) [   x:start] o.a.s.c.SolrCore [start]  Registered new searcher autowarm time: 0 ms
-2021-01-15 03:01:04.332 INFO  (qtp204322447-52) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1610679661468} status=0 QTime=0
-2021-01-15 03:01:04.375 INFO  (qtp204322447-50) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1610679661468} status=0 QTime=42
-2021-01-15 03:01:04.418 INFO  (qtp204322447-49) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1610679661468} status=0 QTime=41
-2021-01-15 03:01:09.081 INFO  (qtp204322447-30) [   x:start] o.a.s.u.p.LogUpdateProcessorFactory [start]  webapp=/solr path=/update params={}{deleteByQuery=*:* (-1688920044644335616)} 0 77
-2021-01-15 03:01:09.121 INFO  (searcherExecutor-17-thread-1-processing-x:start) [   x:start] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2021-01-15 03:01:09.125 INFO  (searcherExecutor-17-thread-1-processing-x:start) [   x:start] o.a.s.c.SolrCore [start]  Registered new searcher autowarm time: 1 ms
-2021-01-15 03:01:09.133 INFO  (qtp204322447-49) [   x:start] o.a.s.u.p.LogUpdateProcessorFactory [start]  webapp=/solr path=/update params={commit=true}{commit=} 0 46
-2021-01-15 03:01:13.148 INFO  (qtp204322447-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1610679661468} status=0 QTime=0
-2021-01-15 03:01:13.152 INFO  (qtp204322447-50) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1610679673120} status=0 QTime=4
-2021-01-15 03:01:13.153 INFO  (qtp204322447-25) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1610679661468&ts=1610679661468} status=503 QTime=1
-2021-01-15 03:01:13.153 INFO  (qtp204322447-28) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/replication params={wt=json&command=details&_=1610679673120} status=0 QTime=3
-2021-01-15 03:01:13.248 INFO  (qtp204322447-31) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1610679661468} status=0 QTime=98
-2021-01-15 03:01:13.248 INFO  (qtp204322447-57) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/admin/system params={wt=json&_=1610679673120} status=0 QTime=97
-2021-01-15 03:01:14.800 INFO  (qtp204322447-29) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1610679661468} status=0 QTime=0
-2021-01-15 03:01:14.844 INFO  (qtp204322447-32) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1610679661468} status=0 QTime=44
-2021-01-15 03:01:15.620 INFO  (qtp204322447-50) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/select params={q=*:*&_=1610679674777} hits=0 status=0 QTime=8
-2021-01-15 03:01:17.117 INFO  (qtp204322447-29) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1610679661468} status=0 QTime=0
-2021-01-15 03:01:17.120 INFO  (qtp204322447-28) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1610679673120} status=0 QTime=3
-2021-01-15 03:01:17.164 INFO  (qtp204322447-52) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1610679661468} status=0 QTime=46
-2021-01-15 03:01:24.569 INFO  (qtp204322447-58) [   x:start] o.a.s.u.p.LogUpdateProcessorFactory [start]  webapp=/solr path=/update/extract params={commitWithin=1000&overwrite=true&wt=json}{add=[df722c10-7355-4fbc-b754-cd4918a1808e (1688920060812328960)]} 0 703
-2021-01-15 03:01:25.650 INFO  (searcherExecutor-17-thread-1-processing-x:start) [   x:start] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2021-01-15 03:01:25.653 INFO  (searcherExecutor-17-thread-1-processing-x:start) [   x:start] o.a.s.c.SolrCore [start]  Registered new searcher autowarm time: 0 ms
-2021-01-15 03:01:26.101 INFO  (qtp204322447-52) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1610679661468} status=0 QTime=0
-2021-01-15 03:01:26.145 INFO  (qtp204322447-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1610679661468} status=0 QTime=44
-2021-01-15 03:01:29.304 INFO  (qtp204322447-28) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=*:*&_=1610679674777} hits=1 status=0 QTime=3
-2021-01-15 03:01:42.527 ERROR (qtp204322447-26) [   x:start] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: no field name specified in query and no default specified via 'df' param
+2021-01-15 22:45:44.242 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.27.v20200227; built: 2020-02-27T18:37:21.340Z; git: a304fd9f351f337e7c0e2a7c28878dd536149c6c; jvm 11.0.7+8-LTS
+2021-01-15 22:45:44.276 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///D:/xampp/htdocs/BRI/TAREA4/solr-8.7.0/server/contexts/] at interval 0
+2021-01-15 22:45:45.439 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2021-01-15 22:45:45.455 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2021-01-15 22:45:45.455 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2021-01-15 22:45:45.459 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 660000ms
+2021-01-15 22:45:45.588 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2021-01-15 22:45:45.600 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.7.0
+2021-01-15 22:45:45.600 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2021-01-15 22:45:45.600 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: D:\xampp\htdocs\BRI\TAREA4\solr-8.7.0
+2021-01-15 22:45:45.600 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2021-01-15T22:45:45.600431700Z
+2021-01-15 22:45:45.629 INFO  (main) [   ] o.a.s.c.SolrPaths Using system property solr.solr.home: D:\xampp\htdocs\BRI\TAREA4\solr-8.7.0\server\solr
+2021-01-15 22:45:45.655 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from D:\xampp\htdocs\BRI\TAREA4\solr-8.7.0\server\solr\solr.xml
+2021-01-15 22:45:45.954 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@6581dc0a, but no JMX reporters were configured - adding default JMX reporter.
+2021-01-15 22:45:46.556 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2021-01-15 22:45:46.793 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@10dc7d6[provider=null,keyStore=null,trustStore=null]
+2021-01-15 22:45:46.793 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@10dc7d6[provider=null,keyStore=null,trustStore=null]
+2021-01-15 22:45:46.948 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@76ad6715[provider=null,keyStore=null,trustStore=null]
+2021-01-15 22:45:46.948 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@76ad6715[provider=null,keyStore=null,trustStore=null]
+2021-01-15 22:45:47.146 WARN  (main) [   ] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2021-01-15 22:45:51.853 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2021-01-15 22:45:51.856 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2021-01-15 22:45:51.953 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@6581dc0a
+2021-01-15 22:45:51.954 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@6581dc0a
+2021-01-15 22:45:51.957 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@6581dc0a
+2021-01-15 22:45:52.156 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 2 core definitions underneath D:\xampp\htdocs\BRI\TAREA4\solr-8.7.0\server\solr
+2021-01-15 22:45:52.157 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [repository, start]
+2021-01-15 22:45:52.214 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.7.0
+2021-01-15 22:45:52.278 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.c.SolrResourceLoader Added 49 libs to classloader, from paths: [/D:/xampp/htdocs/BRI/TAREA4/solr-8.7.0/contrib/extraction/lib, /D:/xampp/htdocs/BRI/TAREA4/solr-8.7.0/dist]
+2021-01-15 22:45:52.455 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.s.IndexSchema Schema name=default-config
+2021-01-15 22:45:52.891 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@29539e36{/solr,file:///D:/xampp/htdocs/BRI/TAREA4/solr-8.7.0/server/solr-webapp/webapp/,AVAILABLE}{D:\xampp\htdocs\BRI\TAREA4\solr-8.7.0\server/solr-webapp/webapp}
+2021-01-15 22:45:52.911 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@53e211ee{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
+2021-01-15 22:45:52.911 INFO  (main) [   ] o.e.j.s.Server Started @13067ms
+2021-01-15 22:45:53.368 WARN  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
+2021-01-15 22:45:53.368 WARN  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
+2021-01-15 22:45:53.368 WARN  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
+2021-01-15 22:45:53.368 WARN  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
+2021-01-15 22:45:53.368 WARN  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
+2021-01-15 22:45:54.017 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-01-15 22:45:54.058 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.c.CoreContainer Creating SolrCore 'repository' using configuration from instancedir D:\xampp\htdocs\BRI\TAREA4\solr-8.7.0\server\solr\repository, trusted=true
+2021-01-15 22:45:54.207 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.repository' (registry 'solr.core.repository') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@6581dc0a
+2021-01-15 22:45:54.239 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.c.SolrCore [[repository] ] Opening new SolrCore at [D:\xampp\htdocs\BRI\TAREA4\solr-8.7.0\server\solr\repository], dataDir=[D:\xampp\htdocs\BRI\TAREA4\solr-8.7.0\server\solr\repository\data\]
+2021-01-15 22:45:54.461 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.7.0
+2021-01-15 22:45:54.536 WARN  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.s.ManagedIndexSchemaFactory The schema has been upgraded to managed, but the non-managed schema schema.xml is still loadable.  PLEASE REMOVE THIS FILE.
+2021-01-15 22:45:54.548 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.s.IndexSchema Schema name=default-config
+2021-01-15 22:45:55.039 INFO  (qtp204322447-50) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=102
+2021-01-15 22:45:55.140 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-01-15 22:45:55.178 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.c.CoreContainer Creating SolrCore 'start' using configuration from instancedir D:\xampp\htdocs\BRI\TAREA4\solr-8.7.0\server\solr\start, trusted=true
+2021-01-15 22:45:55.179 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.start' (registry 'solr.core.start') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@6581dc0a
+2021-01-15 22:45:55.179 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.c.SolrCore [[start] ] Opening new SolrCore at [D:\xampp\htdocs\BRI\TAREA4\solr-8.7.0\server\solr\start], dataDir=[D:\xampp\htdocs\BRI\TAREA4\solr-8.7.0\server\solr\start\data\]
+2021-01-15 22:45:55.752 INFO  (qtp204322447-50) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1610750755680} status=0 QTime=0
+2021-01-15 22:45:55.812 INFO  (qtp204322447-30) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1610750755681} status=0 QTime=57
+2021-01-15 22:45:59.774 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2021-01-15 22:45:59.774 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2021-01-15 22:45:59.774 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2021-01-15 22:45:59.774 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2021-01-15 22:45:59.845 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2021-01-15 22:45:59.845 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2021-01-15 22:46:00.037 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2021-01-15 22:46:00.037 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2021-01-15 22:46:00.119 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: D:\xampp\htdocs\BRI\TAREA4\solr-8.7.0\server\solr\start\conf
+2021-01-15 22:46:00.146 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2021-01-15 22:46:00.152 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2021-01-15 22:46:00.153 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2021-01-15 22:46:00.154 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=attr_text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,payloadField=address}
+2021-01-15 22:46:00.173 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2021-01-15 22:46:00.490 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: D:\xampp\htdocs\BRI\TAREA4\solr-8.7.0\server\solr\repository\conf
+2021-01-15 22:46:00.490 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2021-01-15 22:46:00.491 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2021-01-15 22:46:00.491 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2021-01-15 22:46:00.519 INFO  (searcherExecutor-15-thread-1-processing-x:repository) [   x:repository] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-01-15 22:46:00.520 INFO  (searcherExecutor-15-thread-1-processing-x:repository) [   x:repository] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2021-01-15 22:46:00.526 INFO  (searcherExecutor-15-thread-1-processing-x:repository) [   x:repository] o.a.s.c.SolrCore [repository]  Registered new searcher autowarm time: 0 ms
+2021-01-15 22:46:01.034 INFO  (searcherExecutor-18-thread-1-processing-x:start) [   x:start] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-01-15 22:46:01.034 INFO  (searcherExecutor-18-thread-1-processing-x:start) [   x:start] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2021-01-15 22:46:01.035 INFO  (searcherExecutor-18-thread-1-processing-x:start) [   x:start] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2021-01-15 22:46:01.035 INFO  (searcherExecutor-18-thread-1-processing-x:start) [   x:start] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: wordbreak
+2021-01-15 22:46:01.037 INFO  (searcherExecutor-18-thread-1-processing-x:start) [   x:start] o.a.s.c.SolrCore [start]  Registered new searcher autowarm time: 0 ms
+2021-01-15 22:46:09.653 INFO  (qtp204322447-53) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1610750769606} status=0 QTime=0
+2021-01-15 22:46:09.676 INFO  (qtp204322447-27) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1610750769644} status=0 QTime=21
+2021-01-15 22:46:09.712 INFO  (qtp204322447-28) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1610750769607} status=0 QTime=59
+2021-01-15 22:46:11.693 INFO  (qtp204322447-50) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1610750769606} status=0 QTime=0
+2021-01-15 22:46:11.748 INFO  (qtp204322447-29) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1610750769607} status=0 QTime=54
+2021-01-15 22:46:12.823 INFO  (qtp204322447-27) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/select params={q=*:*&_=1610750771672} hits=0 status=0 QTime=46
+2021-01-15 22:46:14.914 INFO  (qtp204322447-28) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1610750769606} status=0 QTime=0
+2021-01-15 22:46:14.916 INFO  (qtp204322447-29) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/admin/file params={wt=json&_=1610750774905} status=0 QTime=1
+2021-01-15 22:46:14.930 INFO  (qtp204322447-27) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/admin/file params={file=lang&wt=json&_=1610750774905} status=0 QTime=4
+2021-01-15 22:46:14.969 INFO  (qtp204322447-51) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1610750769607} status=0 QTime=55
+2021-01-15 22:46:15.698 INFO  (qtp204322447-53) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1610750769606} status=0 QTime=0
+2021-01-15 22:46:15.700 INFO  (qtp204322447-50) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1610750775690} status=0 QTime=0
+2021-01-15 22:46:15.752 INFO  (qtp204322447-28) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1610750775690} status=0 QTime=0
+2021-01-15 22:46:15.754 INFO  (qtp204322447-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1610750769606} status=0 QTime=0
+2021-01-15 22:46:15.756 INFO  (qtp204322447-29) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1610750769607} status=0 QTime=56
+2021-01-15 22:46:15.808 INFO  (qtp204322447-53) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1610750769607} status=0 QTime=49
+2021-01-15 22:46:16.208 INFO  (qtp204322447-27) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1610750769606} status=0 QTime=0
+2021-01-15 22:46:16.209 INFO  (qtp204322447-51) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1610750769644} status=0 QTime=1
+2021-01-15 22:46:16.264 INFO  (qtp204322447-30) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1610750769607} status=0 QTime=56
+2021-01-15 22:46:25.350 INFO  (qtp204322447-28) [   x:start] o.a.s.u.p.LogUpdateProcessorFactory [start]  webapp=/solr path=/update/extract params={commitWithin=1000&overwrite=true&wt=json}{add=[ea3ba9af-8595-4c69-947f-861789583d96 (1688994615370186752)]} 0 946
+2021-01-15 22:46:26.454 INFO  (searcherExecutor-18-thread-1-processing-x:start) [   x:start] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-01-15 22:46:26.459 INFO  (searcherExecutor-18-thread-1-processing-x:start) [   x:start] o.a.s.c.SolrCore [start]  Registered new searcher autowarm time: 0 ms
+2021-01-15 22:46:26.941 INFO  (qtp204322447-30) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1610750769606} status=0 QTime=0
+2021-01-15 22:46:26.993 INFO  (qtp204322447-53) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1610750769607} status=0 QTime=51
+2021-01-15 22:46:27.972 INFO  (qtp204322447-51) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/select params={q=*:*&_=1610750771672} hits=1 status=0 QTime=4
+2021-01-15 22:46:30.458 INFO  (qtp204322447-53) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=*:*&_=1610750771672} hits=1 status=0 QTime=0
+2021-01-15 22:47:20.594 INFO  (qtp204322447-51) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=*:*&hl=true&hl.fl=attr_text&facet=true%25&_=1610750771672} hits=1 status=0 QTime=85
+2021-01-15 22:47:25.601 INFO  (qtp204322447-53) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=*:*&hl=true&hl.fl=attr_text&facet=true&_=1610750771672} hits=1 status=0 QTime=13
+2021-01-15 22:47:56.492 INFO  (qtp204322447-51) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=*:*&hl=true&hl.fl=attr_text&facet=on&_=1610750771672} hits=1 status=0 QTime=9
+2021-01-15 22:49:09.522 ERROR (qtp204322447-53) [   x:start] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: no field name specified in query and no default specified via 'df' param
 	at org.apache.solr.parser.SolrQueryParserBase.checkNullField(SolrQueryParserBase.java:1012)
-	at org.apache.solr.parser.SolrQueryParserBase.getWildcardQuery(SolrQueryParserBase.java:1219)
-	at org.apache.solr.parser.SolrQueryParserBase.handleBareTokenQuery(SolrQueryParserBase.java:811)
+	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:1066)
+	at org.apache.solr.parser.SolrQueryParserBase.handleBareTokenQuery(SolrQueryParserBase.java:832)
 	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:421)
 	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278)
 	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162)
@@ -125,8 +122,11 @@
 	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:270)
 	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
 	at org.apache.solr.search.QParser.getQuery(QParser.java:174)
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:162)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:337)
+	at org.apache.solr.request.SimpleFacets.getFacetQueryCount(SimpleFacets.java:312)
+	at org.apache.solr.request.SimpleFacets.getFacetQueryCounts(SimpleFacets.java:302)
+	at org.apache.solr.handler.component.FacetComponent.getFacetCounts(FacetComponent.java:318)
+	at org.apache.solr.handler.component.FacetComponent.process(FacetComponent.java:274)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:360)
 	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:214)
 	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2627)
 	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:795)
@@ -171,16 +171,697 @@
 	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
 	at java.base/java.lang.Thread.run(Thread.java:834)
 
-2021-01-15 03:01:42.527 INFO  (qtp204322447-26) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=*sanchez*&_=1610679674777} status=400 QTime=1
-2021-01-15 03:01:46.304 INFO  (qtp204322447-28) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=*sanchez*&df=attr_text&_=1610679674777} hits=1 status=0 QTime=49
-2021-01-15 03:01:56.663 INFO  (qtp204322447-26) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=sanchez&df=attr_text&_=1610679674777} hits=1 status=0 QTime=8
-2021-01-15 03:02:18.489 INFO  (qtp204322447-28) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=bibliograf&df=attr_text&_=1610679674777} hits=0 status=0 QTime=12
-2021-01-15 03:02:23.314 INFO  (qtp204322447-26) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=bibliografia&df=attr_text&_=1610679674777} hits=1 status=0 QTime=7
-2021-01-15 03:02:29.601 INFO  (qtp204322447-28) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=bibliografica&df=attr_text&_=1610679674777} hits=1 status=0 QTime=6
-2021-01-15 03:02:33.644 INFO  (qtp204322447-26) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=bibliográfica&df=attr_text&_=1610679674777} hits=1 status=0 QTime=13
-2021-01-15 03:02:53.234 INFO  (qtp204322447-28) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=bibliográfica&df=attr_text&hl=true&hl.fl=attr_text&_=1610679674777} hits=1 status=0 QTime=61
-2021-01-15 03:02:58.573 INFO  (qtp204322447-26) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=bibliografica&df=attr_text&hl=true&hl.fl=attr_text&_=1610679674777} hits=1 status=0 QTime=28
-2021-01-15 03:05:28.896 INFO  (qtp204322447-26) [   x:start] o.a.s.u.p.LogUpdateProcessorFactory [start]  webapp=/solr path=/update params={}{deleteByQuery=*:* (-1688920317118906368)} 0 3
-2021-01-15 03:05:28.930 INFO  (searcherExecutor-17-thread-1-processing-x:start) [   x:start] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2021-01-15 03:05:28.932 INFO  (searcherExecutor-17-thread-1-processing-x:start) [   x:start] o.a.s.c.SolrCore [start]  Registered new searcher autowarm time: 0 ms
-2021-01-15 03:05:28.937 INFO  (qtp204322447-28) [   x:start] o.a.s.u.p.LogUpdateProcessorFactory [start]  webapp=/solr path=/update params={commit=true}{commit=} 0 38
+2021-01-15 22:49:09.522 INFO  (qtp204322447-53) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={facet.query=pdf&facet.field=attr_content_type&hl=true&hl.fl=attr_text&facet=on&_=1610750771672} hits=0 status=400 QTime=5
+2021-01-15 22:49:13.919 ERROR (qtp204322447-27) [   x:start] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: no field name specified in query and no default specified via 'df' param
+	at org.apache.solr.parser.SolrQueryParserBase.checkNullField(SolrQueryParserBase.java:1012)
+	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:1066)
+	at org.apache.solr.parser.SolrQueryParserBase.handleBareTokenQuery(SolrQueryParserBase.java:832)
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:421)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:270)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174)
+	at org.apache.solr.request.SimpleFacets.getFacetQueryCount(SimpleFacets.java:312)
+	at org.apache.solr.request.SimpleFacets.getFacetQueryCounts(SimpleFacets.java:302)
+	at org.apache.solr.handler.component.FacetComponent.getFacetCounts(FacetComponent.java:318)
+	at org.apache.solr.handler.component.FacetComponent.process(FacetComponent.java:274)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:360)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:214)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2627)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:795)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:568)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:415)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:345)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1596)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:545)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:590)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1610)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1300)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1580)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1215)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:221)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:500)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:375)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+2021-01-15 22:49:13.919 INFO  (qtp204322447-27) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={facet.query=pdf&facet.field=attr_content_type&facet=on&_=1610750771672} hits=0 status=400 QTime=0
+2021-01-15 22:49:27.341 ERROR (qtp204322447-53) [   x:start] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: no field name specified in query and no default specified via 'df' param
+	at org.apache.solr.parser.SolrQueryParserBase.checkNullField(SolrQueryParserBase.java:1012)
+	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:1066)
+	at org.apache.solr.parser.SolrQueryParserBase.handleBareTokenQuery(SolrQueryParserBase.java:832)
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:421)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:270)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174)
+	at org.apache.solr.request.SimpleFacets.getFacetQueryCount(SimpleFacets.java:312)
+	at org.apache.solr.request.SimpleFacets.getFacetQueryCounts(SimpleFacets.java:302)
+	at org.apache.solr.handler.component.FacetComponent.getFacetCounts(FacetComponent.java:318)
+	at org.apache.solr.handler.component.FacetComponent.process(FacetComponent.java:274)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:360)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:214)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2627)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:795)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:568)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:415)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:345)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1596)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:545)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:590)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1610)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1300)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1580)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1215)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:221)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:500)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:375)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+2021-01-15 22:49:27.341 INFO  (qtp204322447-53) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={facet.query=application/pdf&facet.field=attr_content_type&facet=on&_=1610750771672} hits=0 status=400 QTime=0
+2021-01-15 22:52:30.368 INFO  (qtp204322447-31) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=*:*&_=1610750771672} hits=1 status=0 QTime=0
+2021-01-15 22:53:09.559 ERROR (qtp204322447-50) [   x:start] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: no field name specified in query and no default specified via 'df' param
+	at org.apache.solr.parser.SolrQueryParserBase.checkNullField(SolrQueryParserBase.java:1012)
+	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:1066)
+	at org.apache.solr.parser.SolrQueryParserBase.handleBareTokenQuery(SolrQueryParserBase.java:832)
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:421)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:270)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174)
+	at org.apache.solr.request.SimpleFacets.getFacetQueryCount(SimpleFacets.java:312)
+	at org.apache.solr.request.SimpleFacets.getFacetQueryCounts(SimpleFacets.java:302)
+	at org.apache.solr.handler.component.FacetComponent.getFacetCounts(FacetComponent.java:318)
+	at org.apache.solr.handler.component.FacetComponent.process(FacetComponent.java:274)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:360)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:214)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2627)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:795)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:568)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:415)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:345)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1596)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:545)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:590)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1610)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1300)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1580)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1215)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:221)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:500)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:375)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+2021-01-15 22:53:09.559 INFO  (qtp204322447-50) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={facet.query=application/pdf&q=*:*&facet.field=attr_meta&facet=on&_=1610750771672} hits=1 status=400 QTime=0
+2021-01-15 22:53:16.500 ERROR (qtp204322447-64) [   x:start] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: no field name specified in query and no default specified via 'df' param
+	at org.apache.solr.parser.SolrQueryParserBase.checkNullField(SolrQueryParserBase.java:1012)
+	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:1066)
+	at org.apache.solr.parser.SolrQueryParserBase.handleBareTokenQuery(SolrQueryParserBase.java:832)
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:421)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:270)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174)
+	at org.apache.solr.request.SimpleFacets.getFacetQueryCount(SimpleFacets.java:312)
+	at org.apache.solr.request.SimpleFacets.getFacetQueryCounts(SimpleFacets.java:302)
+	at org.apache.solr.handler.component.FacetComponent.getFacetCounts(FacetComponent.java:318)
+	at org.apache.solr.handler.component.FacetComponent.process(FacetComponent.java:274)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:360)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:214)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2627)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:795)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:568)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:415)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:345)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1596)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:545)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:590)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1610)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1300)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1580)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1215)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:221)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:500)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:375)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+2021-01-15 22:53:16.500 INFO  (qtp204322447-64) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={facet.query=application/pdf&facet.field=attr_meta&facet=on&_=1610750771672} hits=0 status=400 QTime=0
+2021-01-15 22:56:09.081 INFO  (qtp204322447-32) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={facet.field=attr_meta&facet=on&_=1610750771672} hits=0 status=0 QTime=10
+2021-01-15 22:56:19.571 INFO  (qtp204322447-28) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={facet=on&_=1610750771672} hits=0 status=0 QTime=0
+2021-01-15 22:56:26.028 INFO  (qtp204322447-64) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={facet.field=attr_meta&facet=on&_=1610750771672} hits=0 status=0 QTime=0
+2021-01-15 22:56:41.406 INFO  (qtp204322447-28) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=*:*&facet=on&_=1610750771672} hits=1 status=0 QTime=0
+2021-01-15 22:57:01.067 ERROR (qtp204322447-64) [   x:start] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field: "ttr_content_type"
+	at org.apache.solr.schema.IndexSchema.getField(IndexSchema.java:1256)
+	at org.apache.solr.request.SimpleFacets.getTermCounts(SimpleFacets.java:460)
+	at org.apache.solr.request.SimpleFacets.getTermCounts(SimpleFacets.java:423)
+	at org.apache.solr.request.SimpleFacets.lambda$getFacetFieldCounts$0(SimpleFacets.java:834)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.solr.request.SimpleFacets$3.execute(SimpleFacets.java:777)
+	at org.apache.solr.request.SimpleFacets.getFacetFieldCounts(SimpleFacets.java:854)
+	at org.apache.solr.handler.component.FacetComponent.getFacetCounts(FacetComponent.java:330)
+	at org.apache.solr.handler.component.FacetComponent.process(FacetComponent.java:274)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:360)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:214)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2627)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:795)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:568)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:415)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:345)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1596)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:545)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:590)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1610)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1300)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1580)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1215)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:221)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:500)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:375)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+2021-01-15 22:57:01.067 INFO  (qtp204322447-64) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=*:*&facet.field=ttr_content_type&facet=on&_=1610750771672} hits=1 status=400 QTime=0
+2021-01-15 22:57:06.580 INFO  (qtp204322447-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1610750769606} status=0 QTime=0
+2021-01-15 22:57:06.581 INFO  (qtp204322447-28) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1610750769644} status=0 QTime=2
+2021-01-15 22:57:06.627 INFO  (qtp204322447-29) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1610750769607} status=0 QTime=47
+2021-01-15 22:57:15.616 INFO  (qtp204322447-31) [   x:start] o.a.s.u.p.LogUpdateProcessorFactory [start]  webapp=/solr path=/update/extract params={commitWithin=1000&overwrite=true&wt=json}{add=[eac79cb2-8990-4ee3-b2ac-efd8f9aa5e1e (1688995297304248320)]} 0 621
+2021-01-15 22:57:16.670 INFO  (searcherExecutor-18-thread-1-processing-x:start) [   x:start] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-01-15 22:57:16.674 INFO  (searcherExecutor-18-thread-1-processing-x:start) [   x:start] o.a.s.c.SolrCore [start]  Registered new searcher autowarm time: 0 ms
+2021-01-15 22:57:28.428 WARN  (qtp204322447-29) [   x:start] o.a.p.p.f.PDSimpleFont No Unicode mapping for star (63) in font UONODZ+CMMI7
+2021-01-15 22:57:28.454 WARN  (qtp204322447-29) [   x:start] o.a.p.p.f.PDSimpleFont No Unicode mapping for star (63) in font LFTYVS+CMMI6
+2021-01-15 22:57:28.556 INFO  (qtp204322447-29) [   x:start] o.a.s.u.p.LogUpdateProcessorFactory [start]  webapp=/solr path=/update/extract params={commitWithin=1000&overwrite=true&wt=json}{add=[6a2c1d8a-493c-434f-91f2-424a717a0558 (1688995310883307520)]} 0 325
+2021-01-15 22:57:29.611 INFO  (searcherExecutor-18-thread-1-processing-x:start) [   x:start] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-01-15 22:57:29.614 INFO  (searcherExecutor-18-thread-1-processing-x:start) [   x:start] o.a.s.c.SolrCore [start]  Registered new searcher autowarm time: 0 ms
+2021-01-15 22:57:37.200 WARN  (qtp204322447-31) [   x:start] o.a.p.p.f.PDType0Font No Unicode mapping for CID+120 (120) in font YYSITY+SymbolMT-Identity-H
+2021-01-15 22:57:37.333 INFO  (qtp204322447-31) [   x:start] o.a.s.u.p.LogUpdateProcessorFactory [start]  webapp=/solr path=/update/extract params={commitWithin=1000&overwrite=true&wt=json}{add=[0bc75868-dfe4-4eeb-ac13-628c2c630e0f (1688995320107630592)]} 0 200
+2021-01-15 22:57:38.389 INFO  (searcherExecutor-18-thread-1-processing-x:start) [   x:start] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-01-15 22:57:38.391 INFO  (searcherExecutor-18-thread-1-processing-x:start) [   x:start] o.a.s.c.SolrCore [start]  Registered new searcher autowarm time: 0 ms
+2021-01-15 22:57:39.007 INFO  (qtp204322447-29) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1610750769606} status=0 QTime=0
+2021-01-15 22:57:39.051 INFO  (qtp204322447-64) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1610750769607} status=0 QTime=44
+2021-01-15 22:57:40.581 INFO  (qtp204322447-28) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/select params={q=*:*&_=1610750771672} hits=4 status=0 QTime=0
+2021-01-15 22:57:44.669 INFO  (qtp204322447-64) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=*:*&_=1610750771672} hits=4 status=0 QTime=0
+2021-01-15 22:57:49.298 ERROR (qtp204322447-28) [   x:start] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field: "ttr_content_type"
+	at org.apache.solr.schema.IndexSchema.getField(IndexSchema.java:1256)
+	at org.apache.solr.request.SimpleFacets.getTermCounts(SimpleFacets.java:460)
+	at org.apache.solr.request.SimpleFacets.getTermCounts(SimpleFacets.java:423)
+	at org.apache.solr.request.SimpleFacets.lambda$getFacetFieldCounts$0(SimpleFacets.java:834)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.solr.request.SimpleFacets$3.execute(SimpleFacets.java:777)
+	at org.apache.solr.request.SimpleFacets.getFacetFieldCounts(SimpleFacets.java:854)
+	at org.apache.solr.handler.component.FacetComponent.getFacetCounts(FacetComponent.java:330)
+	at org.apache.solr.handler.component.FacetComponent.process(FacetComponent.java:274)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:360)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:214)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2627)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:795)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:568)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:415)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:345)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1596)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:545)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:590)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1610)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1300)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1580)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1215)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:221)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:500)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:375)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+2021-01-15 22:57:49.298 INFO  (qtp204322447-28) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=*:*&facet.field=ttr_content_type&facet=on&_=1610750771672} hits=4 status=400 QTime=0
+2021-01-15 22:58:00.198 ERROR (qtp204322447-64) [   x:start] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field: "ttr_content_type"
+	at org.apache.solr.schema.IndexSchema.getField(IndexSchema.java:1256)
+	at org.apache.solr.request.SimpleFacets.getTermCounts(SimpleFacets.java:460)
+	at org.apache.solr.request.SimpleFacets.getTermCounts(SimpleFacets.java:423)
+	at org.apache.solr.request.SimpleFacets.lambda$getFacetFieldCounts$0(SimpleFacets.java:834)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.solr.request.SimpleFacets$3.execute(SimpleFacets.java:777)
+	at org.apache.solr.request.SimpleFacets.getFacetFieldCounts(SimpleFacets.java:854)
+	at org.apache.solr.handler.component.FacetComponent.getFacetCounts(FacetComponent.java:330)
+	at org.apache.solr.handler.component.FacetComponent.process(FacetComponent.java:274)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:360)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:214)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2627)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:795)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:568)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:415)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:345)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1596)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:545)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:590)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1610)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1300)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1580)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1215)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:221)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:500)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:375)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+2021-01-15 22:58:00.199 INFO  (qtp204322447-64) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={facet.field=ttr_content_type&facet=on&_=1610750771672} hits=0 status=400 QTime=0
+2021-01-15 22:58:03.603 ERROR (qtp204322447-28) [   x:start] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field: "ttr_content_type"
+	at org.apache.solr.schema.IndexSchema.getField(IndexSchema.java:1256)
+	at org.apache.solr.request.SimpleFacets.getTermCounts(SimpleFacets.java:460)
+	at org.apache.solr.request.SimpleFacets.getTermCounts(SimpleFacets.java:423)
+	at org.apache.solr.request.SimpleFacets.lambda$getFacetFieldCounts$0(SimpleFacets.java:834)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.solr.request.SimpleFacets$3.execute(SimpleFacets.java:777)
+	at org.apache.solr.request.SimpleFacets.getFacetFieldCounts(SimpleFacets.java:854)
+	at org.apache.solr.handler.component.FacetComponent.getFacetCounts(FacetComponent.java:330)
+	at org.apache.solr.handler.component.FacetComponent.process(FacetComponent.java:274)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:360)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:214)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2627)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:795)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:568)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:415)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:345)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1596)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:545)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:590)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1610)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1300)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1580)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1215)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:221)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:500)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:375)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+2021-01-15 22:58:03.603 INFO  (qtp204322447-28) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=*:*&facet.field=ttr_content_type&facet=on&_=1610750771672} hits=4 status=400 QTime=0
+2021-01-15 22:58:30.747 INFO  (qtp204322447-64) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=*:*&facet.field=attr_content_type&facet=on&_=1610750771672} hits=4 status=0 QTime=4
+2021-01-15 22:58:33.745 INFO  (qtp204322447-28) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={facet.field=attr_content_type&facet=on&_=1610750771672} hits=0 status=0 QTime=0
+2021-01-15 22:59:01.197 INFO  (qtp204322447-64) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=*:*&facet.field=attr_content_type&facet=on&_=1610750771672} hits=4 status=0 QTime=0
+2021-01-15 22:59:36.663 INFO  (qtp204322447-28) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1610750769606} status=0 QTime=0
+2021-01-15 22:59:36.665 INFO  (qtp204322447-31) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1610750769644} status=0 QTime=2
+2021-01-15 22:59:36.709 INFO  (qtp204322447-47) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1610750769607} status=0 QTime=44
+2021-01-15 22:59:50.295 INFO  (qtp204322447-25) [   x:start] o.a.s.u.p.LogUpdateProcessorFactory [start]  webapp=/solr path=/update/extract params={commitWithin=1000&overwrite=true&wt=json}{add=[7063807c-0671-46b5-b697-2b7ab4cda95c (1688995459537829888)]} 0 1156
+2021-01-15 22:59:51.338 INFO  (searcherExecutor-18-thread-1-processing-x:start) [   x:start] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-01-15 22:59:51.340 INFO  (searcherExecutor-18-thread-1-processing-x:start) [   x:start] o.a.s.c.SolrCore [start]  Registered new searcher autowarm time: 0 ms
+2021-01-15 22:59:52.486 INFO  (qtp204322447-47) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1610750769606} status=0 QTime=0
+2021-01-15 22:59:52.527 INFO  (qtp204322447-61) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1610750769607} status=0 QTime=40
+2021-01-15 22:59:59.643 INFO  (qtp204322447-31) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={facet=on&_=1610750771672} hits=0 status=0 QTime=0
+2021-01-15 23:00:08.441 INFO  (qtp204322447-61) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=*:*&facet.field=attr_content_type&facet=on&_=1610750771672} hits=5 status=0 QTime=2
+2021-01-15 23:03:03.790 ERROR (qtp204322447-27) [   x:start] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: no field name specified in query and no default specified via 'df' param
+	at org.apache.solr.parser.SolrQueryParserBase.checkNullField(SolrQueryParserBase.java:1012)
+	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:1066)
+	at org.apache.solr.parser.SolrQueryParserBase.handleBareTokenQuery(SolrQueryParserBase.java:832)
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:421)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:270)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174)
+	at org.apache.solr.request.SimpleFacets.getFacetQueryCount(SimpleFacets.java:312)
+	at org.apache.solr.request.SimpleFacets.getFacetQueryCounts(SimpleFacets.java:302)
+	at org.apache.solr.handler.component.FacetComponent.getFacetCounts(FacetComponent.java:318)
+	at org.apache.solr.handler.component.FacetComponent.process(FacetComponent.java:274)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:360)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:214)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2627)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:795)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:568)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:415)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:345)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1596)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:545)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:590)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1610)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1300)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1580)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1215)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:221)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:500)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:375)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+2021-01-15 23:03:03.790 INFO  (qtp204322447-27) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={facet.query=application&q=*:*&facet.field=attr_content_type&facet=on&_=1610750771672} hits=5 status=400 QTime=0
+2021-01-15 23:03:09.557 ERROR (qtp204322447-31) [   x:start] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: no field name specified in query and no default specified via 'df' param
+	at org.apache.solr.parser.SolrQueryParserBase.checkNullField(SolrQueryParserBase.java:1012)
+	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:1066)
+	at org.apache.solr.parser.SolrQueryParserBase.handleBareTokenQuery(SolrQueryParserBase.java:832)
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:421)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:270)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174)
+	at org.apache.solr.request.SimpleFacets.getFacetQueryCount(SimpleFacets.java:312)
+	at org.apache.solr.request.SimpleFacets.getFacetQueryCounts(SimpleFacets.java:302)
+	at org.apache.solr.handler.component.FacetComponent.getFacetCounts(FacetComponent.java:318)
+	at org.apache.solr.handler.component.FacetComponent.process(FacetComponent.java:274)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:360)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:214)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2627)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:795)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:568)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:415)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:345)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1596)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:545)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:590)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1610)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1300)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1580)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1215)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:221)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:500)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:375)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+2021-01-15 23:03:09.557 INFO  (qtp204322447-31) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={facet.query=pdf&q=*:*&facet.field=attr_content_type&facet=on&_=1610750771672} hits=5 status=400 QTime=0
+2021-01-15 23:03:30.016 INFO  (qtp204322447-27) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=*:*&facet.field=attr_content_type&facet.prefix=pdf&facet=on&_=1610750771672} hits=5 status=0 QTime=1
+2021-01-15 23:07:19.272 ERROR (qtp204322447-51) [   x:start] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: no field name specified in query and no default specified via 'df' param
+	at org.apache.solr.parser.SolrQueryParserBase.checkNullField(SolrQueryParserBase.java:1012)
+	at org.apache.solr.parser.SolrQueryParserBase.getWildcardQuery(SolrQueryParserBase.java:1219)
+	at org.apache.solr.parser.SolrQueryParserBase.handleBareTokenQuery(SolrQueryParserBase.java:811)
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:421)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:270)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174)
+	at org.apache.solr.request.SimpleFacets.getFacetQueryCount(SimpleFacets.java:312)
+	at org.apache.solr.request.SimpleFacets.getFacetQueryCounts(SimpleFacets.java:302)
+	at org.apache.solr.handler.component.FacetComponent.getFacetCounts(FacetComponent.java:318)
+	at org.apache.solr.handler.component.FacetComponent.process(FacetComponent.java:274)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:360)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:214)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2627)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:795)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:568)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:415)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:345)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1596)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:545)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:590)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1610)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1300)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1580)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1215)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:221)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:500)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:375)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+2021-01-15 23:07:19.272 INFO  (qtp204322447-51) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={facet.query=attr_content_type%3D*pdf*&q=*:*&facet.field=attr_content_type&facet.prefix=pdf&facet=on&_=1610750771672} hits=5 status=400 QTime=0
+2021-01-15 23:07:27.948 INFO  (qtp204322447-47) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=*:*&facet.field=attr_content_type&facet.prefix=pdf&facet=on&_=1610750771672} hits=5 status=0 QTime=0
+2021-01-15 23:07:53.563 INFO  (qtp204322447-51) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={facet.query=*:*&q=*:*&facet.field=attr_content_type&facet.prefix=pdf&facet=on&_=1610750771672} hits=5 status=0 QTime=0
+2021-01-15 23:13:44.803 INFO  (qtp204322447-66) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=*:*&_=1610750771672} hits=5 status=0 QTime=0
+2021-01-15 23:14:19.280 INFO  (qtp204322447-26) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=*:*&facet.field=attr_author&facet=on&_=1610750771672} hits=5 status=0 QTime=3
