@@ -15,7 +15,7 @@ function search() {
     get(urlBusqueda).then(function(response) {
         let tabla = initializeTable(response);
         let foo = document.getElementById("resultados");
-        if (foo.hasChildNodes()) { 
+        if (foo.hasChildNodes()) {
             while ( foo.childNodes.length >= 1 ){
                 foo.removeChild( foo.firstChild );
             }
@@ -49,6 +49,7 @@ function initializeTable(data) {
     data = JSON.parse(data);
     data = JSON.parse(data);
     documents = data['response']['docs'];
+    let weights = data.debug.explain;
 
     var table = document.createElement("table");
     var thead = table.createTHead();
@@ -57,10 +58,10 @@ function initializeTable(data) {
     var table_content = "";
 
     console.log(data);
-    
+
     if (documents.length > 0) {
         documents.forEach(document => {
-            table_content = `${table_content} <h3>${document['attr_dc_title'][0]}<h3><p>${document['attr_text'][0]}</p>`
+            table_content = `${table_content} <h3>${document['attr_dc_title'][0]} / Peso ${weights[document.id].value}<h3><p>${document['attr_text'][0]}</p>`
         });
 
         table.innerHTML = table_content;
