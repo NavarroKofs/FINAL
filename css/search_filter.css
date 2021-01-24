@@ -11,3 +11,7 @@
   height: 300px;
   background-color: red;
 }
+
+.filters-container > p {
+  cursor: pointer;
+}
