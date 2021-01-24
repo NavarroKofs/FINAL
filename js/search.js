@@ -46,15 +46,26 @@ function get(url) {
 }
 
 function initializeTable(data) {
-    console.log(data);
     data = JSON.parse(data);
+    data = JSON.parse(data);
+    documents = data['response']['docs'];
 
     var table = document.createElement("table");
     var thead = table.createTHead();
     var tbody = table.createTBody();
     var col = [];
+    var table_content = "";
 
-    if (data.length > 0) {
+    console.log(data);
+    
+    if (documents.length > 0) {
+        documents.forEach(document => {
+            table_content = `${table_content} <h3>${document['attr_dc_title'][0]}<h3><p>${document['attr_text'][0]}</p>`
+        });
+
+        table.innerHTML = table_content;
+
+        /*
         for (var i = 0; i < data.length; i++) {
             for (var key in data[i]) {
                 if (col.indexOf(key) === -1) {
@@ -79,6 +90,7 @@ function initializeTable(data) {
                 }
             }
         }
+        */
     } else {
         table.innerHTML = "Sin resultados";
     }
