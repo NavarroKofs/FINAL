@@ -109,6 +109,7 @@ table > tr:hover {
 tr > td {
     font-size: 18px;
     text-align:center;
+    border-bottom: ridge;
 }
 
 .description {

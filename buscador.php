@@ -5,7 +5,6 @@
         $consulta = strtolower ($_GET['consulta']);
         $consulta = strtolower ($consulta);
         $arrayDividido = explode(" ", $consulta);
-        //$arrayDividido = array_values(removeEmptyElements($arrayDividido));
         $tamaño = count($arrayDividido);
         $sentenciaSolr = 'http://localhost:8983/solr/start/selectCheck?debug.explain.structured=true&debugQuery=on&df=attr_text&hl.fl=attr_text&hl=true&q=';
         $tipoAnterior = "elemento";
@@ -35,8 +34,7 @@
     }
 
     //echo $sentenciaSolr;
-    $resultados = file_get_contents($sentenciaSolr);
-    //SolrConection($sentenciaSolr);
+    $resultados = file_get_contents($sentenciaSolr.'&wt=json');
     echo json_encode($resultados);
 
     function quitarTildes($cadena) {
@@ -44,21 +42,6 @@
         $permitidas = array ("a","e","i","o","u","A","E","I","O","U","n","N");
         $texto = str_replace($no_permitidas, $permitidas, $cadena);
         return $texto;
-    }
-
-    function SolrConection($sentenciaSolr){
-        $file = file_get_contents($sentenciaSolr);
-        return $file;
-        //eval("\$result = " . $file . ";");
-        //eval("\$result = \"$file\";");
-        /*for($i=0; $i<count($file["response"]["docs"]) ; $i++){
-            echo "=========Result ".($i+$start+1)."=========<br>";
-            foreach($file["response"]["docs"][$i] as $k=>$v){
-                //display($k,$v);
-                echo "<br>";
-            }
-            echo "<br>";
-        }*/
     }
 
     function agregarPalabra($palabra, $tipoAnterior, $sentenciaSolr){
@@ -71,42 +54,5 @@
         }
         return $sentenciaSolr;
     }
-
-
-
-   /*  function dividirCadena($arrayDividido, $i, $divisor, $tamaño){
-        $palabra = "";
-        for ($k=$i; $k < $tamaño; $k++) { 
-            $palabra = $palabra . " " . $arrayDividido[$k];
-            if(endsWith($arrayDividido[$k], ")")) {
-                break;
-            }
-        }
-        $parte1=explode($divisor,$palabra);
-        $parte2=explode(')', $parte1[1]);
-        $busqueda= $parte2[0];
-        return $busqueda;
-    }
-
-   function removeEmptyElements(&$element){
-        if (is_array($element)) {
-            if ($key = key($element)) {
-                $element[$key] = array_filter($element);
-            }
-
-            if (count($element) != count($element, COUNT_RECURSIVE)) {
-                $element = array_filter(current($element), __FUNCTION__);
-            }
-
-            $element = array_filter($element);
-
-            return $element;
-        } else {
-            return empty($element) ? false : $element;
-        }
-    } 
-    function endsWith($haystack, $needle) {
-        return substr_compare($haystack, $needle, -strlen($needle)) === 0;
-    }*/
 
 ?>

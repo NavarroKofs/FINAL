@@ -32,7 +32,9 @@ function voiceRecognition(){
       document.querySelector(".voice-search__result-text").innerHTML = voiceText;
       recognition.stop();
       setTimeout(()=>{
-      window.open("https://google.com/search?q="+voiceText);
+        search(voiceText);
+      	voiceSearchModalClose();
+      	document.getElementById("inputSearch").value = voiceText;      	
       },1800)
 	}
     recognition.start();

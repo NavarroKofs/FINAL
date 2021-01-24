@@ -17,9 +17,10 @@ function scrapping() {
     }
     let urlScrapping = 'webScrapping.php?urls=' + urls;
     get(urlScrapping).then(function(response) {
-        console.log(response);
+        //console.log(response);
+        alert("Resultados indizados");
     }, function(error) {
-        alert("Se ha producido un error, intente más tarde.")
+        alert("Se ha producido un error, intente más tarde.");
     });
 }
 

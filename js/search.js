@@ -1,16 +1,20 @@
-document.getElementById("btn").addEventListener("click", search);
+document.getElementById("btn").addEventListener("click", read);
 document.getElementById("inputSearch").addEventListener("keydown", function(event) {
     if (event.key === "Enter") {
       document.getElementById("btn").click();
     }
 });
 
-function search() {
+function read() {
     let palabraBuscar = document.getElementById("inputSearch").value;
     if(!palabraBuscar) {
         alert("Introduce una palabra en el buscador")
         return;
     }
+    search(palabraBuscar);
+}
+
+function search(palabraBuscar){
     let urlBusqueda = 'buscador.php?consulta=' + palabraBuscar;
     get(urlBusqueda).then(function(response) {
         let tabla = initializeTable(response);
@@ -25,6 +29,7 @@ function search() {
         alert("Se ha producido un error, intente más tarde.")
     })
 }
+
 
 function get(url) {
     return new Promise(function(resolve, reject) {
@@ -55,42 +60,46 @@ function initializeTable(data) {
     var tbody = table.createTBody();
     var col = [];
     var table_content = "";
+    var tam = data['response']['numFound'];
 
     console.log(data);
     
     if (documents.length > 0) {
-        documents.forEach(document => {
-            table_content = `${table_content} <h3>${document['attr_dc_title'][0]}<h3><p>${document['attr_text'][0]}</p>`
-        });
+        /*documents.forEach(document => {
+            table_content = `${table_content} <h3>${document['attr_title'][0]}<h3>
+            <p>${data['highlighting'][document['id']]['attr_text'][0]}</p>`
+        });*/
 
-        table.innerHTML = table_content;
+        //table.innerHTML = table_content;
 
-        /*
-        for (var i = 0; i < data.length; i++) {
-            for (var key in data[i]) {
+        
+       /* for (var i = 0; i < documents.length; i++) {
+            for (var key in documents[i]) {
                 if (col.indexOf(key) === -1) {
                     col.push(key);
+                    console.log(col);
                 }
             }
-        }
+        }*/
+
         var cabecera = thead.insertRow(-1);
-        for (var i = 0; i < col.length; i++) {
+        var titulos = ['Título','Descripción','Debug'];
+        for (var i = 0; i < 3; i++) {
             var th = document.createElement("th");
-            th.innerHTML = col[i];
+            th.innerHTML = titulos[i];
             cabecera.appendChild(th);
         }
-        for (var i = 0; i < data.length; i++) {
+
+        for (var i = 0; i < tam; i++) {
             tr = tbody.insertRow(-1);
-            for (var j = 0; j < col.length; j++) {
-                var tabCell = tr.insertCell(-1);
-                if (col[j] == 'link') {
-                    tabCell.innerHTML = '<a href="' + data[i][col[j]] + '">' + data[i][col[j]] + '</a>';
-                } else {
-                    tabCell.innerHTML = data[i][col[j]];
-                }
-            }
+            var tabCell = tr.insertCell(-1);
+            tabCell.innerHTML = documents[i]['attr_title'][0];
+            tabCell = tr.insertCell(-1);
+            tabCell.innerHTML = data['highlighting'][documents[i]['id']]['attr_text'][0];
+            tabCell = tr.insertCell(-1);
+            tabCell.innerHTML = data['debug']['explain'][documents[i]['id']]['value'];
         }
-        */
+        
     } else {
         table.innerHTML = "Sin resultados";
     }
