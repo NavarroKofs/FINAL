@@ -14,15 +14,15 @@ function addDocument(){ //este va a añadirse
     $urls = explode(",", $urls);
 
     for ($i=0; $i < count($urls); $i++) {
-        $data_string = petitionGuzzle($urls[$i]);//file_get_contents($data);    
-
+        $data_string = petitionGuzzle($urls[$i]);//file_get_contents($data);   
+        $html = "<meta property='url' content = '$urls[$i]'>".$data_string->getBody();
         try {
             if ($data_string->getStatusCode() == 200) {
                 //echo $data_string->getBody();
                 curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
                 curl_setopt($ch, CURLOPT_POST, TRUE);
                 curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-type: application/json'));
-                curl_setopt($ch, CURLOPT_POSTFIELDS, remover_javascriptCSS($data_string->getBody()));
+                curl_setopt($ch, CURLOPT_POSTFIELDS, $html);
                 echo curl_exec($ch);
             }
         } catch (\Throwable $th) {
