@@ -371,7 +371,7 @@ codicia => avaricia ambición avidez ansia cicatería
 cofradía => hermandad corporación asociación confraternidad
 cognoscible => comprensible inteligible conocible identificable
 cohechar => corromper sobornar comprar viciar
-cohesión => coherencia =>  ilación consistencia adherencia unión
+coherencia =>  ilación consistencia adherencia unión
 cohibir => contener coartar retener sujetar reprimir
 cohorte => séquito grupo legión serie
 coincidir => concordar ajustar convenir armonizar
