@@ -5076,3 +5076,993 @@ org.apache.solr.common.SolrException: URLDecoder: The query string contains a no
 2021-01-24 23:46:39.854 INFO  (qtp1199673596-66) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=merida**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=1
 2021-01-24 23:46:41.752 INFO  (qtp1199673596-64) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*merida*)OR(*yucatan*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=25
 2021-01-24 23:46:42.389 INFO  (qtp1199673596-68) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*merida*)OR(*yucatan*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=56
+2021-01-24 23:50:46.469 INFO  (qtp1199673596-61) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=u**&df=attr_title&wt=json&wt=json} hits=4 status=0 QTime=1
+2021-01-24 23:50:46.766 INFO  (qtp1199673596-64) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=un**&df=attr_title&wt=json&wt=json} hits=4 status=0 QTime=1
+2021-01-24 23:50:47.014 INFO  (qtp1199673596-25) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=uni**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=1
+2021-01-24 23:50:47.934 INFO  (qtp1199673596-61) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=uni&df=attr_text&spellcheck=on&wt=json} hits=0 status=0 QTime=1
+2021-01-24 23:50:47.963 INFO  (qtp1199673596-68) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*uni*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=5 status=0 QTime=30
+2021-01-24 23:50:48.306 INFO  (qtp1199673596-64) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*uni*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=5 status=0 QTime=301
+2021-01-24 23:51:18.882 INFO  (qtp1199673596-25) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=u**&df=attr_title&wt=json&wt=json} hits=4 status=0 QTime=0
+2021-01-24 23:51:19.043 INFO  (qtp1199673596-68) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=un**&df=attr_title&wt=json&wt=json} hits=4 status=0 QTime=0
+2021-01-24 23:51:19.264 INFO  (qtp1199673596-61) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=uni**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=1
+2021-01-24 23:51:19.511 INFO  (qtp1199673596-25) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=uni&df=attr_text&spellcheck=on&wt=json} hits=0 status=0 QTime=0
+2021-01-24 23:51:19.528 INFO  (qtp1199673596-64) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*uni*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=5 status=0 QTime=16
+2021-01-24 23:51:19.573 INFO  (qtp1199673596-68) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*uni*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=5 status=0 QTime=11
+2021-01-24 23:51:27.175 INFO  (qtp1199673596-61) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=u**&df=attr_title&wt=json&wt=json} hits=4 status=0 QTime=1
+2021-01-24 23:51:27.298 INFO  (qtp1199673596-64) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=un**&df=attr_title&wt=json&wt=json} hits=4 status=0 QTime=1
+2021-01-24 23:51:27.508 INFO  (qtp1199673596-25) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=uni**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=1
+2021-01-24 23:51:27.960 INFO  (qtp1199673596-61) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=uni&df=attr_text&spellcheck=on&wt=json} hits=0 status=0 QTime=0
+2021-01-24 23:51:27.968 INFO  (qtp1199673596-68) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*uni*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=5 status=0 QTime=17
+2021-01-24 23:51:28.026 INFO  (qtp1199673596-64) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*uni*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=5 status=0 QTime=17
+2021-01-24 23:51:58.548 INFO  (qtp1199673596-25) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=u**&df=attr_title&wt=json&wt=json} hits=4 status=0 QTime=1
+2021-01-24 23:51:58.684 INFO  (qtp1199673596-68) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=un**&df=attr_title&wt=json&wt=json} hits=4 status=0 QTime=1
+2021-01-24 23:51:58.843 INFO  (qtp1199673596-61) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=uni**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=1
+2021-01-24 23:51:59.710 INFO  (qtp1199673596-64) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=univ**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=3
+2021-01-24 23:51:59.909 INFO  (qtp1199673596-25) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=unive**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=3
+2021-01-24 23:52:00.023 INFO  (qtp1199673596-68) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=univer**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=5
+2021-01-24 23:52:00.554 INFO  (qtp1199673596-61) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=univers**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=5
+2021-01-24 23:52:00.726 INFO  (qtp1199673596-64) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=universi**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=5
+2021-01-24 23:52:00.820 INFO  (qtp1199673596-25) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=universid**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=8
+2021-01-24 23:52:00.948 INFO  (qtp1199673596-68) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=universida**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=8
+2021-01-24 23:52:01.050 INFO  (qtp1199673596-61) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=universidad**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=1
+2021-01-24 23:52:01.167 INFO  (qtp1199673596-25) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=universidad&df=attr_text&spellcheck=on&wt=json} hits=4 status=0 QTime=0
+2021-01-24 23:52:01.198 INFO  (qtp1199673596-64) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=4 status=0 QTime=24
+2021-01-24 23:52:01.251 INFO  (qtp1199673596-68) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=4 status=0 QTime=24
+2021-01-24 23:52:04.095 INFO  (qtp1199673596-69) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=universidad&df=attr_text&spellcheck=on&wt=json} hits=4 status=0 QTime=0
+2021-01-24 23:52:04.123 INFO  (qtp1199673596-64) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=4 status=0 QTime=19
+2021-01-24 23:52:04.178 INFO  (qtp1199673596-25) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=4 status=0 QTime=20
+2021-01-24 23:54:11.237 INFO  (qtp1199673596-71) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=m**&df=attr_title&wt=json&wt=json} hits=4 status=0 QTime=3
+2021-01-24 23:54:12.290 WARN  (qtp1199673596-69) [   ] o.e.j.s.HttpChannel /solr/start/selectCheck => org.apache.solr.common.SolrException: URLDecoder: The query string contains a not-%-escaped byte > 127 at position 17
+	at org.apache.solr.servlet.SolrRequestParsers$2.read(SolrRequestParsers.java:305)
+org.apache.solr.common.SolrException: URLDecoder: The query string contains a not-%-escaped byte > 127 at position 17
+	at org.apache.solr.servlet.SolrRequestParsers$2.read(SolrRequestParsers.java:305) ~[?:?]
+	at org.apache.solr.servlet.SolrRequestParsers.parseFormDataContent(SolrRequestParsers.java:337) ~[?:?]
+	at org.apache.solr.servlet.SolrRequestParsers.parseQueryString(SolrRequestParsers.java:314) ~[?:?]
+	at org.apache.solr.servlet.SolrRequestParsers.parseQueryString(SolrRequestParsers.java:284) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.<init>(HttpSolrCall.java:195) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.getHttpSolrCall(SolrDispatchFilter.java:473) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:412) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:345) ~[?:?]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1596) ~[jetty-servlet-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:545) ~[jetty-servlet-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:590) ~[jetty-security-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1610) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1300) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485) ~[jetty-servlet-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1580) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1215) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:221) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.Server.handle(Server.java:500) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103) ~[jetty-io-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117) ~[jetty-io-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:375) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0-25]
+2021-01-24 23:54:12.903 WARN  (qtp1199673596-64) [   ] o.e.j.s.HttpChannel /solr/start/selectCheck => org.apache.solr.common.SolrException: URLDecoder: The query string contains a not-%-escaped byte > 127 at position 17
+	at org.apache.solr.servlet.SolrRequestParsers$2.read(SolrRequestParsers.java:305)
+org.apache.solr.common.SolrException: URLDecoder: The query string contains a not-%-escaped byte > 127 at position 17
+	at org.apache.solr.servlet.SolrRequestParsers$2.read(SolrRequestParsers.java:305) ~[?:?]
+	at org.apache.solr.servlet.SolrRequestParsers.parseFormDataContent(SolrRequestParsers.java:337) ~[?:?]
+	at org.apache.solr.servlet.SolrRequestParsers.parseQueryString(SolrRequestParsers.java:314) ~[?:?]
+	at org.apache.solr.servlet.SolrRequestParsers.parseQueryString(SolrRequestParsers.java:284) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.<init>(HttpSolrCall.java:195) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.getHttpSolrCall(SolrDispatchFilter.java:473) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:412) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:345) ~[?:?]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1596) ~[jetty-servlet-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:545) ~[jetty-servlet-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:590) ~[jetty-security-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1610) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1300) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485) ~[jetty-servlet-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1580) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1215) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:221) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.Server.handle(Server.java:500) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103) ~[jetty-io-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117) ~[jetty-io-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:375) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0-25]
+2021-01-24 23:54:13.258 WARN  (qtp1199673596-25) [   ] o.e.j.s.HttpChannel /solr/start/selectCheck => org.apache.solr.common.SolrException: URLDecoder: The query string contains a not-%-escaped byte > 127 at position 17
+	at org.apache.solr.servlet.SolrRequestParsers$2.read(SolrRequestParsers.java:305)
+org.apache.solr.common.SolrException: URLDecoder: The query string contains a not-%-escaped byte > 127 at position 17
+	at org.apache.solr.servlet.SolrRequestParsers$2.read(SolrRequestParsers.java:305) ~[?:?]
+	at org.apache.solr.servlet.SolrRequestParsers.parseFormDataContent(SolrRequestParsers.java:337) ~[?:?]
+	at org.apache.solr.servlet.SolrRequestParsers.parseQueryString(SolrRequestParsers.java:314) ~[?:?]
+	at org.apache.solr.servlet.SolrRequestParsers.parseQueryString(SolrRequestParsers.java:284) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.<init>(HttpSolrCall.java:195) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.getHttpSolrCall(SolrDispatchFilter.java:473) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:412) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:345) ~[?:?]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1596) ~[jetty-servlet-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:545) ~[jetty-servlet-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:590) ~[jetty-security-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1610) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1300) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485) ~[jetty-servlet-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1580) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1215) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:221) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.Server.handle(Server.java:500) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103) ~[jetty-io-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117) ~[jetty-io-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:375) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0-25]
+2021-01-24 23:54:13.984 WARN  (qtp1199673596-66) [   ] o.e.j.s.HttpChannel /solr/start/selectCheck => org.apache.solr.common.SolrException: URLDecoder: The query string contains a not-%-escaped byte > 127 at position 17
+	at org.apache.solr.servlet.SolrRequestParsers$2.read(SolrRequestParsers.java:305)
+org.apache.solr.common.SolrException: URLDecoder: The query string contains a not-%-escaped byte > 127 at position 17
+	at org.apache.solr.servlet.SolrRequestParsers$2.read(SolrRequestParsers.java:305) ~[?:?]
+	at org.apache.solr.servlet.SolrRequestParsers.parseFormDataContent(SolrRequestParsers.java:337) ~[?:?]
+	at org.apache.solr.servlet.SolrRequestParsers.parseQueryString(SolrRequestParsers.java:314) ~[?:?]
+	at org.apache.solr.servlet.SolrRequestParsers.parseQueryString(SolrRequestParsers.java:284) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.<init>(HttpSolrCall.java:195) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.getHttpSolrCall(SolrDispatchFilter.java:473) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:412) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:345) ~[?:?]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1596) ~[jetty-servlet-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:545) ~[jetty-servlet-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:590) ~[jetty-security-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1610) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1300) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485) ~[jetty-servlet-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1580) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1215) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:221) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.Server.handle(Server.java:500) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103) ~[jetty-io-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117) ~[jetty-io-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:375) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0-25]
+2021-01-24 23:54:13.985 WARN  (qtp1199673596-68) [   ] o.e.j.s.HttpChannel /solr/start/selectCheck => org.apache.solr.common.SolrException: URLDecoder: The query string contains a not-%-escaped byte > 127 at position 17
+	at org.apache.solr.servlet.SolrRequestParsers$2.read(SolrRequestParsers.java:305)
+org.apache.solr.common.SolrException: URLDecoder: The query string contains a not-%-escaped byte > 127 at position 17
+	at org.apache.solr.servlet.SolrRequestParsers$2.read(SolrRequestParsers.java:305) ~[?:?]
+	at org.apache.solr.servlet.SolrRequestParsers.parseFormDataContent(SolrRequestParsers.java:337) ~[?:?]
+	at org.apache.solr.servlet.SolrRequestParsers.parseQueryString(SolrRequestParsers.java:314) ~[?:?]
+	at org.apache.solr.servlet.SolrRequestParsers.parseQueryString(SolrRequestParsers.java:284) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.<init>(HttpSolrCall.java:195) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.getHttpSolrCall(SolrDispatchFilter.java:473) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:412) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:345) ~[?:?]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1596) ~[jetty-servlet-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:545) ~[jetty-servlet-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:590) ~[jetty-security-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1610) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1300) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485) ~[jetty-servlet-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1580) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1215) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:221) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.Server.handle(Server.java:500) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103) ~[jetty-io-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117) ~[jetty-io-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:375) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0-25]
+2021-01-24 23:54:14.047 WARN  (qtp1199673596-25) [   ] o.e.j.s.HttpChannel /solr/start/selectCheck => org.apache.solr.common.SolrException: URLDecoder: The query string contains a not-%-escaped byte > 127 at position 16
+	at org.apache.solr.servlet.SolrRequestParsers$2.read(SolrRequestParsers.java:305)
+org.apache.solr.common.SolrException: URLDecoder: The query string contains a not-%-escaped byte > 127 at position 16
+	at org.apache.solr.servlet.SolrRequestParsers$2.read(SolrRequestParsers.java:305) ~[?:?]
+	at org.apache.solr.servlet.SolrRequestParsers.parseFormDataContent(SolrRequestParsers.java:337) ~[?:?]
+	at org.apache.solr.servlet.SolrRequestParsers.parseQueryString(SolrRequestParsers.java:314) ~[?:?]
+	at org.apache.solr.servlet.SolrRequestParsers.parseQueryString(SolrRequestParsers.java:284) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.<init>(HttpSolrCall.java:195) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.getHttpSolrCall(SolrDispatchFilter.java:473) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:412) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:345) ~[?:?]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1596) ~[jetty-servlet-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:545) ~[jetty-servlet-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:590) ~[jetty-security-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1610) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1300) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485) ~[jetty-servlet-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1580) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1215) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:221) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.Server.handle(Server.java:500) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103) ~[jetty-io-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117) ~[jetty-io-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:375) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0-25]
+2021-01-24 23:54:14.070 INFO  (qtp1199673596-69) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=5 status=0 QTime=22
+2021-01-24 23:54:14.131 INFO  (qtp1199673596-70) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=5 status=0 QTime=18
+2021-01-24 23:54:22.531 INFO  (qtp1199673596-68) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=u**&df=attr_title&wt=json&wt=json} hits=4 status=0 QTime=1
+2021-01-24 23:54:22.669 INFO  (qtp1199673596-69) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=un**&df=attr_title&wt=json&wt=json} hits=4 status=0 QTime=1
+2021-01-24 23:54:22.811 INFO  (qtp1199673596-66) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=uni**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=1
+2021-01-24 23:54:22.978 INFO  (qtp1199673596-70) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=univ**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=8
+2021-01-24 23:54:23.139 INFO  (qtp1199673596-68) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=unive**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=8
+2021-01-24 23:54:23.249 INFO  (qtp1199673596-69) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=univer**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=7
+2021-01-24 23:54:23.551 INFO  (qtp1199673596-66) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=univers**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=12
+2021-01-24 23:54:23.753 INFO  (qtp1199673596-70) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=universi**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=9
+2021-01-24 23:54:23.886 INFO  (qtp1199673596-68) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=universid**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=15
+2021-01-24 23:54:23.952 INFO  (qtp1199673596-69) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=universida**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=8
+2021-01-24 23:54:24.081 INFO  (qtp1199673596-71) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=universidad**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=2
+2021-01-24 23:54:24.343 INFO  (qtp1199673596-68) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=universidad&df=attr_text&spellcheck=on&wt=json} hits=4 status=0 QTime=0
+2021-01-24 23:54:24.372 INFO  (qtp1199673596-70) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=4 status=0 QTime=33
+2021-01-24 23:54:24.425 INFO  (qtp1199673596-69) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=4 status=0 QTime=17
+2021-01-24 23:55:29.588 INFO  (qtp1199673596-70) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=7 status=0 QTime=142
+2021-01-24 23:55:38.459 INFO  (qtp1199673596-68) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=u**&df=attr_title&wt=json&wt=json} hits=4 status=0 QTime=1
+2021-01-24 23:55:38.570 INFO  (qtp1199673596-69) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=un**&df=attr_title&wt=json&wt=json} hits=4 status=0 QTime=1
+2021-01-24 23:55:38.749 INFO  (qtp1199673596-66) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=uni**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=2
+2021-01-24 23:55:40.002 INFO  (qtp1199673596-70) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=7 status=0 QTime=44
+2021-01-25 00:07:05.506 INFO  (qtp1199673596-71) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=m**&df=attr_title&wt=json&wt=json} hits=4 status=0 QTime=2
+2021-01-25 00:07:05.722 WARN  (qtp1199673596-66) [   ] o.e.j.s.HttpChannel /solr/start/selectCheck => org.apache.solr.common.SolrException: URLDecoder: The query string contains a not-%-escaped byte > 127 at position 17
+	at org.apache.solr.servlet.SolrRequestParsers$2.read(SolrRequestParsers.java:305)
+org.apache.solr.common.SolrException: URLDecoder: The query string contains a not-%-escaped byte > 127 at position 17
+	at org.apache.solr.servlet.SolrRequestParsers$2.read(SolrRequestParsers.java:305) ~[?:?]
+	at org.apache.solr.servlet.SolrRequestParsers.parseFormDataContent(SolrRequestParsers.java:337) ~[?:?]
+	at org.apache.solr.servlet.SolrRequestParsers.parseQueryString(SolrRequestParsers.java:314) ~[?:?]
+	at org.apache.solr.servlet.SolrRequestParsers.parseQueryString(SolrRequestParsers.java:284) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.<init>(HttpSolrCall.java:195) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.getHttpSolrCall(SolrDispatchFilter.java:473) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:412) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:345) ~[?:?]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1596) ~[jetty-servlet-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:545) ~[jetty-servlet-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:590) ~[jetty-security-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1610) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1300) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485) ~[jetty-servlet-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1580) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1215) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:221) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.Server.handle(Server.java:500) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103) ~[jetty-io-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117) ~[jetty-io-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:375) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0-25]
+2021-01-25 00:07:07.698 WARN  (qtp1199673596-70) [   ] o.e.j.s.HttpChannel /solr/start/selectCheck => org.apache.solr.common.SolrException: URLDecoder: The query string contains a not-%-escaped byte > 127 at position 17
+	at org.apache.solr.servlet.SolrRequestParsers$2.read(SolrRequestParsers.java:305)
+org.apache.solr.common.SolrException: URLDecoder: The query string contains a not-%-escaped byte > 127 at position 17
+	at org.apache.solr.servlet.SolrRequestParsers$2.read(SolrRequestParsers.java:305) ~[?:?]
+	at org.apache.solr.servlet.SolrRequestParsers.parseFormDataContent(SolrRequestParsers.java:337) ~[?:?]
+	at org.apache.solr.servlet.SolrRequestParsers.parseQueryString(SolrRequestParsers.java:314) ~[?:?]
+	at org.apache.solr.servlet.SolrRequestParsers.parseQueryString(SolrRequestParsers.java:284) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.<init>(HttpSolrCall.java:195) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.getHttpSolrCall(SolrDispatchFilter.java:473) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:412) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:345) ~[?:?]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1596) ~[jetty-servlet-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:545) ~[jetty-servlet-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:590) ~[jetty-security-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1610) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1300) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485) ~[jetty-servlet-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1580) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1215) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:221) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.Server.handle(Server.java:500) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103) ~[jetty-io-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117) ~[jetty-io-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:375) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0-25]
+2021-01-25 00:07:07.817 WARN  (qtp1199673596-25) [   ] o.e.j.s.HttpChannel /solr/start/selectCheck => org.apache.solr.common.SolrException: URLDecoder: The query string contains a not-%-escaped byte > 127 at position 17
+	at org.apache.solr.servlet.SolrRequestParsers$2.read(SolrRequestParsers.java:305)
+org.apache.solr.common.SolrException: URLDecoder: The query string contains a not-%-escaped byte > 127 at position 17
+	at org.apache.solr.servlet.SolrRequestParsers$2.read(SolrRequestParsers.java:305) ~[?:?]
+	at org.apache.solr.servlet.SolrRequestParsers.parseFormDataContent(SolrRequestParsers.java:337) ~[?:?]
+	at org.apache.solr.servlet.SolrRequestParsers.parseQueryString(SolrRequestParsers.java:314) ~[?:?]
+	at org.apache.solr.servlet.SolrRequestParsers.parseQueryString(SolrRequestParsers.java:284) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.<init>(HttpSolrCall.java:195) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.getHttpSolrCall(SolrDispatchFilter.java:473) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:412) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:345) ~[?:?]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1596) ~[jetty-servlet-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:545) ~[jetty-servlet-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:590) ~[jetty-security-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1610) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1300) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485) ~[jetty-servlet-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1580) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1215) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:221) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.Server.handle(Server.java:500) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103) ~[jetty-io-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117) ~[jetty-io-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:375) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0-25]
+2021-01-25 00:07:07.983 WARN  (qtp1199673596-62) [   ] o.e.j.s.HttpChannel /solr/start/selectCheck => org.apache.solr.common.SolrException: URLDecoder: The query string contains a not-%-escaped byte > 127 at position 17
+	at org.apache.solr.servlet.SolrRequestParsers$2.read(SolrRequestParsers.java:305)
+org.apache.solr.common.SolrException: URLDecoder: The query string contains a not-%-escaped byte > 127 at position 17
+	at org.apache.solr.servlet.SolrRequestParsers$2.read(SolrRequestParsers.java:305) ~[?:?]
+	at org.apache.solr.servlet.SolrRequestParsers.parseFormDataContent(SolrRequestParsers.java:337) ~[?:?]
+	at org.apache.solr.servlet.SolrRequestParsers.parseQueryString(SolrRequestParsers.java:314) ~[?:?]
+	at org.apache.solr.servlet.SolrRequestParsers.parseQueryString(SolrRequestParsers.java:284) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.<init>(HttpSolrCall.java:195) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.getHttpSolrCall(SolrDispatchFilter.java:473) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:412) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:345) ~[?:?]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1596) ~[jetty-servlet-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:545) ~[jetty-servlet-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:590) ~[jetty-security-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1610) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1300) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485) ~[jetty-servlet-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1580) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1215) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:221) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.Server.handle(Server.java:500) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103) ~[jetty-io-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117) ~[jetty-io-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:375) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0-25]
+2021-01-25 00:07:08.191 WARN  (qtp1199673596-69) [   ] o.e.j.s.HttpChannel /solr/start/selectCheck => org.apache.solr.common.SolrException: URLDecoder: The query string contains a not-%-escaped byte > 127 at position 17
+	at org.apache.solr.servlet.SolrRequestParsers$2.read(SolrRequestParsers.java:305)
+org.apache.solr.common.SolrException: URLDecoder: The query string contains a not-%-escaped byte > 127 at position 17
+	at org.apache.solr.servlet.SolrRequestParsers$2.read(SolrRequestParsers.java:305) ~[?:?]
+	at org.apache.solr.servlet.SolrRequestParsers.parseFormDataContent(SolrRequestParsers.java:337) ~[?:?]
+	at org.apache.solr.servlet.SolrRequestParsers.parseQueryString(SolrRequestParsers.java:314) ~[?:?]
+	at org.apache.solr.servlet.SolrRequestParsers.parseQueryString(SolrRequestParsers.java:284) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.<init>(HttpSolrCall.java:195) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.getHttpSolrCall(SolrDispatchFilter.java:473) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:412) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:345) ~[?:?]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1596) ~[jetty-servlet-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:545) ~[jetty-servlet-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:590) ~[jetty-security-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1610) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1300) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485) ~[jetty-servlet-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1580) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1215) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:221) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.Server.handle(Server.java:500) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103) ~[jetty-io-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117) ~[jetty-io-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:375) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0-25]
+2021-01-25 00:07:10.649 WARN  (qtp1199673596-66) [   ] o.e.j.s.HttpChannel /solr/start/selectCheck => org.apache.solr.common.SolrException: URLDecoder: The query string contains a not-%-escaped byte > 127 at position 16
+	at org.apache.solr.servlet.SolrRequestParsers$2.read(SolrRequestParsers.java:305)
+org.apache.solr.common.SolrException: URLDecoder: The query string contains a not-%-escaped byte > 127 at position 16
+	at org.apache.solr.servlet.SolrRequestParsers$2.read(SolrRequestParsers.java:305) ~[?:?]
+	at org.apache.solr.servlet.SolrRequestParsers.parseFormDataContent(SolrRequestParsers.java:337) ~[?:?]
+	at org.apache.solr.servlet.SolrRequestParsers.parseQueryString(SolrRequestParsers.java:314) ~[?:?]
+	at org.apache.solr.servlet.SolrRequestParsers.parseQueryString(SolrRequestParsers.java:284) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.<init>(HttpSolrCall.java:195) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.getHttpSolrCall(SolrDispatchFilter.java:473) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:412) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:345) ~[?:?]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1596) ~[jetty-servlet-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:545) ~[jetty-servlet-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:590) ~[jetty-security-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1610) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1300) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485) ~[jetty-servlet-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1580) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1215) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:221) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.Server.handle(Server.java:500) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103) ~[jetty-io-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117) ~[jetty-io-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:375) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0-25]
+2021-01-25 00:07:11.309 INFO  (qtp1199673596-70) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=5 status=0 QTime=25
+2021-01-25 00:07:11.386 INFO  (qtp1199673596-25) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=5 status=0 QTime=34
+2021-01-25 00:07:35.925 WARN  (qtp1199673596-62) [   ] o.e.j.s.HttpChannel /solr/start/selectCheck => org.apache.solr.common.SolrException: URLDecoder: The query string contains a not-%-escaped byte > 127 at position 17
+	at org.apache.solr.servlet.SolrRequestParsers$2.read(SolrRequestParsers.java:305)
+org.apache.solr.common.SolrException: URLDecoder: The query string contains a not-%-escaped byte > 127 at position 17
+	at org.apache.solr.servlet.SolrRequestParsers$2.read(SolrRequestParsers.java:305) ~[?:?]
+	at org.apache.solr.servlet.SolrRequestParsers.parseFormDataContent(SolrRequestParsers.java:337) ~[?:?]
+	at org.apache.solr.servlet.SolrRequestParsers.parseQueryString(SolrRequestParsers.java:314) ~[?:?]
+	at org.apache.solr.servlet.SolrRequestParsers.parseQueryString(SolrRequestParsers.java:284) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.<init>(HttpSolrCall.java:195) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.getHttpSolrCall(SolrDispatchFilter.java:473) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:412) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:345) ~[?:?]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1596) ~[jetty-servlet-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:545) ~[jetty-servlet-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:590) ~[jetty-security-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1610) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1300) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485) ~[jetty-servlet-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1580) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1215) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:221) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.Server.handle(Server.java:500) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103) ~[jetty-io-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117) ~[jetty-io-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:375) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0-25]
+2021-01-25 00:07:37.927 INFO  (qtp1199673596-25) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*merida*)OR(*yucatan*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=181
+2021-01-25 00:07:38.026 INFO  (qtp1199673596-62) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*merida*)OR(*yucatan*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=37
+2021-01-25 00:09:33.574 INFO  (qtp1199673596-69) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*merida*)+or+(*yucatan*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on&_=1611490666491} hits=6 status=0 QTime=55
+2021-01-25 00:13:55.841 INFO  (qtp1199673596-64) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*merida*)OR(*yucatan*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=39
+2021-01-25 00:13:55.899 INFO  (qtp1199673596-70) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*merida*)OR(*yucatan*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=22
+2021-01-25 00:14:27.796 INFO  (qtp1199673596-62) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*ayuda*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=1 status=0 QTime=11
+2021-01-25 00:14:51.735 INFO  (qtp1199673596-61) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*ayuda*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=1 status=0 QTime=8
+2021-01-25 00:14:51.835 INFO  (qtp1199673596-70) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=ayuda&df=attr_text&spellcheck=on&wt=json} hits=0 status=0 QTime=5
+2021-01-25 00:14:51.837 INFO  (qtp1199673596-68) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*ayuda*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=1 status=0 QTime=8
+2021-01-25 00:14:54.224 INFO  (qtp1199673596-62) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=aiuta&df=attr_text&spellcheck=on&wt=json} hits=1 status=0 QTime=4
+2021-01-25 00:14:54.233 INFO  (qtp1199673596-61) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*aiuta*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=1 status=0 QTime=14
+2021-01-25 00:14:58.264 INFO  (qtp1199673596-68) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=u**&df=attr_title&wt=json&wt=json} hits=4 status=0 QTime=1
+2021-01-25 00:14:58.456 INFO  (qtp1199673596-70) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=un**&df=attr_title&wt=json&wt=json} hits=4 status=0 QTime=2
+2021-01-25 00:14:58.627 INFO  (qtp1199673596-62) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=uni**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=2
+2021-01-25 00:14:58.866 INFO  (qtp1199673596-61) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=univ**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=7
+2021-01-25 00:14:59.046 INFO  (qtp1199673596-68) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=unive**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=4
+2021-01-25 00:14:59.174 INFO  (qtp1199673596-70) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=univer**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=3
+2021-01-25 00:15:00.086 INFO  (qtp1199673596-62) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=univers**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=6
+2021-01-25 00:15:00.269 INFO  (qtp1199673596-66) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=universi**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=6
+2021-01-25 00:15:00.330 INFO  (qtp1199673596-68) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=universid**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=6
+2021-01-25 00:15:00.477 INFO  (qtp1199673596-70) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=universidq**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=9
+2021-01-25 00:15:00.614 INFO  (qtp1199673596-62) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=universidqd**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=10
+2021-01-25 00:15:01.119 INFO  (qtp1199673596-66) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=universidq**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=9
+2021-01-25 00:15:01.434 INFO  (qtp1199673596-68) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=universid**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=7
+2021-01-25 00:15:01.601 INFO  (qtp1199673596-70) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=universida**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=11
+2021-01-25 00:15:01.727 INFO  (qtp1199673596-62) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=universidad**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=1
+2021-01-25 00:15:01.908 INFO  (qtp1199673596-66) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=universidada**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=14
+2021-01-25 00:15:02.367 INFO  (qtp1199673596-68) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=universidad**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=2
+2021-01-25 00:15:02.602 INFO  (qtp1199673596-62) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=universidad&df=attr_text&spellcheck=on&wt=json} hits=4 status=0 QTime=1
+2021-01-25 00:15:02.676 INFO  (qtp1199673596-70) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=4 status=0 QTime=47
+2021-01-25 00:15:02.776 INFO  (qtp1199673596-66) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=4 status=0 QTime=68
+2021-01-25 00:15:08.260 INFO  (qtp1199673596-70) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=universidad&df=attr_text&spellcheck=on&wt=json} hits=4 status=0 QTime=2
+2021-01-25 00:15:08.442 INFO  (qtp1199673596-25) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=4 status=0 QTime=193
+2021-01-25 00:15:08.541 INFO  (qtp1199673596-62) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=4 status=0 QTime=52
+2021-01-25 00:15:14.234 INFO  (qtp1199673596-66) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=7 status=0 QTime=71
+2021-01-25 00:15:26.540 INFO  (qtp1199673596-70) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=u**&df=attr_title&wt=json&wt=json} hits=4 status=0 QTime=0
+2021-01-25 00:15:26.703 INFO  (qtp1199673596-62) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=un**&df=attr_title&wt=json&wt=json} hits=4 status=0 QTime=1
+2021-01-25 00:15:26.914 INFO  (qtp1199673596-66) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=uni**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=3
+2021-01-25 00:15:27.118 INFO  (qtp1199673596-68) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=univ**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=7
+2021-01-25 00:15:27.264 INFO  (qtp1199673596-70) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=unive**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=2
+2021-01-25 00:15:27.439 INFO  (qtp1199673596-62) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=univer**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=3
+2021-01-25 00:15:27.836 INFO  (qtp1199673596-61) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=univers**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=8
+2021-01-25 00:15:27.966 INFO  (qtp1199673596-68) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=universi**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=3
+2021-01-25 00:15:28.231 INFO  (qtp1199673596-70) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=universia**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=8
+2021-01-25 00:15:28.602 INFO  (qtp1199673596-62) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=universi**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=7
+2021-01-25 00:15:29.045 INFO  (qtp1199673596-61) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=univers**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=7
+2021-01-25 00:15:29.979 INFO  (qtp1199673596-68) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=univer**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=4
+2021-01-25 00:15:30.852 INFO  (qtp1199673596-70) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=univers**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=10
+2021-01-25 00:15:31.001 INFO  (qtp1199673596-62) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=universi**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=6
+2021-01-25 00:15:31.072 INFO  (qtp1199673596-61) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=universid**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=6
+2021-01-25 00:15:31.189 INFO  (qtp1199673596-68) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=universida**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=7
+2021-01-25 00:15:31.298 INFO  (qtp1199673596-70) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=universidad**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=1
+2021-01-25 00:15:31.405 INFO  (qtp1199673596-61) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=universidad&df=attr_text&spellcheck=on&wt=json} hits=4 status=0 QTime=1
+2021-01-25 00:15:31.444 INFO  (qtp1199673596-62) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=4 status=0 QTime=43
+2021-01-25 00:15:31.491 INFO  (qtp1199673596-68) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=4 status=0 QTime=23
+2021-01-25 00:15:37.988 INFO  (qtp1199673596-62) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=universidad&df=attr_text&spellcheck=on&wt=json} hits=4 status=0 QTime=1
+2021-01-25 00:15:38.028 INFO  (qtp1199673596-70) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=4 status=0 QTime=41
+2021-01-25 00:15:38.902 INFO  (qtp1199673596-61) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=universidad&df=attr_text&spellcheck=on&wt=json} hits=4 status=0 QTime=0
+2021-01-25 00:15:38.952 INFO  (qtp1199673596-68) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=4 status=0 QTime=40
+2021-01-25 00:15:39.097 INFO  (qtp1199673596-62) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=universidad&df=attr_text&spellcheck=on&wt=json} hits=4 status=0 QTime=0
+2021-01-25 00:15:39.125 INFO  (qtp1199673596-66) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=4 status=0 QTime=30
+2021-01-25 00:15:39.300 INFO  (qtp1199673596-68) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=universidad&df=attr_text&spellcheck=on&wt=json} hits=4 status=0 QTime=0
+2021-01-25 00:15:39.315 INFO  (qtp1199673596-61) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=4 status=0 QTime=28
+2021-01-25 00:15:41.991 INFO  (qtp1199673596-62) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=universidad&df=attr_text&spellcheck=on&wt=json} hits=4 status=0 QTime=1
+2021-01-25 00:15:42.029 INFO  (qtp1199673596-66) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=4 status=0 QTime=38
+2021-01-25 00:15:43.641 INFO  (qtp1199673596-68) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=universidad&df=attr_text&spellcheck=on&wt=json} hits=4 status=0 QTime=0
+2021-01-25 00:15:43.652 INFO  (qtp1199673596-25) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=4 status=0 QTime=23
+2021-01-25 00:15:44.146 INFO  (qtp1199673596-62) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=universidad&df=attr_text&spellcheck=on&wt=json} hits=4 status=0 QTime=0
+2021-01-25 00:15:44.185 INFO  (qtp1199673596-66) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=4 status=0 QTime=31
+2021-01-25 00:16:03.225 INFO  (qtp1199673596-25) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=5 status=0 QTime=46
+2021-01-25 00:16:57.745 INFO  (qtp1199673596-68) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on&_=1611490666491} hits=5 status=0 QTime=32
+2021-01-25 00:17:30.779 INFO  (qtp1199673596-61) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=merida&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on&_=1611490666491} hits=5 status=0 QTime=24
+2021-01-25 00:18:20.477 WARN  (qtp1199673596-62) [   ] o.e.j.s.HttpChannel /solr/start/selectCheck => org.apache.solr.common.SolrException: URLDecoder: The query string contains a not-%-escaped byte > 127 at position 16
+	at org.apache.solr.servlet.SolrRequestParsers$2.read(SolrRequestParsers.java:305)
+org.apache.solr.common.SolrException: URLDecoder: The query string contains a not-%-escaped byte > 127 at position 16
+	at org.apache.solr.servlet.SolrRequestParsers$2.read(SolrRequestParsers.java:305) ~[?:?]
+	at org.apache.solr.servlet.SolrRequestParsers.parseFormDataContent(SolrRequestParsers.java:337) ~[?:?]
+	at org.apache.solr.servlet.SolrRequestParsers.parseQueryString(SolrRequestParsers.java:314) ~[?:?]
+	at org.apache.solr.servlet.SolrRequestParsers.parseQueryString(SolrRequestParsers.java:284) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.<init>(HttpSolrCall.java:195) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.getHttpSolrCall(SolrDispatchFilter.java:473) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:412) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:345) ~[?:?]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1596) ~[jetty-servlet-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:545) ~[jetty-servlet-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:590) ~[jetty-security-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1610) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1300) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485) ~[jetty-servlet-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1580) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1215) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:221) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.Server.handle(Server.java:500) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103) ~[jetty-io-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117) ~[jetty-io-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:375) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0-25]
+2021-01-25 00:18:20.511 INFO  (qtp1199673596-66) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=5 status=0 QTime=24
+2021-01-25 00:18:20.571 INFO  (qtp1199673596-70) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=5 status=0 QTime=26
+2021-01-25 00:18:46.724 INFO  (qtp1199673596-68) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=*&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on&_=1611490666491} hits=7 status=0 QTime=18
+2021-01-25 00:19:02.280 WARN  (qtp1199673596-61) [   ] o.e.j.s.HttpChannel /solr/start/selectCheck => org.apache.solr.common.SolrException: URLDecoder: The query string contains a not-%-escaped byte > 127 at position 17
+	at org.apache.solr.servlet.SolrRequestParsers$2.read(SolrRequestParsers.java:305)
+org.apache.solr.common.SolrException: URLDecoder: The query string contains a not-%-escaped byte > 127 at position 17
+	at org.apache.solr.servlet.SolrRequestParsers$2.read(SolrRequestParsers.java:305) ~[?:?]
+	at org.apache.solr.servlet.SolrRequestParsers.parseFormDataContent(SolrRequestParsers.java:337) ~[?:?]
+	at org.apache.solr.servlet.SolrRequestParsers.parseQueryString(SolrRequestParsers.java:314) ~[?:?]
+	at org.apache.solr.servlet.SolrRequestParsers.parseQueryString(SolrRequestParsers.java:284) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.<init>(HttpSolrCall.java:195) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.getHttpSolrCall(SolrDispatchFilter.java:473) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:412) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:345) ~[?:?]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1596) ~[jetty-servlet-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:545) ~[jetty-servlet-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:590) ~[jetty-security-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1610) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1300) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485) ~[jetty-servlet-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1580) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1215) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:221) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.Server.handle(Server.java:500) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103) ~[jetty-io-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117) ~[jetty-io-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:375) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0-25]
+2021-01-25 00:19:03.616 INFO  (qtp1199673596-70) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*merida*)OR(*yucatan*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=22
+2021-01-25 00:19:03.653 INFO  (qtp1199673596-61) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*merida*)OR(*yucatan*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=16
+2021-01-25 00:20:04.884 INFO  (qtp1199673596-62) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=a**&df=attr_title&wt=json&wt=json} hits=1 status=0 QTime=1
+2021-01-25 00:20:04.889 INFO  (qtp1199673596-70) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=ay**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=0
+2021-01-25 00:20:05.275 INFO  (qtp1199673596-64) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=a**&df=attr_title&wt=json&wt=json} hits=1 status=0 QTime=0
+2021-01-25 00:20:05.952 INFO  (qtp1199673596-61) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=u**&df=attr_title&wt=json&wt=json} hits=4 status=0 QTime=2
+2021-01-25 00:20:06.062 INFO  (qtp1199673596-62) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=un**&df=attr_title&wt=json&wt=json} hits=4 status=0 QTime=0
+2021-01-25 00:20:06.209 INFO  (qtp1199673596-68) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=uni**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=0
+2021-01-25 00:20:08.016 INFO  (qtp1199673596-64) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=univ**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=7
+2021-01-25 00:20:08.271 INFO  (qtp1199673596-61) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=unive**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=2
+2021-01-25 00:20:08.486 INFO  (qtp1199673596-62) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=univer**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=3
+2021-01-25 00:20:08.806 INFO  (qtp1199673596-68) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=univers**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=2
+2021-01-25 00:20:08.937 INFO  (qtp1199673596-64) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=universi**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=4
+2021-01-25 00:20:08.999 INFO  (qtp1199673596-61) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=universid**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=3
+2021-01-25 00:20:09.128 INFO  (qtp1199673596-62) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=universida**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=12
+2021-01-25 00:20:09.246 INFO  (qtp1199673596-68) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=universidad**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=1
+2021-01-25 00:20:09.362 INFO  (qtp1199673596-61) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=universidad&df=attr_text&spellcheck=on&wt=json} hits=4 status=0 QTime=0
+2021-01-25 00:20:09.382 INFO  (qtp1199673596-64) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=4 status=0 QTime=22
+2021-01-25 00:20:09.441 INFO  (qtp1199673596-62) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=4 status=0 QTime=22
+2021-01-25 00:21:48.734 INFO  (qtp1199673596-70) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=universida**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=16
+2021-01-25 00:21:49.238 INFO  (qtp1199673596-64) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=universid**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=13
+2021-01-25 00:21:49.288 INFO  (qtp1199673596-61) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=universi**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=6
+2021-01-25 00:21:49.295 INFO  (qtp1199673596-62) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=univers**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=5
+2021-01-25 00:21:49.308 INFO  (qtp1199673596-70) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=univer**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=2
+2021-01-25 00:21:49.340 INFO  (qtp1199673596-68) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=unive**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=1
+2021-01-25 00:21:49.366 INFO  (qtp1199673596-64) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=univ**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=1
+2021-01-25 00:21:49.399 INFO  (qtp1199673596-62) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=uni**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=0
+2021-01-25 00:21:49.429 INFO  (qtp1199673596-70) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=un**&df=attr_title&wt=json&wt=json} hits=4 status=0 QTime=0
+2021-01-25 00:21:49.467 INFO  (qtp1199673596-68) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=u**&df=attr_title&wt=json&wt=json} hits=4 status=0 QTime=0
+2021-01-25 00:21:50.624 INFO  (qtp1199673596-64) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=m**&df=attr_title&wt=json&wt=json} hits=4 status=0 QTime=0
+2021-01-25 00:21:50.770 INFO  (qtp1199673596-62) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=me**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=0
+2021-01-25 00:21:51.173 INFO  (qtp1199673596-70) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=mer**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=2
+2021-01-25 00:21:54.257 INFO  (qtp1199673596-68) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=meri**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=12
+2021-01-25 00:21:54.332 INFO  (qtp1199673596-64) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=merid**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=2
+2021-01-25 00:21:54.467 INFO  (qtp1199673596-62) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=merida**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=1
+2021-01-25 00:21:56.324 INFO  (qtp1199673596-68) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=merida&df=attr_text&spellcheck=on&wt=json} hits=5 status=0 QTime=0
+2021-01-25 00:21:56.349 INFO  (qtp1199673596-70) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=5 status=0 QTime=27
+2021-01-25 00:21:56.454 INFO  (qtp1199673596-64) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=5 status=0 QTime=61
+2021-01-25 00:22:25.496 INFO  (qtp1199673596-62) [   x:start] o.a.s.u.p.LogUpdateProcessorFactory [start]  webapp=/solr path=/update params={}{deleteByQuery=*:* (-1689816028044853248)} 0 165
+2021-01-25 00:22:25.583 INFO  (searcherExecutor-18-thread-1-processing-x:start) [   x:start] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-01-25 00:22:25.610 INFO  (searcherExecutor-18-thread-1-processing-x:start) [   x:start] o.a.s.c.SolrCore [start]  Registered new searcher autowarm time: 0 ms
+2021-01-25 00:22:25.760 INFO  (qtp1199673596-70) [   x:start] o.a.s.u.p.LogUpdateProcessorFactory [start]  webapp=/solr path=/update params={commit=true}{commit=} 0 258
+2021-01-25 00:23:05.869 INFO  (searcherExecutor-18-thread-1-processing-x:start) [   x:start] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-01-25 00:23:05.873 INFO  (searcherExecutor-18-thread-1-processing-x:start) [   x:start] o.a.s.c.SolrCore [start]  Registered new searcher autowarm time: 0 ms
+2021-01-25 00:23:05.874 INFO  (qtp1199673596-71) [   x:start] o.a.s.u.p.LogUpdateProcessorFactory [start]  webapp=/solr path=/update/extract params={commit=true}{add=[793852b5-da42-400f-80d1-239d84b0b3dd (1689816069236064256)],commit=} 0 1299
+2021-01-25 00:23:08.019 INFO  (searcherExecutor-18-thread-1-processing-x:start) [   x:start] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-01-25 00:23:08.023 INFO  (searcherExecutor-18-thread-1-processing-x:start) [   x:start] o.a.s.c.SolrCore [start]  Registered new searcher autowarm time: 0 ms
+2021-01-25 00:23:08.024 INFO  (qtp1199673596-62) [   x:start] o.a.s.u.p.LogUpdateProcessorFactory [start]  webapp=/solr path=/update/extract params={commit=true}{add=[c15f0adb-0d17-489f-9fa2-89cc970d9c38 (1689816072039956480)],commit=} 0 717
+2021-01-25 00:23:09.529 INFO  (searcherExecutor-18-thread-1-processing-x:start) [   x:start] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-01-25 00:23:09.533 INFO  (searcherExecutor-18-thread-1-processing-x:start) [   x:start] o.a.s.c.SolrCore [start]  Registered new searcher autowarm time: 0 ms
+2021-01-25 00:23:09.533 INFO  (qtp1199673596-71) [   x:start] o.a.s.u.p.LogUpdateProcessorFactory [start]  webapp=/solr path=/update/extract params={commit=true}{add=[ce0d1759-e9a9-4a7b-ae3a-b1e93344a5a4 (1689816073559343104)],commit=} 0 744
+2021-01-25 00:23:11.049 INFO  (searcherExecutor-18-thread-1-processing-x:start) [   x:start] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-01-25 00:23:11.064 INFO  (searcherExecutor-18-thread-1-processing-x:start) [   x:start] o.a.s.c.SolrCore [start]  Registered new searcher autowarm time: 0 ms
+2021-01-25 00:23:11.064 INFO  (qtp1199673596-62) [   x:start] o.a.s.u.p.LogUpdateProcessorFactory [start]  webapp=/solr path=/update/extract params={commit=true}{add=[1f1aa4f6-26ce-4702-bcc9-628756db661f (1689816074903617536)],commit=} 0 994
+2021-01-25 00:23:13.592 INFO  (searcherExecutor-18-thread-1-processing-x:start) [   x:start] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-01-25 00:23:13.621 INFO  (searcherExecutor-18-thread-1-processing-x:start) [   x:start] o.a.s.c.SolrCore [start]  Registered new searcher autowarm time: 0 ms
+2021-01-25 00:23:13.621 INFO  (qtp1199673596-71) [   x:start] o.a.s.u.p.LogUpdateProcessorFactory [start]  webapp=/solr path=/update/extract params={commit=true}{add=[e1b3b389-36b3-48c5-907d-8a07fc40b545 (1689816076734431232)],commit=} 0 1811
+2021-01-25 00:23:16.091 INFO  (searcherExecutor-18-thread-1-processing-x:start) [   x:start] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-01-25 00:23:16.335 INFO  (searcherExecutor-18-thread-1-processing-x:start) [   x:start] o.a.s.c.SolrCore [start]  Registered new searcher autowarm time: 0 ms
+2021-01-25 00:23:16.335 INFO  (qtp1199673596-62) [   x:start] o.a.s.u.p.LogUpdateProcessorFactory [start]  webapp=/solr path=/update/extract params={commit=true}{add=[05cf7526-5673-40be-acfa-5cd835fb6f81 (1689816080223043584)],commit=} 0 1191
+2021-01-25 00:23:29.965 INFO  (qtp1199673596-68) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=*&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on&_=1611490666491} hits=6 status=0 QTime=139
+2021-01-25 00:23:42.877 INFO  (qtp1199673596-64) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=m**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=1
+2021-01-25 00:23:43.076 INFO  (qtp1199673596-70) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=mw**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=1
+2021-01-25 00:23:43.194 INFO  (qtp1199673596-62) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=mwr**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=1
+2021-01-25 00:23:43.623 WARN  (qtp1199673596-71) [   ] o.e.j.s.HttpChannel /solr/start/selectCheck => org.apache.solr.common.SolrException: URLDecoder: The query string contains a not-%-escaped byte > 127 at position 19
+	at org.apache.solr.servlet.SolrRequestParsers$2.read(SolrRequestParsers.java:305)
+org.apache.solr.common.SolrException: URLDecoder: The query string contains a not-%-escaped byte > 127 at position 19
+	at org.apache.solr.servlet.SolrRequestParsers$2.read(SolrRequestParsers.java:305) ~[?:?]
+	at org.apache.solr.servlet.SolrRequestParsers.parseFormDataContent(SolrRequestParsers.java:337) ~[?:?]
+	at org.apache.solr.servlet.SolrRequestParsers.parseQueryString(SolrRequestParsers.java:314) ~[?:?]
+	at org.apache.solr.servlet.SolrRequestParsers.parseQueryString(SolrRequestParsers.java:284) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.<init>(HttpSolrCall.java:195) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.getHttpSolrCall(SolrDispatchFilter.java:473) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:412) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:345) ~[?:?]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1596) ~[jetty-servlet-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:545) ~[jetty-servlet-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:590) ~[jetty-security-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1610) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1300) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485) ~[jetty-servlet-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1580) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1215) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:221) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.Server.handle(Server.java:500) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103) ~[jetty-io-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117) ~[jetty-io-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:375) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0-25]
+2021-01-25 00:23:43.809 INFO  (qtp1199673596-64) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=mwr**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=0
+2021-01-25 00:23:43.986 INFO  (qtp1199673596-70) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=mw**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=1
+2021-01-25 00:23:44.314 INFO  (qtp1199673596-62) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=m**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=0
+2021-01-25 00:23:44.590 INFO  (qtp1199673596-68) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=me**&df=attr_title&wt=json&wt=json} hits=2 status=0 QTime=1
+2021-01-25 00:23:44.726 INFO  (qtp1199673596-64) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=mer**&df=attr_title&wt=json&wt=json} hits=2 status=0 QTime=1
+2021-01-25 00:23:44.795 INFO  (qtp1199673596-70) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=meri**&df=attr_title&wt=json&wt=json} hits=2 status=0 QTime=4
+2021-01-25 00:23:44.941 INFO  (qtp1199673596-62) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=merid**&df=attr_title&wt=json&wt=json} hits=2 status=0 QTime=4
+2021-01-25 00:23:45.087 INFO  (qtp1199673596-68) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=merida**&df=attr_title&wt=json&wt=json} hits=2 status=0 QTime=1
+2021-01-25 00:23:45.295 INFO  (qtp1199673596-70) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=merida&df=attr_text&spellcheck=on&wt=json} hits=4 status=0 QTime=0
+2021-01-25 00:23:45.315 INFO  (qtp1199673596-64) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=4 status=0 QTime=22
+2021-01-25 00:23:45.372 INFO  (qtp1199673596-62) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=4 status=0 QTime=14
+2021-01-25 00:23:48.500 INFO  (qtp1199673596-68) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=merida**&df=attr_title&wt=json&wt=json} hits=2 status=0 QTime=1
+2021-01-25 00:23:49.870 INFO  (qtp1199673596-62) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*merida*)OR(*yucatan*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=5 status=0 QTime=24
+2021-01-25 00:23:49.923 INFO  (qtp1199673596-71) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*merida*)OR(*yucatan*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=5 status=0 QTime=23
+2021-01-25 00:24:51.145 INFO  (qtp1199673596-64) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=a**&df=attr_title&wt=json&wt=json} hits=1 status=0 QTime=1
+2021-01-25 00:24:51.395 INFO  (qtp1199673596-62) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=ay**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=1
+2021-01-25 00:24:51.606 INFO  (qtp1199673596-66) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=ayu**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=1
+2021-01-25 00:24:51.776 INFO  (qtp1199673596-71) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=ayud**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=2
+2021-01-25 00:24:51.985 INFO  (qtp1199673596-64) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=ayuda**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=2
+2021-01-25 00:24:53.055 INFO  (qtp1199673596-62) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=ayud**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=3
+2021-01-25 00:24:53.563 INFO  (qtp1199673596-66) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=ayu**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=1
+2021-01-25 00:24:53.591 INFO  (qtp1199673596-71) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=ay**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=1
+2021-01-25 00:24:53.634 INFO  (qtp1199673596-64) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=a**&df=attr_title&wt=json&wt=json} hits=1 status=0 QTime=1
