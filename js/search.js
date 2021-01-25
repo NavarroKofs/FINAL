@@ -19,7 +19,7 @@ function search(palabraBuscar){
     get(urlBusqueda).then(function(response) {
         let tabla = initializeTable(response);
         let foo = document.getElementById("resultados");
-        if (foo.hasChildNodes()) { 
+        if (foo.hasChildNodes()) {
             while ( foo.childNodes.length >= 1 ){
                 foo.removeChild( foo.firstChild );
             }
@@ -54,6 +54,7 @@ function initializeTable(data) {
     data = JSON.parse(data);
     data = JSON.parse(data);
     documents = data['response']['docs'];
+    let weights = data.debug.explain;
 
     var table = document.createElement("table");
     var thead = table.createTHead();
@@ -63,24 +64,13 @@ function initializeTable(data) {
     var tam = data['response']['numFound'];
 
     console.log(data);
-    
+
     if (documents.length > 0) {
         /*documents.forEach(document => {
-            table_content = `${table_content} <h3>${document['attr_title'][0]}<h3>
-            <p>${data['highlighting'][document['id']]['attr_text'][0]}</p>`
-        });*/
+            table_content = `${table_content} <h3>${document['attr_dc_title'][0]} / Peso ${weights[document.id].value}<h3><p>${document['attr_text'][0]}</p>`
+        });
+        table.innerHTML = table_content;*/
 
-        //table.innerHTML = table_content;
-
-        
-       /* for (var i = 0; i < documents.length; i++) {
-            for (var key in documents[i]) {
-                if (col.indexOf(key) === -1) {
-                    col.push(key);
-                    console.log(col);
-                }
-            }
-        }*/
 
         var cabecera = thead.insertRow(-1);
         var titulos = ['Título','Descripción','Debug'];
