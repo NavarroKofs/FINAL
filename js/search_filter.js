@@ -1,10 +1,11 @@
 
-document.getElementById("inputSearch").addEventListener("keydown", function(event) {
-    if (event.key === "Enter") {
-      search_filter();
-    }
+document.getElementById("inputSearch").addEventListener("keydown", function (event) {
+  if (event.key === "Enter") {
+    search_filter();
+  }
 });
 var results;
+var rawData;
 var esp_elements;
 var auth_elements;
 var image_elements;
@@ -23,7 +24,7 @@ function search_filter() {
   wrapper.innerHTML = '';
   get(urlBusqueda).then(function (response) {
     results = JSON.parse(JSON.parse(response));
-
+    rawData = results;
     results['response']['docs'].forEach(element => {
       let author_tag = element['attr_meta'][35];
       let lenguaje_tag = element['attr_meta'][47];
@@ -31,40 +32,72 @@ function search_filter() {
 
       if (typeof author_tag !== 'undefined') {
         auth_elements.push(document_index);
-        console.log("a-------------------------------------------a");
-        console.log(auth_elements);
       }
-      if ((typeof lenguaje_tag !== 'undefined') && (lenguaje_tag == 'es_MX' )) {
+      if ((typeof lenguaje_tag !== 'undefined') && (lenguaje_tag == 'es_MX')) {
         esp_elements.push(document_index);
-        console.log("b-------------------------------------------b");
-        console.log(esp_elements);      
       }
-      if ((typeof image_tag !== 'undefined') && (image_tag == 'og:image' )) {
+      if ((typeof image_tag !== 'undefined') && (image_tag == 'og:image')) {
         image_elements.push(document_index);
-        console.log("c-------------------------------------------c");
-        console.log(image_elements);   
       }
 
       document_index++;
     })
 
-      filters=`<div class="filters-container">
+    filters = `<div class="filters-container">
                 <button onclick="filteredTable('esp')">En español(${esp_elements.length})</button>
                 <button onclick="filteredTable('auth')">Con autor(${auth_elements.length})</button>
                 <button onclick="filteredTable('image')">Con imagenes(${image_elements.length})</button>
               </div>`;
-    
-      wrapper.innerHTML = filters;
-    
-    }, function (error) {
+
+    wrapper.innerHTML = filters;
+
+  }, function (error) {
     alert("Se ha producido un error, intente más tarde.")
   })
+}
+
+function initializeFilteredTable(data) {
+  documents = data;
+  let weights = 1//data.debug.explain;
+
+  var table = document.createElement("table");
+  var thead = table.createTHead();
+  var tbody = table.createTBody();
+  var col = [];
+  var table_content = "";
+  var tam = data.length;
+
+  if (documents.length > 0) {
+    var cabecera = thead.insertRow(-1);
+    var titulos = ['Título', 'Descripción', 'Debug'];
+    for (var i = 0; i < 3; i++) {
+      var th = document.createElement("th");
+      th.innerHTML = titulos[i];
+      cabecera.appendChild(th);
+    }
+
+    console.log(documents);
+
+    for (var i = 0; i < tam; i++) {
+      tr = tbody.insertRow(-1);
+      var tabCell = tr.insertCell(-1);
+      tabCell.innerHTML = ((typeof(documents[i]['attr_og_title']) != "undefined") ? documents[i]['attr_og_title'][0] : documents[i]['attr_title'][0]);
+      tabCell = tr.insertCell(-1);
+      tabCell.innerHTML = rawData['highlighting'][documents[i]['id']]['attr_text'][0];
+      tabCell = tr.insertCell(-1);
+      tabCell.innerHTML = rawData['debug']['explain'][documents[i]['id']]['value'];
+    }
+
+  } else {
+    table.innerHTML = "Sin resultados";
+  }
+  return table;
 }
 
 function filteredTable(type) {
   data = results;
   let documents = [];
-  
+
   switch (type) {
     case 'esp':
       esp_elements.forEach(element => {
@@ -79,32 +112,12 @@ function filteredTable(type) {
     case 'image':
       image_elements.forEach(element => {
         documents.push(data['response']['docs'][element]);
-      });      
+      });
       break;
   }
-  
+
   let foo = document.getElementById("resultados");
-  var table = document.createElement("table");
-  var table_content = "";
-  
-  
-  if (documents.length > 0) {
-    documents.forEach(document => {
-        table_content = `${table_content} <h3>${document['attr_dc_title'][0]}<h3><p>${document['attr_text'][0]}</p>`
-        console.log(documents);
-      });
-
-      table.innerHTML = table_content;
-  } else {
-      table.innerHTML = "Sin resultados";
-  }
-  
-  if (foo.hasChildNodes()) { 
-    while ( foo.childNodes.length >= 1 ){
-        foo.removeChild( foo.firstChild );
-    }
-  }
-
-
+  var table = initializeFilteredTable(documents);
+  foo.innerHTML = "";
   foo.appendChild(table);
 }
