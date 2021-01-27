@@ -76,7 +76,7 @@ function initializeFilteredTable(data) {
       cabecera.appendChild(th);
     }
 
-    console.log(documents);
+    //console.log(documents);
 
     for (var i = 0; i < tam; i++) {
       tr = tbody.insertRow(-1);

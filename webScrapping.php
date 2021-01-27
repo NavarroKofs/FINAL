@@ -12,18 +12,18 @@ if(isset($_GET['urls'])) {
     $datos = readDoc();
     writeDocs("urls.txt", $urls);
     
-    $ch = curl_init("http://localhost:8983/solr/start/update/extract?commit=true");
+    $ch = curl_init("http://localhost:8983/solr/start/update/extract?commit=true"); 
 
     for ($i=0; $i < count($urls); $i++) {
         if (in_array($urls[$i], $datos) != 1 && $urls[$i] != null){
             $data_string = petitionGuzzle($urls[$i]);
+            $html = "<meta property='url' content = '$urls[$i]'>".$data_string->getBody();
             try {
                 if ($data_string->getStatusCode() == 200) {
-                    //echo $data_string->getBody();
                     curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
                     curl_setopt($ch, CURLOPT_POST, TRUE);
                     curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-type: application/json'));
-                    curl_setopt($ch, CURLOPT_POSTFIELDS, remover_javascriptCSS($data_string->getBody()));
+                    curl_setopt($ch, CURLOPT_POSTFIELDS, $html);
                     echo curl_exec($ch);
                 }
             } catch (\Throwable $th) {

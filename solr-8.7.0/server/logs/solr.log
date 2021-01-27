@@ -1,200 +1,586 @@
-2021-01-26 20:47:23.512 INFO  (main) [   ] o.e.j.u.log Logging initialized @8161ms to org.eclipse.jetty.util.log.Slf4jLog
-2021-01-26 20:47:23.969 WARN  (main) [   ] o.e.j.x.XmlConfiguration Ignored arg: <Arg name="threadpool">
+2021-01-26 23:27:30.423 INFO  (main) [   ] o.e.j.u.log Logging initialized @9545ms to org.eclipse.jetty.util.log.Slf4jLog
+2021-01-26 23:27:30.652 WARN  (main) [   ] o.e.j.x.XmlConfiguration Ignored arg: <Arg name="threadpool">
     <New id="threadpool" class="com.codahale.metrics.jetty9.InstrumentedQueuedThreadPool"><Arg name="registry">
         <Call id="solrJettyMetricRegistry" name="getOrCreate" class="com.codahale.metrics.SharedMetricRegistries"><Arg>solr.jetty</Arg></Call>
       </Arg></New>
   </Arg>
-2021-01-26 20:47:24.554 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.27.v20200227; built: 2020-02-27T18:37:21.340Z; git: a304fd9f351f337e7c0e2a7c28878dd536149c6c; jvm 14.0.1+7
-2021-01-26 20:47:24.608 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///C:/xampp/htdocs/FINAL/solr-8.7.0/server/contexts/] at interval 0
-2021-01-26 20:47:25.942 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
-2021-01-26 20:47:25.960 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
-2021-01-26 20:47:25.960 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
-2021-01-26 20:47:25.965 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 600000ms
-2021-01-26 20:47:26.124 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
-2021-01-26 20:47:26.155 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.7.0
-2021-01-26 20:47:26.155 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
-2021-01-26 20:47:26.156 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: C:\xampp\htdocs\FINAL\solr-8.7.0
-2021-01-26 20:47:26.156 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2021-01-26T20:47:26.156367100Z
-2021-01-26 20:47:26.222 INFO  (main) [   ] o.a.s.c.SolrPaths Using system property solr.solr.home: C:\xampp\htdocs\FINAL\solr-8.7.0\server\solr
-2021-01-26 20:47:26.270 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from C:\xampp\htdocs\FINAL\solr-8.7.0\server\solr\solr.xml
-2021-01-26 20:47:26.741 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@4201c465, but no JMX reporters were configured - adding default JMX reporter.
-2021-01-26 20:47:29.088 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
-2021-01-26 20:47:29.765 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@4c59e45e[provider=null,keyStore=null,trustStore=null]
-2021-01-26 20:47:29.765 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@4c59e45e[provider=null,keyStore=null,trustStore=null]
-2021-01-26 20:47:30.053 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@20134094[provider=null,keyStore=null,trustStore=null]
-2021-01-26 20:47:30.054 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@20134094[provider=null,keyStore=null,trustStore=null]
-2021-01-26 20:47:30.373 WARN  (main) [   ] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
-2021-01-26 20:47:36.590 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
-2021-01-26 20:47:36.606 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
-2021-01-26 20:47:36.838 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@4201c465
-2021-01-26 20:47:36.839 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@4201c465
-2021-01-26 20:47:36.847 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@4201c465
-2021-01-26 20:47:37.079 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 2 core definitions underneath C:\xampp\htdocs\FINAL\solr-8.7.0\server\solr
-2021-01-26 20:47:37.080 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [repository, start]
-2021-01-26 20:47:37.275 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.7.0
-2021-01-26 20:47:37.366 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.c.SolrResourceLoader Added 49 libs to classloader, from paths: [/C:/xampp/htdocs/FINAL/solr-8.7.0/contrib/extraction/lib, /C:/xampp/htdocs/FINAL/solr-8.7.0/dist]
-2021-01-26 20:47:37.739 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.s.IndexSchema Schema name=default-config
-2021-01-26 20:47:40.061 WARN  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
-2021-01-26 20:47:40.061 WARN  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
-2021-01-26 20:47:40.061 WARN  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
-2021-01-26 20:47:40.061 WARN  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
-2021-01-26 20:47:40.061 WARN  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
-2021-01-26 20:47:40.168 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@b968a76{/solr,file:///C:/xampp/htdocs/FINAL/solr-8.7.0/server/solr-webapp/webapp/,AVAILABLE}{C:\xampp\htdocs\FINAL\solr-8.7.0\server/solr-webapp/webapp}
-2021-01-26 20:47:40.178 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@1d470d0{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
-2021-01-26 20:47:40.178 INFO  (main) [   ] o.e.j.s.Server Started @24830ms
-2021-01-26 20:47:41.293 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
-2021-01-26 20:47:41.452 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.c.CoreContainer Creating SolrCore 'repository' using configuration from instancedir C:\xampp\htdocs\FINAL\solr-8.7.0\server\solr\repository, trusted=true
-2021-01-26 20:47:41.645 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.repository' (registry 'solr.core.repository') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@4201c465
-2021-01-26 20:47:41.707 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.c.SolrCore [[repository] ] Opening new SolrCore at [C:\xampp\htdocs\FINAL\solr-8.7.0\server\solr\repository], dataDir=[C:\xampp\htdocs\FINAL\solr-8.7.0\server\solr\repository\data\]
-2021-01-26 20:47:42.352 INFO  (qtp892083096-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=493
-2021-01-26 20:47:43.371 INFO  (qtp892083096-43) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1611694063042} status=0 QTime=1
-2021-01-26 20:47:43.529 INFO  (qtp892083096-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1611694063042} status=0 QTime=153
-2021-01-26 20:47:43.530 INFO  (qtp892083096-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1611694063042} status=0 QTime=154
-2021-01-26 20:47:44.432 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.7.0
-2021-01-26 20:47:44.505 WARN  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.s.ManagedIndexSchemaFactory The schema has been upgraded to managed, but the non-managed schema schema.xml is still loadable.  PLEASE REMOVE THIS FILE.
-2021-01-26 20:47:44.525 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.s.IndexSchema Schema name=default-config
-2021-01-26 20:47:45.598 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
-2021-01-26 20:47:45.988 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.c.CoreContainer Creating SolrCore 'start' using configuration from instancedir C:\xampp\htdocs\FINAL\solr-8.7.0\server\solr\start, trusted=true
-2021-01-26 20:47:45.989 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.start' (registry 'solr.core.start') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@4201c465
-2021-01-26 20:47:45.989 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.c.SolrCore [[start] ] Opening new SolrCore at [C:\xampp\htdocs\FINAL\solr-8.7.0\server\solr\start], dataDir=[C:\xampp\htdocs\FINAL\solr-8.7.0\server\solr\start\data\]
-2021-01-26 20:47:48.494 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2021-01-26 20:47:48.494 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2021-01-26 20:47:48.569 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
-2021-01-26 20:47:48.569 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2021-01-26 20:47:49.312 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\xampp\htdocs\FINAL\solr-8.7.0\server\solr\repository\conf
-2021-01-26 20:47:49.360 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
-2021-01-26 20:47:49.372 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
-2021-01-26 20:47:49.385 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
-2021-01-26 20:47:49.444 INFO  (searcherExecutor-15-thread-1-processing-x:repository) [   x:repository] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2021-01-26 20:47:49.444 INFO  (searcherExecutor-15-thread-1-processing-x:repository) [   x:repository] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2021-01-26 20:47:49.454 INFO  (searcherExecutor-15-thread-1-processing-x:repository) [   x:repository] o.a.s.c.SolrCore [repository]  Registered new searcher autowarm time: 0 ms
-2021-01-26 20:47:50.649 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2021-01-26 20:47:50.650 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2021-01-26 20:47:50.662 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
-2021-01-26 20:47:50.662 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2021-01-26 20:47:50.721 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\xampp\htdocs\FINAL\solr-8.7.0\server\solr\start\conf
-2021-01-26 20:47:50.722 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
-2021-01-26 20:47:50.722 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
-2021-01-26 20:47:50.723 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
-2021-01-26 20:47:50.723 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=attr_text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,payloadField=address}
-2021-01-26 20:47:50.733 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
-2021-01-26 20:47:52.632 INFO  (qtp892083096-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1611694072473} status=0 QTime=0
-2021-01-26 20:47:52.753 INFO  (qtp892083096-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1611694072473} status=0 QTime=122
-2021-01-26 20:47:52.754 INFO  (qtp892083096-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1611694072473} status=0 QTime=121
-2021-01-26 20:47:52.791 INFO  (searcherExecutor-18-thread-1-processing-x:start) [   x:start] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2021-01-26 20:47:52.791 INFO  (searcherExecutor-18-thread-1-processing-x:start) [   x:start] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2021-01-26 20:47:52.791 INFO  (searcherExecutor-18-thread-1-processing-x:start) [   x:start] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2021-01-26 20:47:52.791 INFO  (searcherExecutor-18-thread-1-processing-x:start) [   x:start] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: wordbreak
-2021-01-26 20:47:52.799 INFO  (searcherExecutor-18-thread-1-processing-x:start) [   x:start] o.a.s.c.SolrCore [start]  Registered new searcher autowarm time: 0 ms
-2021-01-26 20:57:02.483 INFO  (qtp892083096-25) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=w**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=105
-2021-01-26 20:57:02.530 INFO  (qtp892083096-23) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=wd**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=153
-2021-01-26 20:57:02.530 INFO  (qtp892083096-42) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=wda**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=144
-2021-01-26 20:57:02.541 INFO  (qtp892083096-19) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=wdad**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=68
-2021-01-26 20:57:02.658 INFO  (qtp892083096-20) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=wdad&df=attr_text&spellcheck=on&wt=json} hits=0 status=0 QTime=27
-2021-01-26 20:57:02.661 INFO  (qtp892083096-42) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*wdad*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=0 status=0 QTime=22
-2021-01-26 20:57:02.661 INFO  (qtp892083096-24) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*wdad*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=0 status=0 QTime=13
-2021-01-26 20:57:06.603 INFO  (qtp892083096-19) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=wda**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=3
-2021-01-26 20:57:10.846 INFO  (qtp892083096-27) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1611694630749} status=0 QTime=0
-2021-01-26 20:57:10.949 INFO  (qtp892083096-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1611694630749} status=0 QTime=93
-2021-01-26 20:57:10.950 INFO  (qtp892083096-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1611694630749} status=0 QTime=93
-2021-01-26 20:57:12.405 INFO  (qtp892083096-26) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1611694630749&ts=1611694630749} status=503 QTime=3
-2021-01-26 20:57:12.405 INFO  (qtp892083096-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1611694630749} status=0 QTime=0
-2021-01-26 20:57:12.418 INFO  (qtp892083096-53) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/replication params={wt=json&command=details&_=1611694632384} status=0 QTime=17
-2021-01-26 20:57:12.429 INFO  (qtp892083096-42) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1611694632384} status=0 QTime=28
-2021-01-26 20:57:12.521 INFO  (qtp892083096-41) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/admin/system params={wt=json&_=1611694632384} status=0 QTime=120
-2021-01-26 20:57:12.522 INFO  (qtp892083096-27) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1611694630749} status=0 QTime=116
-2021-01-26 20:57:18.354 INFO  (qtp892083096-25) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=da**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=1
-2021-01-26 20:57:18.858 INFO  (qtp892083096-24) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=a**&df=attr_title&wt=json&wt=json} hits=1 status=0 QTime=13
-2021-01-26 20:57:19.632 INFO  (qtp892083096-26) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=U**&df=attr_title&wt=json&wt=json} hits=4 status=0 QTime=1
-2021-01-26 20:57:19.802 INFO  (qtp892083096-52) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=UA**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=1
-2021-01-26 20:57:20.624 INFO  (qtp892083096-25) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=U**&df=attr_title&wt=json&wt=json} hits=4 status=0 QTime=0
-2021-01-26 20:57:22.861 INFO  (qtp892083096-41) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=776
-2021-01-26 20:57:25.295 INFO  (qtp892083096-25) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=63
-2021-01-26 20:57:25.298 INFO  (qtp892083096-24) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=72
-2021-01-26 21:01:06.403 INFO  (qtp892083096-53) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=45
-2021-01-26 21:01:06.468 INFO  (qtp892083096-42) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=40
-2021-01-26 21:01:43.791 INFO  (qtp892083096-20) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=25
-2021-01-26 21:01:43.851 INFO  (qtp892083096-53) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=37
-2021-01-26 21:02:10.472 INFO  (qtp892083096-52) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=44
-2021-01-26 21:02:10.473 INFO  (qtp892083096-42) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=45
-2021-01-26 21:03:18.767 INFO  (qtp892083096-20) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=28
-2021-01-26 21:03:18.817 INFO  (qtp892083096-25) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=31
-2021-01-26 21:03:53.891 INFO  (qtp892083096-42) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=33
-2021-01-26 21:03:53.893 INFO  (qtp892083096-52) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=36
-2021-01-26 21:04:01.672 INFO  (qtp892083096-20) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=31
-2021-01-26 21:04:01.674 INFO  (qtp892083096-53) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=32
-2021-01-26 21:04:15.202 INFO  (qtp892083096-19) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=30
-2021-01-26 21:04:15.208 INFO  (qtp892083096-42) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=31
-2021-01-26 21:04:23.347 INFO  (qtp892083096-53) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=24
-2021-01-26 21:04:23.347 INFO  (qtp892083096-41) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=24
-2021-01-26 21:08:39.450 INFO  (qtp892083096-19) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=21
-2021-01-26 21:08:39.500 INFO  (qtp892083096-20) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=28
-2021-01-26 21:09:17.926 INFO  (qtp892083096-52) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=22
-2021-01-26 21:09:17.967 INFO  (qtp892083096-58) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=23
-2021-01-26 21:09:20.372 INFO  (qtp892083096-25) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=26
-2021-01-26 21:09:20.381 INFO  (qtp892083096-20) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=25
-2021-01-26 21:16:11.719 INFO  (qtp892083096-55) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=27
-2021-01-26 21:16:11.759 INFO  (qtp892083096-56) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=21
-2021-01-26 21:16:42.652 INFO  (qtp892083096-52) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=19
-2021-01-26 21:16:42.668 INFO  (qtp892083096-55) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=25
-2021-01-26 21:19:16.216 INFO  (qtp892083096-52) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=21
-2021-01-26 21:19:16.240 INFO  (qtp892083096-20) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=21
-2021-01-26 21:19:40.752 INFO  (qtp892083096-19) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=27
-2021-01-26 21:19:40.758 INFO  (qtp892083096-27) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=24
-2021-01-26 21:21:40.626 INFO  (qtp892083096-24) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=22
-2021-01-26 21:21:40.627 INFO  (qtp892083096-20) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=26
-2021-01-26 21:22:16.774 INFO  (qtp892083096-27) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=19
-2021-01-26 21:22:16.776 INFO  (qtp892083096-58) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=25
-2021-01-26 21:24:29.968 INFO  (qtp892083096-42) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=24
-2021-01-26 21:24:29.969 INFO  (qtp892083096-24) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=26
-2021-01-26 21:24:45.018 INFO  (qtp892083096-27) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=24
-2021-01-26 21:24:45.021 INFO  (qtp892083096-20) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=26
-2021-01-26 21:25:12.178 INFO  (qtp892083096-52) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=19
-2021-01-26 21:25:12.178 INFO  (qtp892083096-24) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=20
-2021-01-26 21:26:51.494 INFO  (qtp892083096-20) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=42
-2021-01-26 21:26:51.504 INFO  (qtp892083096-27) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=42
-2021-01-26 21:27:31.135 INFO  (qtp892083096-52) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=23
-2021-01-26 21:27:31.138 INFO  (qtp892083096-20) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=23
-2021-01-26 21:29:05.905 INFO  (qtp892083096-23) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=19
-2021-01-26 21:29:05.906 INFO  (qtp892083096-27) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=20
-2021-01-26 21:30:28.433 INFO  (qtp892083096-19) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=19
-2021-01-26 21:30:28.435 INFO  (qtp892083096-20) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=17
-2021-01-26 21:30:48.132 INFO  (qtp892083096-23) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=22
-2021-01-26 21:30:48.132 INFO  (qtp892083096-27) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=22
-2021-01-26 21:31:20.402 INFO  (qtp892083096-55) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=20
-2021-01-26 21:31:20.403 INFO  (qtp892083096-27) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=21
-2021-01-26 21:32:20.016 INFO  (qtp892083096-55) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=17
-2021-01-26 21:32:20.052 INFO  (qtp892083096-23) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=21
-2021-01-26 21:32:37.937 INFO  (qtp892083096-24) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=22
-2021-01-26 21:32:37.940 INFO  (qtp892083096-52) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=24
-2021-01-26 21:33:42.940 INFO  (qtp892083096-23) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=21
-2021-01-26 21:33:42.979 INFO  (qtp892083096-19) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=21
-2021-01-26 21:34:47.517 INFO  (qtp892083096-55) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=20
-2021-01-26 21:34:47.519 INFO  (qtp892083096-61) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=23
-2021-01-26 21:35:16.432 INFO  (qtp892083096-23) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=e**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=0
-2021-01-26 21:35:17.993 INFO  (qtp892083096-20) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=u**&df=attr_title&wt=json&wt=json} hits=4 status=0 QTime=0
-2021-01-26 21:35:18.251 INFO  (qtp892083096-19) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=ua**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=2
-2021-01-26 21:35:19.028 INFO  (qtp892083096-55) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=u**&df=attr_title&wt=json&wt=json} hits=4 status=0 QTime=0
-2021-01-26 21:35:20.988 INFO  (qtp892083096-52) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=24
-2021-01-26 21:35:22.952 INFO  (qtp892083096-19) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=22
-2021-01-26 21:35:22.956 INFO  (qtp892083096-52) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=22
-2021-01-26 21:36:47.524 INFO  (qtp892083096-62) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=16
-2021-01-26 21:36:47.559 INFO  (qtp892083096-55) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=19
-2021-01-26 21:39:52.372 INFO  (qtp892083096-42) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=20
-2021-01-26 21:39:52.381 INFO  (qtp892083096-61) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=18
-2021-01-26 21:40:52.124 INFO  (qtp892083096-52) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=14
-2021-01-26 21:40:52.153 INFO  (qtp892083096-20) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=14
-2021-01-26 21:41:18.763 INFO  (qtp892083096-62) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=14
-2021-01-26 21:41:18.798 INFO  (qtp892083096-52) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=17
-2021-01-26 21:42:32.907 INFO  (qtp892083096-20) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=15
-2021-01-26 21:42:32.943 INFO  (qtp892083096-23) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=20
-2021-01-26 21:43:02.987 INFO  (qtp892083096-52) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=19
-2021-01-26 21:43:02.988 INFO  (qtp892083096-20) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=20
-2021-01-26 21:44:37.947 INFO  (qtp892083096-55) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=16
-2021-01-26 21:44:37.981 INFO  (qtp892083096-20) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=20
-2021-01-26 21:45:38.650 INFO  (qtp892083096-24) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=20
-2021-01-26 21:45:38.651 INFO  (qtp892083096-23) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=21
-2021-01-26 21:46:02.224 INFO  (qtp892083096-61) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=28
-2021-01-26 21:46:02.224 INFO  (qtp892083096-55) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=29
-2021-01-26 21:46:16.131 INFO  (qtp892083096-23) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=16
-2021-01-26 21:46:16.142 INFO  (qtp892083096-55) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=17
+2021-01-26 23:27:31.278 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.27.v20200227; built: 2020-02-27T18:37:21.340Z; git: a304fd9f351f337e7c0e2a7c28878dd536149c6c; jvm 1.8.0-25-microsoft-b00
+2021-01-26 23:27:31.351 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///C:/xampp/htdocs/FINAL/solr-8.7.0/server/contexts/] at interval 0
+2021-01-26 23:27:32.475 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2021-01-26 23:27:32.507 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2021-01-26 23:27:32.507 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2021-01-26 23:27:32.517 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 660000ms
+2021-01-26 23:27:32.712 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2021-01-26 23:27:33.057 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.7.0
+2021-01-26 23:27:33.057 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2021-01-26 23:27:33.057 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: C:\xampp\htdocs\FINAL\solr-8.7.0
+2021-01-26 23:27:33.066 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2021-01-26T23:27:33.066Z
+2021-01-26 23:27:33.160 INFO  (main) [   ] o.a.s.c.SolrPaths Using system property solr.solr.home: C:\xampp\htdocs\FINAL\solr-8.7.0\server\solr
+2021-01-26 23:27:33.210 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from C:\xampp\htdocs\FINAL\solr-8.7.0\server\solr\solr.xml
+2021-01-26 23:27:34.053 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@71b1176b, but no JMX reporters were configured - adding default JMX reporter.
+2021-01-26 23:27:35.576 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2021-01-26 23:27:35.986 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@242aa8d9[provider=null,keyStore=null,trustStore=null]
+2021-01-26 23:27:35.986 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@242aa8d9[provider=null,keyStore=null,trustStore=null]
+2021-01-26 23:27:36.183 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@5fd62371[provider=null,keyStore=null,trustStore=null]
+2021-01-26 23:27:36.184 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@5fd62371[provider=null,keyStore=null,trustStore=null]
+2021-01-26 23:27:36.539 WARN  (main) [   ] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2021-01-26 23:27:41.699 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2021-01-26 23:27:41.733 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2021-01-26 23:27:42.054 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@71b1176b
+2021-01-26 23:27:42.055 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@71b1176b
+2021-01-26 23:27:42.065 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@71b1176b
+2021-01-26 23:27:42.181 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 2 core definitions underneath C:\xampp\htdocs\FINAL\solr-8.7.0\server\solr
+2021-01-26 23:27:42.181 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [repository, start]
+2021-01-26 23:27:42.328 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.7.0
+2021-01-26 23:27:42.489 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.c.SolrResourceLoader Added 49 libs to classloader, from paths: [/C:/xampp/htdocs/FINAL/solr-8.7.0/contrib/extraction/lib, /C:/xampp/htdocs/FINAL/solr-8.7.0/dist]
+2021-01-26 23:27:42.807 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.s.IndexSchema Schema name=default-config
+2021-01-26 23:27:43.983 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@783a467b{/solr,file:///C:/xampp/htdocs/FINAL/solr-8.7.0/server/solr-webapp/webapp/,AVAILABLE}{C:\xampp\htdocs\FINAL\solr-8.7.0\server/solr-webapp/webapp}
+2021-01-26 23:27:44.015 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@4f67eb2a{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
+2021-01-26 23:27:44.015 INFO  (main) [   ] o.e.j.s.Server Started @23138ms
+2021-01-26 23:27:44.194 WARN  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
+2021-01-26 23:27:44.194 WARN  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
+2021-01-26 23:27:44.194 WARN  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
+2021-01-26 23:27:44.194 WARN  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
+2021-01-26 23:27:44.194 WARN  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
+2021-01-26 23:27:44.973 INFO  (qtp1199673596-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=218
+2021-01-26 23:27:45.422 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-01-26 23:27:45.487 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.c.CoreContainer Creating SolrCore 'repository' using configuration from instancedir C:\xampp\htdocs\FINAL\solr-8.7.0\server\solr\repository, trusted=true
+2021-01-26 23:27:45.524 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.repository' (registry 'solr.core.repository') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@71b1176b
+2021-01-26 23:27:45.572 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.c.SolrCore [[repository] ] Opening new SolrCore at [C:\xampp\htdocs\FINAL\solr-8.7.0\server\solr\repository], dataDir=[C:\xampp\htdocs\FINAL\solr-8.7.0\server\solr\repository\data\]
+2021-01-26 23:27:45.910 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.7.0
+2021-01-26 23:27:46.036 WARN  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.s.ManagedIndexSchemaFactory The schema has been upgraded to managed, but the non-managed schema schema.xml is still loadable.  PLEASE REMOVE THIS FILE.
+2021-01-26 23:27:46.093 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.s.IndexSchema Schema name=default-config
+2021-01-26 23:27:46.977 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-01-26 23:27:47.221 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.c.CoreContainer Creating SolrCore 'start' using configuration from instancedir C:\xampp\htdocs\FINAL\solr-8.7.0\server\solr\start, trusted=true
+2021-01-26 23:27:47.221 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.start' (registry 'solr.core.start') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@71b1176b
+2021-01-26 23:27:47.222 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.c.SolrCore [[start] ] Opening new SolrCore at [C:\xampp\htdocs\FINAL\solr-8.7.0\server\solr\start], dataDir=[C:\xampp\htdocs\FINAL\solr-8.7.0\server\solr\start\data\]
+2021-01-26 23:27:52.643 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2021-01-26 23:27:52.643 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2021-01-26 23:27:52.643 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2021-01-26 23:27:52.643 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2021-01-26 23:27:52.775 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2021-01-26 23:27:52.775 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2021-01-26 23:27:53.094 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2021-01-26 23:27:53.094 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2021-01-26 23:27:54.361 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\xampp\htdocs\FINAL\solr-8.7.0\server\solr\repository\conf
+2021-01-26 23:27:54.555 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\xampp\htdocs\FINAL\solr-8.7.0\server\solr\start\conf
+2021-01-26 23:27:54.738 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2021-01-26 23:27:54.739 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2021-01-26 23:27:54.761 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2021-01-26 23:27:54.761 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2021-01-26 23:27:54.763 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2021-01-26 23:27:54.763 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=attr_text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,payloadField=address}
+2021-01-26 23:27:54.791 INFO  (coreLoadExecutor-13-thread-1) [   x:repository] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2021-01-26 23:27:54.791 INFO  (coreLoadExecutor-13-thread-2) [   x:start] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2021-01-26 23:27:54.807 INFO  (searcherExecutor-15-thread-1-processing-x:repository) [   x:repository] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-01-26 23:27:54.807 INFO  (searcherExecutor-15-thread-1-processing-x:repository) [   x:repository] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2021-01-26 23:27:54.819 INFO  (searcherExecutor-15-thread-1-processing-x:repository) [   x:repository] o.a.s.c.SolrCore [repository]  Registered new searcher autowarm time: 0 ms
+2021-01-26 23:27:57.229 INFO  (searcherExecutor-18-thread-1-processing-x:start) [   x:start] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-01-26 23:27:57.230 INFO  (searcherExecutor-18-thread-1-processing-x:start) [   x:start] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2021-01-26 23:27:57.230 INFO  (searcherExecutor-18-thread-1-processing-x:start) [   x:start] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2021-01-26 23:27:57.230 INFO  (searcherExecutor-18-thread-1-processing-x:start) [   x:start] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: wordbreak
+2021-01-26 23:27:57.235 INFO  (searcherExecutor-18-thread-1-processing-x:start) [   x:start] o.a.s.c.SolrCore [start]  Registered new searcher autowarm time: 0 ms
+2021-01-26 23:42:57.984 INFO  (qtp1199673596-17) [   x:start] o.a.s.u.p.LogUpdateProcessorFactory [start]  webapp=/solr path=/update params={}{deleteByQuery=*:* (-1689994739294666752)} 0 459
+2021-01-26 23:42:58.450 INFO  (searcherExecutor-18-thread-1-processing-x:start) [   x:start] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-01-26 23:42:58.484 INFO  (searcherExecutor-18-thread-1-processing-x:start) [   x:start] o.a.s.c.SolrCore [start]  Registered new searcher autowarm time: 5 ms
+2021-01-26 23:42:58.574 INFO  (qtp1199673596-18) [   x:start] o.a.s.u.p.LogUpdateProcessorFactory [start]  webapp=/solr path=/update params={commit=true}{commit=} 0 551
+2021-01-26 23:43:14.794 INFO  (qtp1199673596-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1611704594327} status=0 QTime=3
+2021-01-26 23:43:14.903 INFO  (qtp1199673596-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1611704594328} status=0 QTime=111
+2021-01-26 23:43:36.178 INFO  (qtp1199673596-23) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=*&df=attr_text&hl=true&hl.fl=attr_text&wt=json&_=1611704594667} hits=0 status=0 QTime=273
+2021-01-26 23:44:10.913 INFO  (qtp1199673596-23) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=*&df=attr_text&hl=true&hl.fl=attr_text&wt=json&_=1611704594667} hits=0 status=0 QTime=1
+2021-01-26 23:48:49.853 INFO  (searcherExecutor-18-thread-1-processing-x:start) [   x:start] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-01-26 23:48:49.866 INFO  (searcherExecutor-18-thread-1-processing-x:start) [   x:start] o.a.s.c.SolrCore [start]  Registered new searcher autowarm time: 0 ms
+2021-01-26 23:48:49.866 INFO  (qtp1199673596-19) [   x:start] o.a.s.u.p.LogUpdateProcessorFactory [start]  webapp=/solr path=/update/extract params={commit=true}{add=[940acd87-cae3-4481-9f1e-e91a78512c4d (1689995107368960000)],commit=} 0 2038
+2021-01-26 23:49:03.726 INFO  (searcherExecutor-18-thread-1-processing-x:start) [   x:start] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-01-26 23:49:03.732 INFO  (searcherExecutor-18-thread-1-processing-x:start) [   x:start] o.a.s.c.SolrCore [start]  Registered new searcher autowarm time: 0 ms
+2021-01-26 23:49:03.733 INFO  (qtp1199673596-18) [   x:start] o.a.s.u.p.LogUpdateProcessorFactory [start]  webapp=/solr path=/update/extract params={commit=true}{add=[5993652a-3bba-4a9c-bbed-6f805967a50b (1689995122286002176)],commit=} 0 1351
+2021-01-26 23:49:06.467 INFO  (searcherExecutor-18-thread-1-processing-x:start) [   x:start] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-01-26 23:49:06.470 INFO  (searcherExecutor-18-thread-1-processing-x:start) [   x:start] o.a.s.c.SolrCore [start]  Registered new searcher autowarm time: 0 ms
+2021-01-26 23:49:06.471 INFO  (qtp1199673596-19) [   x:start] o.a.s.u.p.LogUpdateProcessorFactory [start]  webapp=/solr path=/update/extract params={commit=true}{add=[cb3bfe5d-67b6-4867-9d11-f4f077ed2906 (1689995125072068608)],commit=} 0 1505
+2021-01-26 23:49:08.713 INFO  (searcherExecutor-18-thread-1-processing-x:start) [   x:start] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-01-26 23:49:08.718 INFO  (searcherExecutor-18-thread-1-processing-x:start) [   x:start] o.a.s.c.SolrCore [start]  Registered new searcher autowarm time: 0 ms
+2021-01-26 23:49:08.723 INFO  (qtp1199673596-18) [   x:start] o.a.s.u.p.LogUpdateProcessorFactory [start]  webapp=/solr path=/update/extract params={commit=true}{add=[3e3525ed-968c-441c-a431-033bbb04eb5c (1689995126579920896)],commit=} 0 1718
+2021-01-26 23:49:12.610 INFO  (searcherExecutor-18-thread-1-processing-x:start) [   x:start] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-01-26 23:49:12.616 INFO  (searcherExecutor-18-thread-1-processing-x:start) [   x:start] o.a.s.c.SolrCore [start]  Registered new searcher autowarm time: 0 ms
+2021-01-26 23:49:12.617 INFO  (qtp1199673596-19) [   x:start] o.a.s.u.p.LogUpdateProcessorFactory [start]  webapp=/solr path=/update/extract params={commit=true}{add=[41ab69ff-dc91-4e2c-bfbc-853e9790c424 (1689995131486208000)],commit=} 0 914
+2021-01-26 23:49:16.964 INFO  (searcherExecutor-18-thread-1-processing-x:start) [   x:start] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-01-26 23:49:16.970 INFO  (searcherExecutor-18-thread-1-processing-x:start) [   x:start] o.a.s.c.SolrCore [start]  Registered new searcher autowarm time: 0 ms
+2021-01-26 23:49:16.971 INFO  (qtp1199673596-18) [   x:start] o.a.s.u.p.LogUpdateProcessorFactory [start]  webapp=/solr path=/update/extract params={commit=true}{add=[a8fd437c-e3e8-4203-890b-45de2e6ccc43 (1689995135098552320)],commit=} 0 1799
+2021-01-26 23:49:47.838 INFO  (qtp1199673596-25) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=*&df=attr_text&hl=true&hl.fl=attr_text&wt=json&_=1611704594667} hits=6 status=0 QTime=718
+2021-01-26 23:50:08.868 INFO  (qtp1199673596-19) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=*&df=attr_text&hl=true&hl.fl=attr_text&wt=json&_=1611704594667} hits=6 status=0 QTime=39
+2021-01-26 23:50:10.975 INFO  (qtp1199673596-25) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=*&df=attr_text&hl=true&hl.fl=attr_text&wt=json&_=1611704594667} hits=6 status=0 QTime=34
+2021-01-26 23:50:16.713 INFO  (qtp1199673596-19) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=*&df=attr_text&hl=true&hl.fl=attr_text&wt=json&_=1611704594667} hits=6 status=0 QTime=20
+2021-01-26 23:50:17.183 INFO  (qtp1199673596-25) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=*&df=attr_text&hl=true&hl.fl=attr_text&wt=json&_=1611704594667} hits=6 status=0 QTime=23
+2021-01-26 23:51:54.293 INFO  (qtp1199673596-45) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=m**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=138
+2021-01-26 23:51:54.334 INFO  (qtp1199673596-22) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=me**&df=attr_title&wt=json&wt=json} hits=2 status=0 QTime=90
+2021-01-26 23:51:54.360 INFO  (qtp1199673596-18) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=mer**&df=attr_title&wt=json&wt=json} hits=2 status=0 QTime=4
+2021-01-26 23:51:54.523 INFO  (qtp1199673596-19) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=meri**&df=attr_title&wt=json&wt=json} hits=2 status=0 QTime=123
+2021-01-26 23:51:54.661 INFO  (qtp1199673596-45) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=merid**&df=attr_title&wt=json&wt=json} hits=2 status=0 QTime=48
+2021-01-26 23:51:54.893 INFO  (qtp1199673596-22) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=merida**&df=attr_title&wt=json&wt=json} hits=2 status=0 QTime=9
+2021-01-26 23:51:55.213 INFO  (qtp1199673596-18) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=merida&df=attr_text&spellcheck=on&wt=json} hits=4 status=0 QTime=7
+2021-01-26 23:51:55.763 INFO  (qtp1199673596-19) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=4 status=0 QTime=529
+2021-01-26 23:51:55.869 INFO  (qtp1199673596-16) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=4 status=0 QTime=55
+2021-01-26 23:52:10.320 INFO  (qtp1199673596-45) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)OR(*marista*)OR(*de*)OR(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=6 status=0 QTime=236
+2021-01-26 23:53:06.543 INFO  (qtp1199673596-18) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=m**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=5
+2021-01-26 23:53:07.107 WARN  (qtp1199673596-16) [   ] o.e.j.s.HttpChannel /solr/start/selectCheck => org.apache.solr.common.SolrException: URLDecoder: The query string contains a not-%-escaped byte > 127 at position 17
+	at org.apache.solr.servlet.SolrRequestParsers$2.read(SolrRequestParsers.java:305)
+org.apache.solr.common.SolrException: URLDecoder: The query string contains a not-%-escaped byte > 127 at position 17
+	at org.apache.solr.servlet.SolrRequestParsers$2.read(SolrRequestParsers.java:305) ~[?:?]
+	at org.apache.solr.servlet.SolrRequestParsers.parseFormDataContent(SolrRequestParsers.java:337) ~[?:?]
+	at org.apache.solr.servlet.SolrRequestParsers.parseQueryString(SolrRequestParsers.java:314) ~[?:?]
+	at org.apache.solr.servlet.SolrRequestParsers.parseQueryString(SolrRequestParsers.java:284) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.<init>(HttpSolrCall.java:195) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.getHttpSolrCall(SolrDispatchFilter.java:473) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:412) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:345) ~[?:?]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1596) ~[jetty-servlet-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:545) ~[jetty-servlet-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:590) ~[jetty-security-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1610) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1300) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485) ~[jetty-servlet-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1580) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1215) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:221) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.Server.handle(Server.java:500) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103) ~[jetty-io-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117) ~[jetty-io-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:375) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0-25]
+2021-01-26 23:53:07.302 WARN  (qtp1199673596-45) [   ] o.e.j.s.HttpChannel /solr/start/selectCheck => org.apache.solr.common.SolrException: URLDecoder: The query string contains a not-%-escaped byte > 127 at position 17
+	at org.apache.solr.servlet.SolrRequestParsers$2.read(SolrRequestParsers.java:305)
+org.apache.solr.common.SolrException: URLDecoder: The query string contains a not-%-escaped byte > 127 at position 17
+	at org.apache.solr.servlet.SolrRequestParsers$2.read(SolrRequestParsers.java:305) ~[?:?]
+	at org.apache.solr.servlet.SolrRequestParsers.parseFormDataContent(SolrRequestParsers.java:337) ~[?:?]
+	at org.apache.solr.servlet.SolrRequestParsers.parseQueryString(SolrRequestParsers.java:314) ~[?:?]
+	at org.apache.solr.servlet.SolrRequestParsers.parseQueryString(SolrRequestParsers.java:284) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.<init>(HttpSolrCall.java:195) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.getHttpSolrCall(SolrDispatchFilter.java:473) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:412) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:345) ~[?:?]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1596) ~[jetty-servlet-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:545) ~[jetty-servlet-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:590) ~[jetty-security-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1610) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1300) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485) ~[jetty-servlet-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1580) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1215) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:221) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.Server.handle(Server.java:500) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103) ~[jetty-io-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117) ~[jetty-io-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:375) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0-25]
+2021-01-26 23:53:07.476 WARN  (qtp1199673596-25) [   ] o.e.j.s.HttpChannel /solr/start/selectCheck => org.apache.solr.common.SolrException: URLDecoder: The query string contains a not-%-escaped byte > 127 at position 17
+	at org.apache.solr.servlet.SolrRequestParsers$2.read(SolrRequestParsers.java:305)
+org.apache.solr.common.SolrException: URLDecoder: The query string contains a not-%-escaped byte > 127 at position 17
+	at org.apache.solr.servlet.SolrRequestParsers$2.read(SolrRequestParsers.java:305) ~[?:?]
+	at org.apache.solr.servlet.SolrRequestParsers.parseFormDataContent(SolrRequestParsers.java:337) ~[?:?]
+	at org.apache.solr.servlet.SolrRequestParsers.parseQueryString(SolrRequestParsers.java:314) ~[?:?]
+	at org.apache.solr.servlet.SolrRequestParsers.parseQueryString(SolrRequestParsers.java:284) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.<init>(HttpSolrCall.java:195) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.getHttpSolrCall(SolrDispatchFilter.java:473) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:412) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:345) ~[?:?]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1596) ~[jetty-servlet-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:545) ~[jetty-servlet-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:590) ~[jetty-security-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1610) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1300) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485) ~[jetty-servlet-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1580) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1215) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:221) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.Server.handle(Server.java:500) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103) ~[jetty-io-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117) ~[jetty-io-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:375) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0-25]
+2021-01-26 23:53:07.558 WARN  (qtp1199673596-19) [   ] o.e.j.s.HttpChannel /solr/start/selectCheck => org.apache.solr.common.SolrException: URLDecoder: The query string contains a not-%-escaped byte > 127 at position 17
+	at org.apache.solr.servlet.SolrRequestParsers$2.read(SolrRequestParsers.java:305)
+org.apache.solr.common.SolrException: URLDecoder: The query string contains a not-%-escaped byte > 127 at position 17
+	at org.apache.solr.servlet.SolrRequestParsers$2.read(SolrRequestParsers.java:305) ~[?:?]
+	at org.apache.solr.servlet.SolrRequestParsers.parseFormDataContent(SolrRequestParsers.java:337) ~[?:?]
+	at org.apache.solr.servlet.SolrRequestParsers.parseQueryString(SolrRequestParsers.java:314) ~[?:?]
+	at org.apache.solr.servlet.SolrRequestParsers.parseQueryString(SolrRequestParsers.java:284) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.<init>(HttpSolrCall.java:195) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.getHttpSolrCall(SolrDispatchFilter.java:473) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:412) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:345) ~[?:?]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1596) ~[jetty-servlet-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:545) ~[jetty-servlet-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:590) ~[jetty-security-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1610) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1300) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485) ~[jetty-servlet-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1580) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1215) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:221) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.Server.handle(Server.java:500) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103) ~[jetty-io-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117) ~[jetty-io-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:375) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0-25]
+2021-01-26 23:53:07.668 WARN  (qtp1199673596-18) [   ] o.e.j.s.HttpChannel /solr/start/selectCheck => org.apache.solr.common.SolrException: URLDecoder: The query string contains a not-%-escaped byte > 127 at position 17
+	at org.apache.solr.servlet.SolrRequestParsers$2.read(SolrRequestParsers.java:305)
+org.apache.solr.common.SolrException: URLDecoder: The query string contains a not-%-escaped byte > 127 at position 17
+	at org.apache.solr.servlet.SolrRequestParsers$2.read(SolrRequestParsers.java:305) ~[?:?]
+	at org.apache.solr.servlet.SolrRequestParsers.parseFormDataContent(SolrRequestParsers.java:337) ~[?:?]
+	at org.apache.solr.servlet.SolrRequestParsers.parseQueryString(SolrRequestParsers.java:314) ~[?:?]
+	at org.apache.solr.servlet.SolrRequestParsers.parseQueryString(SolrRequestParsers.java:284) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.<init>(HttpSolrCall.java:195) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.getHttpSolrCall(SolrDispatchFilter.java:473) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:412) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:345) ~[?:?]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1596) ~[jetty-servlet-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:545) ~[jetty-servlet-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:590) ~[jetty-security-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1610) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1300) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485) ~[jetty-servlet-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1580) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1215) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:221) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.Server.handle(Server.java:500) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103) ~[jetty-io-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117) ~[jetty-io-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:375) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0-25]
+2021-01-26 23:53:08.106 INFO  (qtp1199673596-22) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=4 status=0 QTime=49
+2021-01-26 23:53:08.201 WARN  (qtp1199673596-48) [   ] o.e.j.s.HttpChannel /solr/start/selectCheck => org.apache.solr.common.SolrException: URLDecoder: The query string contains a not-%-escaped byte > 127 at position 16
+	at org.apache.solr.servlet.SolrRequestParsers$2.read(SolrRequestParsers.java:305)
+org.apache.solr.common.SolrException: URLDecoder: The query string contains a not-%-escaped byte > 127 at position 16
+	at org.apache.solr.servlet.SolrRequestParsers$2.read(SolrRequestParsers.java:305) ~[?:?]
+	at org.apache.solr.servlet.SolrRequestParsers.parseFormDataContent(SolrRequestParsers.java:337) ~[?:?]
+	at org.apache.solr.servlet.SolrRequestParsers.parseQueryString(SolrRequestParsers.java:314) ~[?:?]
+	at org.apache.solr.servlet.SolrRequestParsers.parseQueryString(SolrRequestParsers.java:284) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.<init>(HttpSolrCall.java:195) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.getHttpSolrCall(SolrDispatchFilter.java:473) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:412) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:345) ~[?:?]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1596) ~[jetty-servlet-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:545) ~[jetty-servlet-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:590) ~[jetty-security-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1610) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1300) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485) ~[jetty-servlet-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1580) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1215) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:221) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.Server.handle(Server.java:500) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273) ~[jetty-server-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103) ~[jetty-io-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117) ~[jetty-io-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:375) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938) ~[jetty-util-9.4.27.v20200227.jar:9.4.27.v20200227]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0-25]
+2021-01-26 23:53:08.276 INFO  (qtp1199673596-17) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=4 status=0 QTime=48
+2021-01-26 23:57:04.955 INFO  (qtp1199673596-16) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=m**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=3
+2021-01-26 23:57:07.236 INFO  (qtp1199673596-47) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=me**&df=attr_title&wt=json&wt=json} hits=2 status=0 QTime=4
+2021-01-26 23:57:07.423 INFO  (qtp1199673596-22) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=mer**&df=attr_title&wt=json&wt=json} hits=2 status=0 QTime=3
+2021-01-26 23:57:07.573 INFO  (qtp1199673596-17) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=meri**&df=attr_title&wt=json&wt=json} hits=2 status=0 QTime=15
+2021-01-26 23:57:07.673 INFO  (qtp1199673596-56) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=merid**&df=attr_title&wt=json&wt=json} hits=2 status=0 QTime=10
+2021-01-26 23:57:07.775 INFO  (qtp1199673596-47) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=merida**&df=attr_title&wt=json&wt=json} hits=2 status=0 QTime=3
+2021-01-26 23:57:07.938 INFO  (qtp1199673596-24) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=merida&df=attr_text&spellcheck=on&wt=json} hits=4 status=0 QTime=2
+2021-01-26 23:57:07.986 INFO  (qtp1199673596-22) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=4 status=0 QTime=64
+2021-01-26 23:57:08.093 INFO  (qtp1199673596-17) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=4 status=0 QTime=77
+2021-01-26 23:57:47.893 INFO  (qtp1199673596-56) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=m**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=2
+2021-01-26 23:57:48.118 INFO  (qtp1199673596-22) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=me**&df=attr_title&wt=json&wt=json} hits=2 status=0 QTime=3
+2021-01-26 23:57:48.288 INFO  (qtp1199673596-19) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=mer**&df=attr_title&wt=json&wt=json} hits=2 status=0 QTime=1
+2021-01-26 23:57:48.887 INFO  (qtp1199673596-17) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=meri**&df=attr_title&wt=json&wt=json} hits=2 status=0 QTime=12
+2021-01-26 23:57:49.373 INFO  (qtp1199673596-56) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=merid**&df=attr_title&wt=json&wt=json} hits=2 status=0 QTime=10
+2021-01-26 23:57:49.493 INFO  (qtp1199673596-22) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=merida**&df=attr_title&wt=json&wt=json} hits=2 status=0 QTime=2
+2021-01-26 23:57:49.955 INFO  (qtp1199673596-47) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=merida&df=attr_text&spellcheck=on&wt=json} hits=4 status=0 QTime=1
+2021-01-26 23:57:49.987 INFO  (qtp1199673596-19) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=4 status=0 QTime=39
+2021-01-26 23:57:50.055 INFO  (qtp1199673596-56) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=4 status=0 QTime=36
+2021-01-26 23:57:55.176 INFO  (qtp1199673596-22) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=merid**&df=attr_title&wt=json&wt=json} hits=2 status=0 QTime=11
+2021-01-26 23:57:55.684 INFO  (qtp1199673596-19) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=meri**&df=attr_title&wt=json&wt=json} hits=2 status=0 QTime=13
+2021-01-26 23:57:55.715 INFO  (qtp1199673596-47) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=mer**&df=attr_title&wt=json&wt=json} hits=2 status=0 QTime=3
+2021-01-26 23:57:55.742 INFO  (qtp1199673596-56) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=me**&df=attr_title&wt=json&wt=json} hits=2 status=0 QTime=2
+2021-01-26 23:57:55.763 INFO  (qtp1199673596-17) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=m**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=1
+2021-01-26 23:58:32.303 INFO  (qtp1199673596-22) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=m**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=2
+2021-01-26 23:58:32.429 INFO  (qtp1199673596-47) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=me**&df=attr_title&wt=json&wt=json} hits=2 status=0 QTime=3
+2021-01-26 23:58:32.554 INFO  (qtp1199673596-19) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=mer**&df=attr_title&wt=json&wt=json} hits=2 status=0 QTime=2
+2021-01-26 23:58:32.644 INFO  (qtp1199673596-17) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=meri**&df=attr_title&wt=json&wt=json} hits=2 status=0 QTime=12
+2021-01-26 23:58:32.791 INFO  (qtp1199673596-56) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=merid**&df=attr_title&wt=json&wt=json} hits=2 status=0 QTime=12
+2021-01-26 23:58:32.858 INFO  (qtp1199673596-47) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=merida**&df=attr_title&wt=json&wt=json} hits=2 status=0 QTime=3
+2021-01-26 23:58:32.986 INFO  (qtp1199673596-17) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=merida&df=attr_text&spellcheck=on&wt=json} hits=4 status=0 QTime=1
+2021-01-26 23:58:32.996 INFO  (qtp1199673596-19) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=4 status=0 QTime=25
+2021-01-26 23:58:33.065 INFO  (qtp1199673596-56) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=4 status=0 QTime=32
+2021-01-26 23:58:51.458 INFO  (qtp1199673596-47) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=m**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=1
+2021-01-26 23:58:51.752 INFO  (qtp1199673596-19) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=me**&df=attr_title&wt=json&wt=json} hits=2 status=0 QTime=1
+2021-01-26 23:58:52.359 INFO  (qtp1199673596-17) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=mer**&df=attr_title&wt=json&wt=json} hits=2 status=0 QTime=2
+2021-01-26 23:58:52.494 INFO  (qtp1199673596-56) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=meri**&df=attr_title&wt=json&wt=json} hits=2 status=0 QTime=7
+2021-01-26 23:58:52.608 INFO  (qtp1199673596-47) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=merid**&df=attr_title&wt=json&wt=json} hits=2 status=0 QTime=6
+2021-01-26 23:58:52.753 INFO  (qtp1199673596-22) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=merida**&df=attr_title&wt=json&wt=json} hits=2 status=0 QTime=1
+2021-01-26 23:58:52.902 INFO  (qtp1199673596-56) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=merida&df=attr_text&spellcheck=on&wt=json} hits=4 status=0 QTime=1
+2021-01-26 23:58:52.939 INFO  (qtp1199673596-17) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=4 status=0 QTime=30
+2021-01-26 23:58:52.978 INFO  (qtp1199673596-19) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=4 status=0 QTime=22
+2021-01-27 00:00:02.073 INFO  (qtp1199673596-47) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=h**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=3
+2021-01-27 00:00:02.174 INFO  (qtp1199673596-24) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=ho**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=3
+2021-01-27 00:00:02.339 INFO  (qtp1199673596-56) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=hol**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=3
+2021-01-27 00:00:02.473 INFO  (qtp1199673596-19) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=hola**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=7
+2021-01-27 00:00:02.840 INFO  (qtp1199673596-24) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=hola&df=attr_text&spellcheck=on&wt=json} hits=1 status=0 QTime=9
+2021-01-27 00:00:02.878 INFO  (qtp1199673596-47) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*hola*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=1 status=0 QTime=32
+2021-01-27 00:00:02.904 INFO  (qtp1199673596-56) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*hola*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=1 status=0 QTime=11
+2021-01-27 00:00:35.966 INFO  (qtp1199673596-19) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=a**&df=attr_title&wt=json&wt=json} hits=1 status=0 QTime=2
+2021-01-27 00:00:37.294 INFO  (qtp1199673596-47) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=ay**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=3
+2021-01-27 00:00:37.312 INFO  (qtp1199673596-17) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=ayy**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=4
+2021-01-27 00:00:37.322 INFO  (qtp1199673596-56) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=ayyd**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=9
+2021-01-27 00:00:37.328 INFO  (qtp1199673596-19) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=ayyda**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=7
+2021-01-27 00:00:37.338 INFO  (qtp1199673596-47) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=ayy**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=1
+2021-01-27 00:00:37.342 INFO  (qtp1199673596-22) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=ayyd**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=4
+2021-01-27 00:00:37.489 INFO  (qtp1199673596-24) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=ay**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=1
+2021-01-27 00:00:37.802 INFO  (qtp1199673596-19) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=ayu**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=2
+2021-01-27 00:00:37.857 INFO  (qtp1199673596-17) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=ayud**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=2
+2021-01-27 00:00:38.027 INFO  (qtp1199673596-22) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=ayuda**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=8
+2021-01-27 00:00:38.170 INFO  (qtp1199673596-24) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*ayuda*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=1 status=0 QTime=9
+2021-01-27 00:00:38.179 INFO  (qtp1199673596-19) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=ayuda&df=attr_text&spellcheck=on&wt=json} hits=0 status=0 QTime=3
+2021-01-27 00:00:38.186 INFO  (qtp1199673596-17) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*ayuda*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=1 status=0 QTime=5
+2021-01-27 00:01:54.907 INFO  (qtp1199673596-22) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=a**&df=attr_title&wt=json&wt=json} hits=1 status=0 QTime=1
+2021-01-27 00:01:55.281 INFO  (qtp1199673596-24) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=ay**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=3
+2021-01-27 00:01:55.414 INFO  (qtp1199673596-19) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=ayy**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=1
+2021-01-27 00:01:55.546 INFO  (qtp1199673596-17) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=ayyd**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=2
+2021-01-27 00:01:55.756 INFO  (qtp1199673596-22) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=ayyda**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=3
+2021-01-27 00:01:56.046 INFO  (qtp1199673596-24) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=ayyda&df=attr_text&spellcheck=on&wt=json} hits=0 status=0 QTime=3
+2021-01-27 00:01:56.050 INFO  (qtp1199673596-19) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*ayyda*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=0 status=0 QTime=7
+2021-01-27 00:01:56.064 INFO  (qtp1199673596-17) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*ayyda*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=0 status=0 QTime=3
+2021-01-27 00:01:58.926 INFO  (qtp1199673596-22) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=ayyd**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=3
+2021-01-27 00:01:59.413 INFO  (qtp1199673596-24) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=ayy**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=2
+2021-01-27 00:01:59.468 INFO  (qtp1199673596-19) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=ay**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=1
+2021-01-27 00:01:59.478 INFO  (qtp1199673596-17) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=a**&df=attr_title&wt=json&wt=json} hits=1 status=0 QTime=1
+2021-01-27 00:01:59.974 INFO  (qtp1199673596-56) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=a**&df=attr_title&wt=json&wt=json} hits=1 status=0 QTime=0
+2021-01-27 00:02:00.237 INFO  (qtp1199673596-24) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=ay**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=1
+2021-01-27 00:02:00.446 INFO  (qtp1199673596-22) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=ayu**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=0
+2021-01-27 00:02:00.647 INFO  (qtp1199673596-17) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=ayud**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=3
+2021-01-27 00:02:00.806 INFO  (qtp1199673596-56) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=ayuda**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=6
+2021-01-27 00:02:00.937 INFO  (qtp1199673596-22) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=ayuda&df=attr_text&spellcheck=on&wt=json} hits=0 status=0 QTime=4
+2021-01-27 00:02:00.949 INFO  (qtp1199673596-24) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*ayuda*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=1 status=0 QTime=11
+2021-01-27 00:02:00.975 INFO  (qtp1199673596-17) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*ayuda*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=1 status=0 QTime=8
+2021-01-27 00:03:21.132 INFO  (qtp1199673596-56) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=*&df=attr_text&hl=true&hl.fl=attr_text&wt=json&_=1611704594667} hits=6 status=0 QTime=13
+2021-01-27 00:03:40.537 INFO  (qtp1199673596-24) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=h**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=2
+2021-01-27 00:03:40.814 INFO  (qtp1199673596-22) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=ho**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=2
+2021-01-27 00:03:41.044 INFO  (qtp1199673596-19) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=hol**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=2
+2021-01-27 00:03:41.187 INFO  (qtp1199673596-17) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=hola**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=6
+2021-01-27 00:03:41.366 INFO  (qtp1199673596-24) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=hola&df=attr_text&spellcheck=on&wt=json} hits=1 status=0 QTime=1
+2021-01-27 00:03:41.386 INFO  (qtp1199673596-22) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*hola*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=1 status=0 QTime=7
+2021-01-27 00:03:41.429 INFO  (qtp1199673596-19) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*hola*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=1 status=0 QTime=7
+2021-01-27 00:07:25.823 INFO  (qtp1199673596-17) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=k**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=4
+2021-01-27 00:07:25.989 INFO  (qtp1199673596-24) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=ka**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=1
+2021-01-27 00:07:26.153 INFO  (qtp1199673596-56) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=kar**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=1
+2021-01-27 00:07:26.227 INFO  (qtp1199673596-19) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=kari**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=4
+2021-01-27 00:07:26.346 INFO  (qtp1199673596-17) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=karin**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=2
+2021-01-27 00:07:26.443 INFO  (qtp1199673596-24) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=karina**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=4
+2021-01-27 00:07:26.603 INFO  (qtp1199673596-57) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*karina*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=0 status=0 QTime=7
+2021-01-27 00:07:26.622 INFO  (qtp1199673596-19) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=karina&df=attr_text&spellcheck=on&wt=json} hits=0 status=0 QTime=2
+2021-01-27 00:07:26.630 INFO  (qtp1199673596-17) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*karina*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=0 status=0 QTime=3
+2021-01-27 00:07:29.431 INFO  (qtp1199673596-24) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=karin**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=5
+2021-01-27 00:07:30.633 INFO  (qtp1199673596-57) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=karinm**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=2
+2021-01-27 00:07:30.723 INFO  (qtp1199673596-19) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=karinme**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=3
+2021-01-27 00:07:30.863 INFO  (qtp1199673596-17) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=karinmer**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=6
+2021-01-27 00:07:30.953 INFO  (qtp1199673596-24) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=karinmeri**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=7
+2021-01-27 00:07:31.114 INFO  (qtp1199673596-57) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=karinmerid**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=4
+2021-01-27 00:07:31.175 INFO  (qtp1199673596-19) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=karinmerida**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=8
+2021-01-27 00:07:31.371 INFO  (qtp1199673596-17) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*karinmerida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=0 status=0 QTime=7
+2021-01-27 00:07:31.379 INFO  (qtp1199673596-24) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=karinmerida&df=attr_text&spellcheck=on&wt=json} hits=0 status=0 QTime=4
+2021-01-27 00:07:31.385 INFO  (qtp1199673596-57) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*karinmerida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=0 status=0 QTime=6
+2021-01-27 00:07:32.124 INFO  (qtp1199673596-19) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=karinmerid**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=7
+2021-01-27 00:07:32.627 INFO  (qtp1199673596-17) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=karinmeri**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=5
+2021-01-27 00:07:32.661 INFO  (qtp1199673596-24) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=karinmer**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=3
+2021-01-27 00:07:32.695 INFO  (qtp1199673596-16) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=karinme**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=4
+2021-01-27 00:07:32.727 INFO  (qtp1199673596-19) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=karinm**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=2
+2021-01-27 00:07:32.753 INFO  (qtp1199673596-17) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=karin**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=2
+2021-01-27 00:07:32.775 INFO  (qtp1199673596-24) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=kari**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=2
+2021-01-27 00:07:32.805 INFO  (qtp1199673596-16) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=kar**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=1
+2021-01-27 00:07:32.838 INFO  (qtp1199673596-19) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=ka**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=1
+2021-01-27 00:07:32.882 INFO  (qtp1199673596-17) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=k**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=1
+2021-01-27 00:07:33.293 INFO  (qtp1199673596-24) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=m**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=0
+2021-01-27 00:07:33.430 INFO  (qtp1199673596-16) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=me**&df=attr_title&wt=json&wt=json} hits=2 status=0 QTime=1
+2021-01-27 00:07:33.545 INFO  (qtp1199673596-19) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=mer**&df=attr_title&wt=json&wt=json} hits=2 status=0 QTime=2
+2021-01-27 00:07:33.644 INFO  (qtp1199673596-17) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=meri**&df=attr_title&wt=json&wt=json} hits=2 status=0 QTime=9
+2021-01-27 00:07:33.791 INFO  (qtp1199673596-24) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=merid**&df=attr_title&wt=json&wt=json} hits=2 status=0 QTime=11
+2021-01-27 00:07:33.827 INFO  (qtp1199673596-57) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=merida**&df=attr_title&wt=json&wt=json} hits=2 status=0 QTime=2
+2021-01-27 00:07:33.976 INFO  (qtp1199673596-17) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=merida&df=attr_text&spellcheck=on&wt=json} hits=4 status=0 QTime=1
+2021-01-27 00:07:34.009 INFO  (qtp1199673596-16) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=4 status=0 QTime=35
+2021-01-27 00:07:34.064 INFO  (qtp1199673596-24) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=4 status=0 QTime=24
+2021-01-27 00:08:04.856 INFO  (qtp1199673596-57) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=m**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=1
+2021-01-27 00:08:05.004 INFO  (qtp1199673596-19) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=me**&df=attr_title&wt=json&wt=json} hits=2 status=0 QTime=1
+2021-01-27 00:08:05.190 INFO  (qtp1199673596-17) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=mer**&df=attr_title&wt=json&wt=json} hits=2 status=0 QTime=2
+2021-01-27 00:08:05.200 INFO  (qtp1199673596-24) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=meri**&df=attr_title&wt=json&wt=json} hits=2 status=0 QTime=4
+2021-01-27 00:08:05.434 INFO  (qtp1199673596-57) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=merida**&df=attr_title&wt=json&wt=json} hits=2 status=0 QTime=1
+2021-01-27 00:08:05.441 INFO  (qtp1199673596-16) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=merid**&df=attr_title&wt=json&wt=json} hits=2 status=0 QTime=6
+2021-01-27 00:08:05.572 INFO  (qtp1199673596-24) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=merida&df=attr_text&spellcheck=on&wt=json} hits=4 status=0 QTime=1
+2021-01-27 00:08:05.605 INFO  (qtp1199673596-19) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=4 status=0 QTime=34
+2021-01-27 00:08:05.666 INFO  (qtp1199673596-57) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=4 status=0 QTime=24
+2021-01-27 00:08:19.087 INFO  (qtp1199673596-19) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=merida&df=attr_text&spellcheck=on&wt=json} hits=4 status=0 QTime=1
+2021-01-27 00:08:19.118 INFO  (qtp1199673596-16) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=4 status=0 QTime=33
+2021-01-27 00:08:19.190 INFO  (qtp1199673596-24) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=4 status=0 QTime=19
+2021-01-27 00:11:54.139 INFO  (qtp1199673596-53) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=m**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=2
+2021-01-27 00:11:54.258 INFO  (qtp1199673596-57) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=me**&df=attr_title&wt=json&wt=json} hits=2 status=0 QTime=1
+2021-01-27 00:11:54.376 INFO  (qtp1199673596-19) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=mer**&df=attr_title&wt=json&wt=json} hits=2 status=0 QTime=1
+2021-01-27 00:11:54.458 INFO  (qtp1199673596-24) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=meri**&df=attr_title&wt=json&wt=json} hits=2 status=0 QTime=7
+2021-01-27 00:11:54.589 INFO  (qtp1199673596-17) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=merid**&df=attr_title&wt=json&wt=json} hits=2 status=0 QTime=7
+2021-01-27 00:11:54.698 INFO  (qtp1199673596-57) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=merida**&df=attr_title&wt=json&wt=json} hits=2 status=0 QTime=2
+2021-01-27 00:11:54.816 INFO  (qtp1199673596-24) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=merida&df=attr_text&spellcheck=on&wt=json} hits=4 status=0 QTime=1
+2021-01-27 00:11:54.825 INFO  (qtp1199673596-18) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=4 status=0 QTime=23
+2021-01-27 00:11:54.879 INFO  (qtp1199673596-17) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=4 status=0 QTime=21
+2021-01-27 00:12:12.765 INFO  (qtp1199673596-57) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=m**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=1
+2021-01-27 00:12:12.891 INFO  (qtp1199673596-18) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=me**&df=attr_title&wt=json&wt=json} hits=2 status=0 QTime=2
+2021-01-27 00:12:13.578 INFO  (qtp1199673596-24) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=mer**&df=attr_title&wt=json&wt=json} hits=2 status=0 QTime=2
+2021-01-27 00:12:13.591 INFO  (qtp1199673596-52) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=merida&df=attr_text&spellcheck=on&wt=json} hits=4 status=0 QTime=2
+2021-01-27 00:12:13.595 INFO  (qtp1199673596-17) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=meri**&df=attr_title&wt=json&wt=json} hits=2 status=0 QTime=8
+2021-01-27 00:12:13.595 INFO  (qtp1199673596-19) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=merid**&df=attr_title&wt=json&wt=json} hits=2 status=0 QTime=6
+2021-01-27 00:12:13.606 INFO  (qtp1199673596-57) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=merida**&df=attr_title&wt=json&wt=json} hits=2 status=0 QTime=1
+2021-01-27 00:12:13.631 INFO  (qtp1199673596-18) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=4 status=0 QTime=28
+2021-01-27 00:12:13.673 INFO  (qtp1199673596-57) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=4 status=0 QTime=13
+2021-01-27 00:12:21.770 INFO  (qtp1199673596-17) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=*&df=attr_text&hl=true&hl.fl=attr_text&wt=json&_=1611704594667} hits=6 status=0 QTime=18
+2021-01-27 00:12:22.686 INFO  (qtp1199673596-53) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=*&df=attr_text&hl=true&hl.fl=attr_text&wt=json&_=1611704594667} hits=6 status=0 QTime=14
+2021-01-27 00:12:46.780 INFO  (qtp1199673596-18) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=4 status=0 QTime=50
+2021-01-27 00:13:00.364 INFO  (qtp1199673596-52) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*universidad*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=4 status=0 QTime=42
+2021-01-27 00:13:33.307 INFO  (qtp1199673596-57) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=m**&df=attr_title&wt=json&wt=json} hits=3 status=0 QTime=3
+2021-01-27 00:13:33.408 INFO  (qtp1199673596-17) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=me**&df=attr_title&wt=json&wt=json} hits=2 status=0 QTime=2
+2021-01-27 00:13:33.606 INFO  (qtp1199673596-18) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=mei**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=2
+2021-01-27 00:13:33.745 INFO  (qtp1199673596-52) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=meid**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=10
+2021-01-27 00:13:33.866 INFO  (qtp1199673596-53) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=meida**&df=attr_title&wt=json&wt=json} hits=0 status=0 QTime=11
+2021-01-27 00:13:33.956 INFO  (qtp1199673596-18) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=meida&df=attr_text&spellcheck=on&wt=json} hits=0 status=0 QTime=4
+2021-01-27 00:13:33.975 INFO  (qtp1199673596-17) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*meida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=0 status=0 QTime=3
+2021-01-27 00:13:33.998 INFO  (qtp1199673596-52) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*meida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=0 status=0 QTime=2
+2021-01-27 00:13:36.465 INFO  (qtp1199673596-17) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=merida&df=attr_text&spellcheck=on&wt=json} hits=4 status=0 QTime=1
+2021-01-27 00:13:36.492 INFO  (qtp1199673596-53) [   x:start] o.a.s.c.S.Request [start]  webapp=/solr path=/selectCheck params={q=(*merida*)&df=attr_text&hl=true&hl.fl=attr_text&debug.explain.structured=true&wt=json&debugQuery=on} hits=4 status=0 QTime=29

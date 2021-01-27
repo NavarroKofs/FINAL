@@ -59,19 +59,11 @@ function initializeTable(data) {
     var table = document.createElement("table");
     var thead = table.createTHead();
     var tbody = table.createTBody();
-    var col = [];
-    var table_content = "";
     var tam = data['response']['numFound'];
 
-    console.log(data);
+    //console.log(data);
 
     if (documents.length > 0) {
-        /*documents.forEach(document => {
-            table_content = `${table_content} <h3>${document['attr_dc_title'][0]} / Peso ${weights[document.id].value}<h3><p>${document['attr_text'][0]}</p>`
-        });
-        table.innerHTML = table_content;*/
-
-
         var cabecera = thead.insertRow(-1);
         var titulos = ['Título','Descripción','Debug'];
         for (var i = 0; i < 3; i++) {
@@ -83,7 +75,9 @@ function initializeTable(data) {
         for (var i = 0; i < tam; i++) {
             tr = tbody.insertRow(-1);
             var tabCell = tr.insertCell(-1);
-            tabCell.innerHTML = documents[i]['attr_title'][0];
+            console.log(documents[i]['attr_url'][0])
+            tabCell.innerHTML = '<a href="' + documents[i]['attr_url'][0] + '">' +
+             documents[i]['attr_title'][0] + '</a>';
             tabCell = tr.insertCell(-1);
             tabCell.innerHTML = data['highlighting'][documents[i]['id']]['attr_text'][0];
             tabCell = tr.insertCell(-1);
